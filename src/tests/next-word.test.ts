@@ -36,6 +36,18 @@ describe("nextWord", () => {
 
   it("Returns the first word if there is only 1 word", () => {
     expect(nextWord([unseenWord], timeNow)).toEqual(unseenWord);
+    expect(nextWord([wordSeenOnce10SecondsAgo], timeNow)).toEqual(
+      wordSeenOnce10SecondsAgo,
+    );
+    expect(nextWord([wordSeenOnce15SecondsAgo], timeNow)).toEqual(
+      wordSeenOnce15SecondsAgo,
+    );
+    expect(nextWord([wordSeenOnce20SecondsAgo], timeNow)).toEqual(
+      wordSeenOnce20SecondsAgo,
+    );
+    expect(nextWord([wordSeenTwice30SecondsAgo], timeNow)).toEqual(
+      wordSeenTwice30SecondsAgo,
+    );
   });
 
   it("Returns the word with last seen >=15 seconds ago", () => {
