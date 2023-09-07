@@ -23,6 +23,7 @@ export async function play(
       const utterance = new SpeechSynthesisUtterance();
       utterance.text = segment.text;
       utterance.lang = segment.language;
+      utterance.rate = 0.85;
       speechSynthesis.speak(utterance);
       await waitUntil(
         () => !speechSynthesis.speaking && !speechSynthesis.pending,
