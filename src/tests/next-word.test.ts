@@ -73,4 +73,10 @@ describe("nextWord", () => {
       nextWord([wordSeenOnce15SecondsAgo, wordSeenTwice30SecondsAgo], timeNow),
     ).toEqual(wordSeenTwice30SecondsAgo);
   });
+
+  it("Returns word seen once 20 seconds ago if the other word was been seen twice 30 seconds ago", () => {
+    expect(
+      nextWord([wordSeenOnce20SecondsAgo, wordSeenTwice30SecondsAgo], timeNow),
+    ).toEqual(wordSeenOnce20SecondsAgo);
+  });
 });
