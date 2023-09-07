@@ -1,4 +1,4 @@
-import { type Segment } from "~/segments/segment";
+import { type Segment } from "~/segments/types";
 
 function wait(milliseconds: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
