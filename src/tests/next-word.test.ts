@@ -4,13 +4,13 @@ import { type Word } from "~/words/types";
 
 const timeNow = 100_000;
 const unseenWord: Word = { japanese: "1", english: "1" };
-const seenOnceWord15SecondsAgo: Word = {
+const wordSeenOnce15SecondsAgo: Word = {
   japanese: "2",
   english: "2",
   lastSeen: timeNow - 15_000,
   seenCount: 1,
 };
-const seenOnceWord10SecondsAgo: Word = {
+const wordSeenOnce10SecondsAgo: Word = {
   japanese: "2",
   english: "2",
   lastSeen: timeNow - 10_000,
@@ -24,20 +24,20 @@ describe("nextWord", () => {
 
   it("Returns the first word if there is only 1 word", () => {
     const word = { japanese: "", english: "" };
-    expect(nextWord([word], 0)).toEqual(word);
+    expect(nextWord([word], timeNow)).toEqual(word);
   });
 
   it("Returns the word with lowest lastSeen if that lastSeen was >=15 seconds ago", () => {
     expect(
       nextWord(
-        [unseenWord, seenOnceWord15SecondsAgo, seenOnceWord10SecondsAgo],
+        [unseenWord, wordSeenOnce15SecondsAgo, wordSeenOnce10SecondsAgo],
         timeNow,
       ),
-    ).toEqual(seenOnceWord15SecondsAgo);
+    ).toEqual(wordSeenOnce15SecondsAgo);
   });
 
   it("Returns an unseen word if no words were last seen >=15 seconds ago", () => {
-    expect(nextWord([unseenWord, seenOnceWord10SecondsAgo], timeNow)).toEqual(
+    expect(nextWord([unseenWord, wordSeenOnce10SecondsAgo], timeNow)).toEqual(
       unseenWord,
     );
   });
