@@ -26,6 +26,9 @@ export function nextWord(words: Word[], now: number): Word | undefined {
     if (!nextSeenB) {
       return nextSeenA <= now ? -1 : 1;
     }
+    if (nextSeenA - nextSeenB === 0) {
+      return (b.seenCount ?? 0) - (a.seenCount ?? 0);
+    }
     return nextSeenA - nextSeenB;
   });
 

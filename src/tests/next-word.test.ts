@@ -22,6 +22,12 @@ const wordSeenOnce10SecondsAgo: Word = {
   lastSeen: timeNow - 10_000,
   seenCount: 1,
 };
+const wordSeenTwice30SecondsAgo: Word = {
+  japanese: "30",
+  english: "30",
+  lastSeen: timeNow - 30_000,
+  seenCount: 2,
+};
 
 describe("nextWord", () => {
   it("Returns undefined if there are no words", () => {
@@ -60,5 +66,11 @@ describe("nextWord", () => {
     expect(nextWord([unseenWord, wordSeenOnce10SecondsAgo], timeNow)).toEqual(
       unseenWord,
     );
+  });
+
+  it("Returns word seen twice 30 seconds ago if the other word was been seen once 15 seconds ago", () => {
+    expect(
+      nextWord([wordSeenOnce15SecondsAgo, wordSeenTwice30SecondsAgo], timeNow),
+    ).toEqual(wordSeenTwice30SecondsAgo);
   });
 });
