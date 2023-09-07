@@ -3,7 +3,7 @@ import { nextWord } from "~/words/next-word";
 import { type Word } from "~/words/types";
 
 const timeNow = 100_000;
-const unseenWord: Word = { japanese: "1", english: "1" };
+const unseenWord: Word = { japanese: "0", english: "0" };
 const wordSeenOnce20SecondsAgo: Word = {
   japanese: "20",
   english: "20",
@@ -35,8 +35,7 @@ describe("nextWord", () => {
   });
 
   it("Returns the first word if there is only 1 word", () => {
-    const word = { japanese: "", english: "" };
-    expect(nextWord([word], timeNow)).toEqual(word);
+    expect(nextWord([unseenWord], timeNow)).toEqual(unseenWord);
   });
 
   it("Returns the word with last seen >=15 seconds ago", () => {
