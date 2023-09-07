@@ -4,15 +4,21 @@ import { type Word } from "~/words/types";
 
 const timeNow = 100_000;
 const unseenWord: Word = { japanese: "1", english: "1" };
+const wordSeenOnce20SecondsAgo: Word = {
+  japanese: "20",
+  english: "20",
+  lastSeen: timeNow - 20_000,
+  seenCount: 1,
+};
 const wordSeenOnce15SecondsAgo: Word = {
-  japanese: "2",
-  english: "2",
+  japanese: "15",
+  english: "15",
   lastSeen: timeNow - 15_000,
   seenCount: 1,
 };
 const wordSeenOnce10SecondsAgo: Word = {
-  japanese: "2",
-  english: "2",
+  japanese: "10",
+  english: "10",
   lastSeen: timeNow - 10_000,
   seenCount: 1,
 };
@@ -30,13 +36,18 @@ describe("nextWord", () => {
   it("Returns the word with lowest lastSeen if that lastSeen was >=15 seconds ago", () => {
     expect(
       nextWord(
-        [unseenWord, wordSeenOnce15SecondsAgo, wordSeenOnce10SecondsAgo],
+        [
+          unseenWord,
+          wordSeenOnce20SecondsAgo,
+          wordSeenOnce15SecondsAgo,
+          wordSeenOnce10SecondsAgo,
+        ],
         timeNow,
       ),
-    ).toEqual(wordSeenOnce15SecondsAgo);
+    ).toEqual(wordSeenOnce20SecondsAgo);
   });
 
-  it("Returns an unseen word if no words were last seen >=15 seconds ago", () => {
+  it("Returns unseen word if no words were last seen >=15 seconds ago", () => {
     expect(nextWord([unseenWord, wordSeenOnce10SecondsAgo], timeNow)).toEqual(
       unseenWord,
     );
