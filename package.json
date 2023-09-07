@@ -1,5 +1,5 @@
 {
-  "name": "jlpt-vocab-audio-srs",
+  "name": "jlpt-audio-srs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
