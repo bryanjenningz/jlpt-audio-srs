@@ -33,7 +33,16 @@ describe("nextWord", () => {
     expect(nextWord([word], timeNow)).toEqual(word);
   });
 
-  it("Returns the word with lowest lastSeen if that lastSeen was >=15 seconds ago", () => {
+  it("Returns the word with lastSeen >=15 seconds ago", () => {
+    expect(
+      nextWord(
+        [unseenWord, wordSeenOnce15SecondsAgo, wordSeenOnce10SecondsAgo],
+        timeNow,
+      ),
+    ).toEqual(wordSeenOnce15SecondsAgo);
+  });
+
+  it("Returns the word with lowest lastSeen if there are multiple words with lastSeen >=15 seconds ago", () => {
     expect(
       nextWord(
         [
