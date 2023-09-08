@@ -9,19 +9,17 @@ export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
   const [japaneseShown, setJapaneseShown] = useState(false);
   const [words, setWords] = useWords();
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const word = nextWord(words, Date.now());
+  const [wordPlaying, setWordPlaying] = useState<Word>();
 
   const playWord = useCallback(
     async (word: Word): Promise<void> => {
-      setIsPlaying(true);
+      setWordPlaying(word);
       await playEnglish(word.english, speechSynthesis);
       await wait(1000);
       setJapaneseShown(true);
       await playJapanese(word.japanese, speechSynthesis);
       setJapaneseShown(false);
-      setIsPlaying(false);
+      setWordPlaying(undefined);
       setWords(updateNextWord(words, Date.now()));
     },
     [words, setWords],
@@ -29,11 +27,13 @@ export default function Home() {
 
   useEffect(() => {
     void (async () => {
-      if (autoplay && !isPlaying && word) {
+      if (autoplay && !wordPlaying) {
+        const word = nextWord(words, Date.now());
+        if (!word) return;
         await playWord(word);
       }
     })();
-  }, [autoplay, isPlaying, word, playWord]);
+  }, [autoplay, wordPlaying, words, playWord]);
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
@@ -47,15 +47,23 @@ export default function Home() {
           />
         </label>
 
-        {word && (
-          <>
-            <button onClick={() => void playWord(word)}>Play next word</button>
+        <button
+          onClick={() => {
+            void (async () => {
+              if (!autoplay && !wordPlaying) {
+                const word = nextWord(words, Date.now());
+                if (!word) return;
+                await playWord(word);
+              }
+            })();
+          }}
+        >
+          Play next word
+        </button>
 
-            {isPlaying && <div>{word.english}</div>}
+        {wordPlaying && <div>{wordPlaying.english}</div>}
 
-            {japaneseShown && <div>{word.japanese}</div>}
-          </>
-        )}
+        {wordPlaying && japaneseShown && <div>{wordPlaying.japanese}</div>}
       </div>
     </main>
   );
