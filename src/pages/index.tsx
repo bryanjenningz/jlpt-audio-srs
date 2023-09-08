@@ -1,7 +1,7 @@
 import { play } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
-import { type Word } from "~/words/types";
+import { updateNextWord } from "~/words/update-next-word";
 
 export default function Home() {
   const [words, setWords] = useWords();
@@ -36,28 +36,7 @@ export default function Home() {
                   speechSynthesis,
                 );
 
-                const newWords = words.filter((w) => w !== word);
-                setWords([
-                  ...newWords,
-                  ((): Word => {
-                    switch (word.type) {
-                      case "unseen":
-                        return {
-                          ...word,
-                          type: "seen",
-                          lastSeen: Date.now(),
-                          seenCount: 1,
-                        };
-
-                      case "seen":
-                        return {
-                          ...word,
-                          lastSeen: Date.now(),
-                          seenCount: word.seenCount + 1,
-                        };
-                    }
-                  })(),
-                ]);
+                setWords(updateNextWord(words, Date.now()));
               })();
             }}
           >
