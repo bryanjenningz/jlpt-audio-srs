@@ -60,4 +60,21 @@ describe("updateNextWord", () => {
       { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },
     ]);
   });
+
+  it("Updates the word 15 seconds ago if there's an unseen word, word seen once 10 seconds ago, and a word seen once 15 seconds ago", () => {
+    expect(
+      updateNextWord(
+        [unseenWord, wordSeenOnce10SecondsAgo, wordSeenOnce15SecondsAgo],
+        timeNow,
+      ),
+    ).toEqual([
+      unseenWord,
+      wordSeenOnce10SecondsAgo,
+      {
+        ...wordSeenOnce15SecondsAgo,
+        lastSeen: timeNow,
+        seenCount: 2,
+      },
+    ]);
+  });
 });
