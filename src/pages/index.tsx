@@ -1,36 +1,58 @@
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { playEnglish, playJapanese, wait } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
+import { type Word } from "~/words/types";
 import { updateNextWord } from "~/words/update-next-word";
 
 export default function Home() {
+  const [autoplay, setAutoplay] = useState(false);
   const [japaneseShown, setJapaneseShown] = useState(false);
   const [words, setWords] = useWords();
+  const isPlaying = useRef(false);
 
   const word = nextWord(words, Date.now());
+
+  const playWord = useCallback(
+    async (word: Word): Promise<void> => {
+      await playEnglish(word.english, speechSynthesis);
+      await wait(1000);
+      setJapaneseShown(true);
+      await playJapanese(word.japanese, speechSynthesis);
+      setWords(updateNextWord(words, Date.now()));
+      setJapaneseShown(false);
+    },
+    [words, setWords],
+  );
+
+  useEffect(() => {
+    void (async () => {
+      if (autoplay && !isPlaying.current && word) {
+        isPlaying.current = true;
+        await playWord(word);
+        isPlaying.current = false;
+      }
+    })();
+  }, [autoplay, word, playWord]);
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center p-5">
+        <label>
+          Autoplay
+          <input
+            type="checkbox"
+            checked={autoplay}
+            onChange={() => setAutoplay(!autoplay)}
+          />
+        </label>
+
         {word && (
           <>
-            <button
-              onClick={() => {
-                void (async () => {
-                  await playEnglish(word.english, speechSynthesis);
-                  await wait(1000);
-                  setJapaneseShown(true);
-                  await playJapanese(word.japanese, speechSynthesis);
-                  setWords(updateNextWord(words, Date.now()));
-                  setJapaneseShown(false);
-                })();
-              }}
-            >
-              Play next word
-            </button>
+            <button onClick={() => void playWord(word)}>Play next word</button>
 
             <div>{word.english}</div>
+
             {japaneseShown && <div>{word.japanese}</div>}
           </>
         )}
