@@ -15,4 +15,10 @@ describe("parseWords", () => {
       ),
     );
   });
+
+  it("Parses a line with word, pronunciation, and definition separated by semi-colons", () => {
+    expect(parseWords("word;pronunciation;definition")).toEqual([
+      { type: "unseen", english: "definition", japanese: "word" },
+    ]);
+  });
 });
