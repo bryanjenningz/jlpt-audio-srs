@@ -44,4 +44,19 @@ describe("parseWords", () => {
       ]);
     });
   });
+
+  describe("Lines with word and definition", () => {
+    it("Parses a line with word and definition separated by a semi-colon", () => {
+      expect(parseWords("word;definition")).toEqual([
+        { type: "unseen", english: "definition", japanese: "word" },
+      ]);
+    });
+
+    it("Parses 2 lines with word and definition separated by a semi-colon", () => {
+      expect(parseWords("word;definition\nword2;definition2")).toEqual([
+        { type: "unseen", english: "definition", japanese: "word" },
+        { type: "unseen", english: "definition2", japanese: "word2" },
+      ]);
+    });
+  });
 });
