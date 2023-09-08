@@ -32,4 +32,12 @@ describe("parseWords", () => {
       { type: "unseen", english: "definition2", japanese: "word2" },
     ]);
   });
+
+  it("Throws if there's a newline at the end of the string", () => {
+    expect(() =>
+      parseWords(
+        "word;pronunciation;definition\nword2;pronunciation2;definition2\n",
+      ),
+    ).toThrow(new Error(`Expected 2 or 3 non-empty sections for line: ""`));
+  });
 });
