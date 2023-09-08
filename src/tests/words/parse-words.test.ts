@@ -21,4 +21,15 @@ describe("parseWords", () => {
       { type: "unseen", english: "definition", japanese: "word" },
     ]);
   });
+
+  it("Parses 2 lines with word, pronunciation, and definition separated by semi-colons", () => {
+    expect(
+      parseWords(
+        "word;pronunciation;definition\nword2;pronunciation2;definition2",
+      ),
+    ).toEqual([
+      { type: "unseen", english: "definition", japanese: "word" },
+      { type: "unseen", english: "definition2", japanese: "word2" },
+    ]);
+  });
 });
