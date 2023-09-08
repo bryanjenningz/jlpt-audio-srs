@@ -1,37 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { nextWord } from "~/words/next-word";
-import { type Word } from "~/words/types";
-
-const timeNow = 100_000;
-const unseenWord: Word = { type: "unseen", japanese: "0", english: "0" };
-const wordSeenOnce20SecondsAgo: Word = {
-  type: "seen",
-  japanese: "20",
-  english: "20",
-  lastSeen: timeNow - 20_000,
-  seenCount: 1,
-};
-const wordSeenOnce15SecondsAgo: Word = {
-  type: "seen",
-  japanese: "15",
-  english: "15",
-  lastSeen: timeNow - 15_000,
-  seenCount: 1,
-};
-const wordSeenOnce10SecondsAgo: Word = {
-  type: "seen",
-  japanese: "10",
-  english: "10",
-  lastSeen: timeNow - 10_000,
-  seenCount: 1,
-};
-const wordSeenTwice30SecondsAgo: Word = {
-  type: "seen",
-  japanese: "30",
-  english: "30",
-  lastSeen: timeNow - 30_000,
-  seenCount: 2,
-};
+import {
+  timeNow,
+  unseenWord,
+  wordSeenOnce10SecondsAgo,
+  wordSeenOnce15SecondsAgo,
+  wordSeenOnce20SecondsAgo,
+  wordSeenTwice30SecondsAgo,
+} from "~/tests/mock-data";
 
 describe("nextWord", () => {
   it("Returns undefined if there are no words", () => {
