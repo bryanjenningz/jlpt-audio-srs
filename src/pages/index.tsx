@@ -35,9 +35,13 @@ export default function Home() {
     })();
   }, [autoplay, wordPlaying, words, playWord]);
 
+  const uniqueWordsSeen = words.filter((x) => x.type === "seen").length;
+
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center p-5">
+        <p>{`Unique words seen: ${uniqueWordsSeen}`}</p>
+
         <label>
           Autoplay
           <input
