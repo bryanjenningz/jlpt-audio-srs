@@ -49,3 +49,15 @@ export async function playEnglish(
   speechSynthesis.speak(utterance);
   await waitUntil(() => !speechSynthesis.speaking && !speechSynthesis.pending);
 }
+
+export async function playJapanese(
+  japanese: string,
+  speechSynthesis: SpeechSynthesis,
+): Promise<void> {
+  const utterance = new SpeechSynthesisUtterance();
+  utterance.text = japanese;
+  utterance.lang = "ja-JP";
+  utterance.rate = 0.85;
+  speechSynthesis.speak(utterance);
+  await waitUntil(() => !speechSynthesis.speaking && !speechSynthesis.pending);
+}

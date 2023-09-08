@@ -1,4 +1,4 @@
-import { play, playEnglish } from "~/segments/play";
+import { play, playEnglish, playJapanese } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
 import { updateNextWord } from "~/words/update-next-word";
@@ -24,10 +24,7 @@ export default function Home() {
                   speechSynthesis,
                 );
 
-                await play(
-                  { type: "speech", text: word.japanese, language: "ja-JP" },
-                  speechSynthesis,
-                );
+                await playJapanese(word.japanese, speechSynthesis);
 
                 setWords(updateNextWord(words, Date.now()));
               })();
