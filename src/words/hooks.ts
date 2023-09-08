@@ -14,7 +14,9 @@ export function useWords() {
 
   useEffect(() => {
     try {
-      const words = wordsSchema.parse(localStorage.getItem(localStorageKey));
+      const words = wordsSchema.parse(
+        JSON.parse(localStorage.getItem(localStorageKey) ?? "0"),
+      );
       setWords(words);
     } catch {
       void (async () => {
