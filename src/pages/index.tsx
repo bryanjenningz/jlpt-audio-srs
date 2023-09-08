@@ -15,12 +15,14 @@ export default function Home() {
 
   const playWord = useCallback(
     async (word: Word): Promise<void> => {
+      setIsPlaying(true);
       await playEnglish(word.english, speechSynthesis);
       await wait(1000);
       setJapaneseShown(true);
       await playJapanese(word.japanese, speechSynthesis);
-      setWords(updateNextWord(words, Date.now()));
       setJapaneseShown(false);
+      setIsPlaying(false);
+      setWords(updateNextWord(words, Date.now()));
     },
     [words, setWords],
   );
@@ -28,9 +30,7 @@ export default function Home() {
   useEffect(() => {
     void (async () => {
       if (autoplay && !isPlaying && word) {
-        setIsPlaying(true);
         await playWord(word);
-        setIsPlaying(false);
       }
     })();
   }, [autoplay, isPlaying, word, playWord]);
@@ -51,7 +51,7 @@ export default function Home() {
           <>
             <button onClick={() => void playWord(word)}>Play next word</button>
 
-            <div>{word.english}</div>
+            {isPlaying && <div>{word.english}</div>}
 
             {japaneseShown && <div>{word.japanese}</div>}
           </>
