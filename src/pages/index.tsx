@@ -1,4 +1,4 @@
-import { play } from "~/segments/play";
+import { play, playEnglish } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
 import { updateNextWord } from "~/words/update-next-word";
@@ -17,14 +17,7 @@ export default function Home() {
           <button
             onClick={() => {
               void (async () => {
-                await play(
-                  {
-                    type: "speech",
-                    text: `Say the following in Japanese... "${word.english}".`,
-                    language: "en-US",
-                  },
-                  speechSynthesis,
-                );
+                await playEnglish(word.english, speechSynthesis);
 
                 await play(
                   { type: "wait", milliseconds: 1000 },

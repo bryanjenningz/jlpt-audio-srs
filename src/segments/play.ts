@@ -37,3 +37,15 @@ export async function play(
   }
   segment satisfies never;
 }
+
+export async function playEnglish(
+  english: string,
+  speechSynthesis: SpeechSynthesis,
+): Promise<void> {
+  const utterance = new SpeechSynthesisUtterance();
+  utterance.text = `Say the following in Japanese... ${english}`;
+  utterance.lang = "en-US";
+  utterance.rate = 0.85;
+  speechSynthesis.speak(utterance);
+  await waitUntil(() => !speechSynthesis.speaking && !speechSynthesis.pending);
+}
