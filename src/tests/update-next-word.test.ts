@@ -78,7 +78,7 @@ describe("updateNextWord", () => {
     ]);
   });
 
-  it("Updates the word 20 seconds ago if there's an unseen word, word seen once 10 seconds ago, a word seen once 15 seconds ago, and a word seen once 20 seconds ago", () => {
+  it("Updates the word seen 20 seconds ago if there's an unseen word, word seen once 10 seconds ago, a word seen once 15 seconds ago, and a word seen once 20 seconds ago", () => {
     expect(
       updateNextWord(
         [
@@ -97,6 +97,29 @@ describe("updateNextWord", () => {
         ...wordSeenOnce20SecondsAgo,
         lastSeen: timeNow,
         seenCount: 2,
+      },
+    ]);
+  });
+
+  it("Updates the word seen twice 30 seconds ago if there's an unseen word, word seen once 10 seconds ago, a word seen once 15 seconds ago, and a word seen twice 30 seconds ago", () => {
+    expect(
+      updateNextWord(
+        [
+          unseenWord,
+          wordSeenOnce10SecondsAgo,
+          wordSeenOnce15SecondsAgo,
+          wordSeenTwice30SecondsAgo,
+        ],
+        timeNow,
+      ),
+    ).toEqual([
+      unseenWord,
+      wordSeenOnce10SecondsAgo,
+      wordSeenOnce15SecondsAgo,
+      {
+        ...wordSeenTwice30SecondsAgo,
+        lastSeen: timeNow,
+        seenCount: 3,
       },
     ]);
   });
