@@ -14,7 +14,7 @@ describe("updateNextWord", () => {
     expect(updateNextWord([], timeNow)).toEqual([]);
   });
 
-  it("Updates the last seen time and seen count of the next word", () => {
+  it("Updates the last seen time and seen count of the next word even if there's only 1 word", () => {
     expect(updateNextWord([unseenWord], timeNow)).toEqual([
       { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },
     ]);
@@ -49,6 +49,15 @@ describe("updateNextWord", () => {
         lastSeen: timeNow,
         seenCount: 3,
       },
+    ]);
+  });
+
+  it("Updates the unseen word if there's an unseen word and a word seen once 10 seconds ago", () => {
+    expect(
+      updateNextWord([unseenWord, wordSeenOnce10SecondsAgo], timeNow),
+    ).toEqual([
+      wordSeenOnce10SecondsAgo,
+      { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },
     ]);
   });
 });
