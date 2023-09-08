@@ -7,4 +7,12 @@ describe("parseWords", () => {
       new Error(`Expected 2 or 3 non-empty sections for line: ""`),
     );
   });
+
+  it("Throws if given a string with no semi-colons", () => {
+    expect(() => parseWords("word,pronunciation,definition")).toThrowError(
+      new Error(
+        `Expected 2 or 3 non-empty sections for line: "word,pronunciation,definition"`,
+      ),
+    );
+  });
 });
