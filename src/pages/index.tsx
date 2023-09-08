@@ -1,6 +1,7 @@
 import { play } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
+import { type Word } from "~/words/types";
 
 export default function Home() {
   const [words, setWords] = useWords();
@@ -38,11 +39,24 @@ export default function Home() {
                 const newWords = words.filter((w) => w !== word);
                 setWords([
                   ...newWords,
-                  {
-                    ...word,
-                    lastSeen: Date.now(),
-                    seenCount: (word.seenCount ?? 0) + 1,
-                  },
+                  ((): Word => {
+                    switch (word.type) {
+                      case "unseen":
+                        return {
+                          ...word,
+                          type: "seen",
+                          lastSeen: Date.now(),
+                          seenCount: 1,
+                        };
+
+                      case "seen":
+                        return {
+                          ...word,
+                          lastSeen: Date.now(),
+                          seenCount: word.seenCount + 1,
+                        };
+                    }
+                  })(),
                 ]);
               })();
             }}
