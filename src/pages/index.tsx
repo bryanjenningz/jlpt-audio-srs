@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { playEnglish, playJapanese, wait } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
@@ -9,7 +9,7 @@ export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
   const [japaneseShown, setJapaneseShown] = useState(false);
   const [words, setWords] = useWords();
-  const isPlaying = useRef(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const word = nextWord(words, Date.now());
 
@@ -27,13 +27,13 @@ export default function Home() {
 
   useEffect(() => {
     void (async () => {
-      if (autoplay && !isPlaying.current && word) {
-        isPlaying.current = true;
+      if (autoplay && !isPlaying && word) {
+        setIsPlaying(true);
         await playWord(word);
-        isPlaying.current = false;
+        setIsPlaying(false);
       }
     })();
-  }, [autoplay, word, playWord]);
+  }, [autoplay, isPlaying, word, playWord]);
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
