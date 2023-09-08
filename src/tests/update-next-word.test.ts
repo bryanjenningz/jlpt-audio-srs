@@ -14,6 +14,18 @@ describe("updateNextWord", () => {
     expect(updateNextWord([], timeNow)).toEqual([]);
   });
 
+  it("Updates the first unseen word if there are 2 unseen words", () => {
+    const unseenWord2 = { ...unseenWord, english: "unseen2" };
+    expect(updateNextWord([unseenWord, unseenWord2], timeNow)).toEqual([
+      unseenWord2,
+      { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },
+    ]);
+    expect(updateNextWord([unseenWord2, unseenWord], timeNow)).toEqual([
+      unseenWord,
+      { ...unseenWord2, type: "seen", lastSeen: timeNow, seenCount: 1 },
+    ]);
+  });
+
   it("Updates the last seen time and seen count of the next word even if there's only 1 word", () => {
     expect(updateNextWord([unseenWord], timeNow)).toEqual([
       { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },
