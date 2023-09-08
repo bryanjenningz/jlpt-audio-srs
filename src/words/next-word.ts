@@ -30,21 +30,6 @@ export function nextWord(words: Word[], now: number): Word | undefined {
             return nextSeenTime(a) - nextSeenTime(b);
         }
     }
-    // const nextSeenA = nextSeenTime(a);
-    // const nextSeenB = nextSeenTime(b);
-    // if (!nextSeenA) {
-    //   if (!nextSeenB) {
-    //     return 0;
-    //   }
-    //   return nextSeenB <= now ? 1 : -1;
-    // }
-    // if (!nextSeenB) {
-    //   return nextSeenA <= now ? -1 : 1;
-    // }
-    // if (nextSeenA - nextSeenB === 0) {
-    //   return (b.seenCount ?? 0) - (a.seenCount ?? 0);
-    // }
-    // return nextSeenA - nextSeenB;
   });
 
   return words[0];
