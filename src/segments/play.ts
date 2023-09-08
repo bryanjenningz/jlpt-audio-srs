@@ -46,6 +46,7 @@ export async function playEnglish(
   utterance.text = `Say the following in Japanese... ${english}`;
   utterance.lang = "en-US";
   utterance.rate = 0.85;
+  utterance.volume = 0.5;
   speechSynthesis.speak(utterance);
   await waitUntil(() => !speechSynthesis.speaking && !speechSynthesis.pending);
 }
@@ -58,6 +59,7 @@ export async function playJapanese(
   utterance.text = japanese;
   utterance.lang = "ja-JP";
   utterance.rate = 0.85;
+  utterance.volume = 1;
   speechSynthesis.speak(utterance);
   await waitUntil(() => !speechSynthesis.speaking && !speechSynthesis.pending);
 }
