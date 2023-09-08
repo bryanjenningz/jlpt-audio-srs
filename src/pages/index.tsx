@@ -12,18 +12,22 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center p-5">
         {word && (
-          <button
-            onClick={() => {
-              void (async () => {
-                await playEnglish(word.english, speechSynthesis);
-                await wait(1000);
-                await playJapanese(word.japanese, speechSynthesis);
-                setWords(updateNextWord(words, Date.now()));
-              })();
-            }}
-          >
-            Play next word
-          </button>
+          <>
+            <button
+              onClick={() => {
+                void (async () => {
+                  await playEnglish(word.english, speechSynthesis);
+                  await wait(1000);
+                  await playJapanese(word.japanese, speechSynthesis);
+                  setWords(updateNextWord(words, Date.now()));
+                })();
+              }}
+            >
+              Play next word
+            </button>
+
+            <div>{word.english}</div>
+          </>
         )}
       </div>
     </main>
