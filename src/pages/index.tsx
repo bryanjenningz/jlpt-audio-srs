@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { playEnglish, playJapanese, wait } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
 import { updateNextWord } from "~/words/update-next-word";
 
 export default function Home() {
+  const [japaneseShown, setJapaneseShown] = useState(false);
   const [words, setWords] = useWords();
 
   const word = nextWord(words, Date.now());
@@ -18,8 +20,10 @@ export default function Home() {
                 void (async () => {
                   await playEnglish(word.english, speechSynthesis);
                   await wait(1000);
+                  setJapaneseShown(true);
                   await playJapanese(word.japanese, speechSynthesis);
                   setWords(updateNextWord(words, Date.now()));
+                  setJapaneseShown(false);
                 })();
               }}
             >
@@ -27,6 +31,7 @@ export default function Home() {
             </button>
 
             <div>{word.english}</div>
+            {japaneseShown && <div>{word.japanese}</div>}
           </>
         )}
       </div>
