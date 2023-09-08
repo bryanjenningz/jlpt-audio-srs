@@ -3,6 +3,10 @@ import { type Word } from "~/words/types";
 export async function fetchWords(): Promise<Word[]> {
   const response = await fetch("/jlpt5.txt");
   const text = await response.text();
+  return parseWords(text);
+}
+
+export function parseWords(text: string): Word[] {
   const lines = text.split("\n");
   const words = lines.map((line): Word => {
     const sections = line.split(";");
