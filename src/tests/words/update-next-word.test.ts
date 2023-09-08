@@ -7,7 +7,7 @@ import {
   wordSeenOnce15SecondsAgo,
   wordSeenOnce20SecondsAgo,
   wordSeenTwice30SecondsAgo,
-} from "~/tests/mock-data";
+} from "~/tests/words/mock-data";
 
 describe("updateNextWord", () => {
   it("Returns empty array if you pass in an empty array", () => {

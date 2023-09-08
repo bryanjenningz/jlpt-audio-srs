@@ -7,7 +7,7 @@ import {
   wordSeenOnce15SecondsAgo,
   wordSeenOnce20SecondsAgo,
   wordSeenTwice30SecondsAgo,
-} from "~/tests/mock-data";
+} from "~/tests/words/mock-data";
 
 describe("nextWord", () => {
   it("Returns undefined if there are no words", () => {
