@@ -13,14 +13,14 @@ export function updateNextWord(words: Word[], now: number): Word[] {
           return {
             ...word,
             type: "seen",
-            lastSeen: Date.now(),
+            lastSeen: now,
             seenCount: 1,
           };
 
         case "seen":
           return {
             ...word,
-            lastSeen: Date.now(),
+            lastSeen: now,
             seenCount: word.seenCount + 1,
           };
       }
