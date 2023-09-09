@@ -16,7 +16,7 @@
 暖かい;あたたかい;warm
 頭;あたま;head
 新しい;あたらしい;new
-あちら;there
+彼方;あちら;there
 暑い;あつい;hot
 熱い;あつい;hot to the touch
 厚い;あつい;kind, deep, thick
