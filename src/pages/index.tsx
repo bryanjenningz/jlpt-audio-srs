@@ -42,17 +42,15 @@ export default function Home() {
       <div className="flex w-full max-w-2xl flex-col items-center p-5">
         <p>{`Unique words seen: ${seenWords.length}`}</p>
 
-        <ul className="max-h-52 overflow-auto">
+        <ul className="max-h-52 w-full max-w-2xl overflow-auto text-lg">
           {seenWords.map((word) => {
             return (
               <li
                 key={`${word.kanji}-${word.definition}`}
-                className="flex gap-3"
+                className="flex items-center p-2 odd:bg-slate-800"
               >
-                <div>{word.kanji}</div>
-                <div>{word.kana}</div>
-                <div>{word.definition}</div>
                 <input
+                  className="mr-3 h-5 w-5"
                   type="checkbox"
                   checked={word.known}
                   onChange={() =>
@@ -65,6 +63,10 @@ export default function Home() {
                     )
                   }
                 />
+
+                <div className="grow basis-1">{word.kanji}</div>
+                <div className="grow basis-1">{word.kana}</div>
+                <div className="grow basis-1">{word.definition}</div>
               </li>
             );
           })}
