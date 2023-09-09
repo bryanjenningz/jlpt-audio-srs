@@ -52,12 +52,12 @@ describe("parseWords", () => {
       ).toEqual([
         {
           type: "unseen",
-          english: "definition,definition-b",
+          english: "definition, definition-b",
           japanese: "word",
         },
         {
           type: "unseen",
-          english: "definition2,definition-b,definition-c",
+          english: "definition2, definition-b, definition-c",
           japanese: "word2",
         },
       ]);

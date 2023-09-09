@@ -9,7 +9,7 @@ export function parseWords(text: string): Word[] {
     if (sections.length < 2 || sections.length > 3 || !japanese || !english) {
       throw new Error(`Expected 2 or 3 non-empty sections for line: "${line}"`);
     }
-    return { type: "unseen", japanese, english };
+    return { type: "unseen", japanese, english: english.split(",").join(", ") };
   });
   return words;
 }
