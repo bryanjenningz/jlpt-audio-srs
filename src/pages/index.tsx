@@ -42,6 +42,23 @@ export default function Home() {
       <div className="flex w-full max-w-2xl flex-col items-center p-5">
         <p>{`Unique words seen: ${seenWords.length}`}</p>
 
+        <article className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
+          <div
+            className="flex h-full items-center justify-center pr-0"
+            title="Skip (already known)"
+          >
+            <div className="mr-3 text-xl">{`⏩`}</div>
+          </div>
+
+          {["Kanji", "Kana", "Definition"].map((col) => {
+            return (
+              <div key={col} className="flex grow basis-1 items-center">
+                {col}
+              </div>
+            );
+          })}
+        </article>
+
         <ul className="max-h-52 w-full max-w-2xl overflow-auto text-lg">
           {seenWords.map((word) => {
             return (
