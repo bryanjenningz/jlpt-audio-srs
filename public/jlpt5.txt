@@ -36,7 +36,7 @@
 洗う;あらう;to wash
 ある;to be,to have (used for inanimate objects)
 歩く;あるく;to walk
-あれ;that
+あれ;(pronoun) that
 いい / よい;good
 いいえ;no
 言う;いう;to say
