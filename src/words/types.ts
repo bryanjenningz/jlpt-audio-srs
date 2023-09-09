@@ -7,13 +7,13 @@ export type Word = z.infer<typeof wordSchema>;
 const unseenWordSchema = z.object({
   type: z.literal("unseen"),
   japanese: z.string(),
-  english: z.string(),
+  definition: z.string(),
 });
 
 const seenWordSchema = z.object({
   type: z.literal("seen"),
   japanese: z.string(),
-  english: z.string(),
+  definition: z.string(),
   lastSeen: z.number(),
   seenCount: z.number(),
 });

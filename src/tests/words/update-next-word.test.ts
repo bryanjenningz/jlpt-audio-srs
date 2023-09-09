@@ -16,7 +16,7 @@ describe("updateNextWord", () => {
   });
 
   it("Updates the first unseen word if there are 2 unseen words", () => {
-    const unseenWord2: Word = { ...unseenWord, english: "unseen2" };
+    const unseenWord2: Word = { ...unseenWord, definition: "unseen2" };
     const result: Word[] = [
       unseenWord2,
       { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },

@@ -14,7 +14,7 @@ export default function Home() {
   const playWord = useCallback(
     async (word: Word): Promise<void> => {
       setWordPlaying(word);
-      await playEnglish(word.english, speechSynthesis);
+      await playEnglish(word.definition, speechSynthesis);
       await wait(1000);
       setJapaneseShown(true);
       await playJapanese(word.japanese, speechSynthesis);
@@ -46,11 +46,11 @@ export default function Home() {
           {seenWords.map((word) => {
             return (
               <li
-                key={`${word.japanese}-${word.english}`}
+                key={`${word.japanese}-${word.definition}`}
                 className="flex gap-3"
               >
                 <div>{word.japanese}</div>
-                <div>{word.english}</div>
+                <div>{word.definition}</div>
               </li>
             );
           })}
@@ -79,7 +79,7 @@ export default function Home() {
           Play next word
         </button>
 
-        {wordPlaying && <div>{wordPlaying.english}</div>}
+        {wordPlaying && <div>{wordPlaying.definition}</div>}
 
         {wordPlaying && japaneseShown && <div>{wordPlaying.japanese}</div>}
       </div>
