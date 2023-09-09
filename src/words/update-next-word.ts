@@ -15,6 +15,7 @@ export function updateNextWord(words: Word[], now: number): Word[] {
             type: "seen",
             lastSeen: now,
             seenCount: 1,
+            known: false,
           };
 
         case "seen":

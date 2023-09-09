@@ -19,20 +19,38 @@ describe("updateNextWord", () => {
     const unseenWord2: Word = { ...unseenWord, definition: "unseen2" };
     const result: Word[] = [
       unseenWord2,
-      { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },
+      {
+        ...unseenWord,
+        type: "seen",
+        lastSeen: timeNow,
+        seenCount: 1,
+        known: false,
+      },
     ];
     expect(updateNextWord([unseenWord, unseenWord2], timeNow)).toEqual(result);
 
     const result2: Word[] = [
       unseenWord,
-      { ...unseenWord2, type: "seen", lastSeen: timeNow, seenCount: 1 },
+      {
+        ...unseenWord2,
+        type: "seen",
+        lastSeen: timeNow,
+        seenCount: 1,
+        known: false,
+      },
     ];
     expect(updateNextWord([unseenWord2, unseenWord], timeNow)).toEqual(result2);
   });
 
   it("Updates the last seen time and seen count of the next word even if there's only 1 word", () => {
     const result: Word[] = [
-      { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },
+      {
+        ...unseenWord,
+        type: "seen",
+        lastSeen: timeNow,
+        seenCount: 1,
+        known: false,
+      },
     ];
     expect(updateNextWord([unseenWord], timeNow)).toEqual(result);
 
@@ -89,6 +107,7 @@ describe("updateNextWord", () => {
     const newlySeenWord: Word = {
       ...unseenWord,
       type: "seen",
+      known: false,
       lastSeen: timeNow,
       seenCount: 1,
     };

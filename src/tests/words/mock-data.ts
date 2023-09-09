@@ -16,6 +16,7 @@ export const wordSeenOnce20SecondsAgo: SeenWord = {
   kana: "20",
   definition: "20",
   order: 2,
+  known: false,
   lastSeen: timeNow - 20_000,
   seenCount: 1,
 };
@@ -26,6 +27,7 @@ export const wordSeenOnce15SecondsAgo: SeenWord = {
   kana: "15",
   definition: "15",
   order: 3,
+  known: false,
   lastSeen: timeNow - 15_000,
   seenCount: 1,
 };
@@ -36,6 +38,7 @@ export const wordSeenOnce10SecondsAgo: SeenWord = {
   kana: "10",
   definition: "10",
   order: 4,
+  known: false,
   lastSeen: timeNow - 10_000,
   seenCount: 1,
 };
@@ -46,6 +49,7 @@ export const wordSeenTwice30SecondsAgo: SeenWord = {
   kana: "30",
   definition: "30",
   order: 5,
+  known: false,
   lastSeen: timeNow - 30_000,
   seenCount: 2,
 };

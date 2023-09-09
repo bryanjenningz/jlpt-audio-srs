@@ -18,6 +18,7 @@ const seenWordSchema = z.object({
   kana: z.string(),
   definition: z.string(),
   order: z.number(),
+  known: z.boolean(),
   lastSeen: z.number(),
   seenCount: z.number(),
 });
