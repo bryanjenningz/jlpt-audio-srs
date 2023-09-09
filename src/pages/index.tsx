@@ -35,12 +35,26 @@ export default function Home() {
     })();
   }, [autoplay, wordPlaying, words, playWord]);
 
-  const uniqueWordsSeen = words.filter((x) => x.type === "seen").length;
+  const seenWords = words.filter((x) => x.type === "seen");
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center p-5">
-        <p>{`Unique words seen: ${uniqueWordsSeen}`}</p>
+        <p>{`Unique words seen: ${seenWords.length}`}</p>
+
+        <ul className="max-h-52 overflow-auto">
+          {seenWords.map((word) => {
+            return (
+              <li
+                key={`${word.japanese}-${word.english}`}
+                className="flex gap-3"
+              >
+                <div>{word.japanese}</div>
+                <div>{word.english}</div>
+              </li>
+            );
+          })}
+        </ul>
 
         <label>
           Autoplay
