@@ -42,28 +42,30 @@ export default function Home() {
       <div className="flex w-full max-w-2xl flex-col items-center gap-5 p-5">
         <p>{`Unique words seen: ${seenWords.length}`}</p>
 
-        <div>
-          <article className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
-            <div
-              className="flex h-full items-center justify-center pr-0"
-              title="Skip (already known)"
-            >
-              <div className="mr-3 text-xl">{`⏩`}</div>
-            </div>
+        <table className="flex w-full flex-col">
+          <thead>
+            <tr className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
+              <th
+                className="flex h-full items-center justify-center pr-0"
+                title="Skip (already known)"
+              >
+                <div className="mr-3 text-xl">{`⏩`}</div>
+              </th>
 
-            {["Kanji", "Kana", "Definition"].map((col) => {
-              return (
-                <div key={col} className="flex grow basis-1 items-center">
-                  {col}
-                </div>
-              );
-            })}
-          </article>
+              {["Kanji", "Kana", "Definition"].map((col) => {
+                return (
+                  <th key={col} className="flex grow basis-1 items-center">
+                    {col}
+                  </th>
+                );
+              })}
+            </tr>
+          </thead>
 
-          <ul className="max-h-52 w-full max-w-2xl overflow-auto text-lg">
+          <tbody className="max-h-52 w-full max-w-2xl overflow-auto text-lg">
             {seenWords.map((word) => {
               return (
-                <li
+                <tr
                   key={`${word.kanji}-${word.definition}`}
                   className="flex items-center p-2 odd:bg-slate-800"
                 >
@@ -82,14 +84,14 @@ export default function Home() {
                     }
                   />
 
-                  <div className="grow basis-1">{word.kanji}</div>
-                  <div className="grow basis-1">{word.kana}</div>
-                  <div className="grow basis-1">{word.definition}</div>
-                </li>
+                  <td className="grow basis-1">{word.kanji}</td>
+                  <td className="grow basis-1">{word.kana}</td>
+                  <td className="grow basis-1">{word.definition}</td>
+                </tr>
               );
             })}
-          </ul>
-        </div>
+          </tbody>
+        </table>
 
         <label className="flex gap-3">
           Autoplay
