@@ -17,7 +17,7 @@ export default function Home() {
       await playEnglish(word.definition, speechSynthesis);
       await wait(1000);
       setJapaneseShown(true);
-      await playJapanese(word.japanese, speechSynthesis);
+      await playJapanese(word.kanji, speechSynthesis);
       setJapaneseShown(false);
       setWordPlaying(undefined);
       setWords(updateNextWord(words, Date.now()));
@@ -46,10 +46,10 @@ export default function Home() {
           {seenWords.map((word) => {
             return (
               <li
-                key={`${word.japanese}-${word.definition}`}
+                key={`${word.kanji}-${word.definition}`}
                 className="flex gap-3"
               >
-                <div>{word.japanese}</div>
+                <div>{word.kanji}</div>
                 <div>{word.definition}</div>
               </li>
             );
@@ -81,7 +81,7 @@ export default function Home() {
 
         {wordPlaying && <div>{wordPlaying.definition}</div>}
 
-        {wordPlaying && japaneseShown && <div>{wordPlaying.japanese}</div>}
+        {wordPlaying && japaneseShown && <div>{wordPlaying.kanji}</div>}
       </div>
     </main>
   );

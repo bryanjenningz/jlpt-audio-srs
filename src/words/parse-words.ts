@@ -11,7 +11,7 @@ export function parseWords(text: string): Word[] {
     }
     return {
       type: "unseen",
-      japanese,
+      kanji: japanese,
       definition: english.split(",").join(", "),
     };
   });

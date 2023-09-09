@@ -33,7 +33,7 @@ describe("parseWords", () => {
         {
           type: "unseen",
           definition: "definition",
-          japanese: "word",
+          kanji: "word",
         },
       ];
       expect(parseWords("word;pronunciation;definition")).toEqual(result);
@@ -41,8 +41,8 @@ describe("parseWords", () => {
 
     it("Parses 2 lines with word, pronunciation, and definition separated by semi-colons", () => {
       const result: Word[] = [
-        { type: "unseen", definition: "definition", japanese: "word" },
-        { type: "unseen", definition: "definition2", japanese: "word2" },
+        { type: "unseen", definition: "definition", kanji: "word" },
+        { type: "unseen", definition: "definition2", kanji: "word2" },
       ];
       expect(
         parseWords(
@@ -56,12 +56,12 @@ describe("parseWords", () => {
         {
           type: "unseen",
           definition: "definition, definition-b",
-          japanese: "word",
+          kanji: "word",
         },
         {
           type: "unseen",
           definition: "definition2, definition-b, definition-c",
-          japanese: "word2",
+          kanji: "word2",
         },
       ];
       expect(
@@ -75,15 +75,15 @@ describe("parseWords", () => {
   describe("Lines with word and definition", () => {
     it("Parses a line with word and definition separated by a semi-colon", () => {
       const result: Word[] = [
-        { type: "unseen", definition: "definition", japanese: "word" },
+        { type: "unseen", definition: "definition", kanji: "word" },
       ];
       expect(parseWords("word;definition")).toEqual(result);
     });
 
     it("Parses 2 lines with word and definition separated by a semi-colon", () => {
       const result: Word[] = [
-        { type: "unseen", definition: "definition", japanese: "word" },
-        { type: "unseen", definition: "definition2", japanese: "word2" },
+        { type: "unseen", definition: "definition", kanji: "word" },
+        { type: "unseen", definition: "definition2", kanji: "word2" },
       ];
       expect(parseWords("word;definition\nword2;definition2")).toEqual(result);
     });
