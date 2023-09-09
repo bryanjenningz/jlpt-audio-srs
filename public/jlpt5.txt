@@ -99,9 +99,9 @@
 奥さん;おくさん;(honorable) wife
 お酒;おさけ;alcohol, rice wine
 お皿;おさら;plate, dish
-伯父 / 叔父;おじいさん;grandfather,male senior citizen
+おじいさん;grandfather,male senior citizen
 教える;おしえる;to teach,to tell
-伯父 / 叔父;おじさん;uncle,middle aged gentleman
+おじさん;uncle,middle aged gentleman
 押す;おす;to push, to stamp something
 遅い;おそい;late,slow
 お茶;おちゃ;green tea
