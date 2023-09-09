@@ -7,6 +7,7 @@ export const unseenWord: UnseenWord = {
   kanji: "0",
   kana: "0",
   definition: "0",
+  order: 1,
 };
 
 export const wordSeenOnce20SecondsAgo: SeenWord = {
@@ -14,6 +15,7 @@ export const wordSeenOnce20SecondsAgo: SeenWord = {
   kanji: "20",
   kana: "20",
   definition: "20",
+  order: 2,
   lastSeen: timeNow - 20_000,
   seenCount: 1,
 };
@@ -23,6 +25,7 @@ export const wordSeenOnce15SecondsAgo: SeenWord = {
   kanji: "15",
   kana: "15",
   definition: "15",
+  order: 3,
   lastSeen: timeNow - 15_000,
   seenCount: 1,
 };
@@ -32,6 +35,7 @@ export const wordSeenOnce10SecondsAgo: SeenWord = {
   kanji: "10",
   kana: "10",
   definition: "10",
+  order: 4,
   lastSeen: timeNow - 10_000,
   seenCount: 1,
 };
@@ -41,6 +45,7 @@ export const wordSeenTwice30SecondsAgo: SeenWord = {
   kanji: "30",
   kana: "30",
   definition: "30",
+  order: 5,
   lastSeen: timeNow - 30_000,
   seenCount: 2,
 };

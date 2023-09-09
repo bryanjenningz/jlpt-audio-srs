@@ -9,6 +9,7 @@ const unseenWordSchema = z.object({
   kanji: z.string(),
   kana: z.string(),
   definition: z.string(),
+  order: z.number(),
 });
 
 const seenWordSchema = z.object({
@@ -16,6 +17,7 @@ const seenWordSchema = z.object({
   kanji: z.string(),
   kana: z.string(),
   definition: z.string(),
+  order: z.number(),
   lastSeen: z.number(),
   seenCount: z.number(),
 });

@@ -35,6 +35,7 @@ describe("parseWords", () => {
           definition: "definition",
           kanji: "word",
           kana: "pronunciation",
+          order: 1,
         },
       ];
       expect(parseWords("word;pronunciation;definition")).toEqual(result);
@@ -47,12 +48,14 @@ describe("parseWords", () => {
           definition: "definition",
           kanji: "word",
           kana: "pronunciation",
+          order: 1,
         },
         {
           type: "unseen",
           definition: "definition2",
           kanji: "word2",
           kana: "pronunciation2",
+          order: 2,
         },
       ];
       expect(
@@ -69,12 +72,14 @@ describe("parseWords", () => {
           definition: "definition, definition-b",
           kanji: "word",
           kana: "pronunciation",
+          order: 1,
         },
         {
           type: "unseen",
           definition: "definition2, definition-b, definition-c",
           kanji: "word2",
           kana: "pronunciation2",
+          order: 2,
         },
       ];
       expect(
@@ -93,6 +98,7 @@ describe("parseWords", () => {
           definition: "definition",
           kanji: "word",
           kana: "word",
+          order: 1,
         },
       ];
       expect(parseWords("word;definition")).toEqual(result);
@@ -105,12 +111,14 @@ describe("parseWords", () => {
           definition: "definition",
           kanji: "word",
           kana: "word",
+          order: 1,
         },
         {
           type: "unseen",
           definition: "definition2",
           kanji: "word2",
           kana: "word2",
+          order: 2,
         },
       ];
       expect(parseWords("word;definition\nword2;definition2")).toEqual(result);

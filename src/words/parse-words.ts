@@ -2,7 +2,7 @@ import { type Word } from "~/words/types";
 
 export function parseWords(text: string): Word[] {
   const lines = text.split("\n");
-  const words = lines.map((line): Word => {
+  const words = lines.map((line, i): Word => {
     const sections = line.split(";");
     const kanji = sections[0];
     const definition = sections[sections.length - 1]?.replace(/,/g, ", ");
@@ -15,6 +15,7 @@ export function parseWords(text: string): Word[] {
       kanji,
       kana,
       definition,
+      order: i + 1,
     };
   });
   return words;
