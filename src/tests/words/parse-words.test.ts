@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { parseWords } from "~/words/parse-words";
+import { type Word } from "~/words/types";
 
 describe("parseWords", () => {
   describe("Invalid strings", () => {
@@ -28,28 +29,30 @@ describe("parseWords", () => {
 
   describe("Lines with word, pronunciation, and definition", () => {
     it("Parses a line with word, pronunciation, and definition separated by semi-colons", () => {
-      expect(parseWords("word;pronunciation;definition")).toEqual([
-        { type: "unseen", english: "definition", japanese: "word" },
-      ]);
+      const result: Word[] = [
+        {
+          type: "unseen",
+          english: "definition",
+          japanese: "word",
+        },
+      ];
+      expect(parseWords("word;pronunciation;definition")).toEqual(result);
     });
 
     it("Parses 2 lines with word, pronunciation, and definition separated by semi-colons", () => {
+      const result: Word[] = [
+        { type: "unseen", english: "definition", japanese: "word" },
+        { type: "unseen", english: "definition2", japanese: "word2" },
+      ];
       expect(
         parseWords(
           "word;pronunciation;definition\nword2;pronunciation2;definition2",
         ),
-      ).toEqual([
-        { type: "unseen", english: "definition", japanese: "word" },
-        { type: "unseen", english: "definition2", japanese: "word2" },
-      ]);
+      ).toEqual(result);
     });
 
     it("Parses 2 lines with word, pronunciation, and definition separated by semi-colons with definitions separated by commas", () => {
-      expect(
-        parseWords(
-          "word;pronunciation;definition,definition-b\nword2;pronunciation2;definition2,definition-b,definition-c",
-        ),
-      ).toEqual([
+      const result: Word[] = [
         {
           type: "unseen",
           english: "definition, definition-b",
@@ -60,22 +63,29 @@ describe("parseWords", () => {
           english: "definition2, definition-b, definition-c",
           japanese: "word2",
         },
-      ]);
+      ];
+      expect(
+        parseWords(
+          "word;pronunciation;definition,definition-b\nword2;pronunciation2;definition2,definition-b,definition-c",
+        ),
+      ).toEqual(result);
     });
   });
 
   describe("Lines with word and definition", () => {
     it("Parses a line with word and definition separated by a semi-colon", () => {
-      expect(parseWords("word;definition")).toEqual([
+      const result: Word[] = [
         { type: "unseen", english: "definition", japanese: "word" },
-      ]);
+      ];
+      expect(parseWords("word;definition")).toEqual(result);
     });
 
     it("Parses 2 lines with word and definition separated by a semi-colon", () => {
-      expect(parseWords("word;definition\nword2;definition2")).toEqual([
+      const result: Word[] = [
         { type: "unseen", english: "definition", japanese: "word" },
         { type: "unseen", english: "definition2", japanese: "word2" },
-      ]);
+      ];
+      expect(parseWords("word;definition\nword2;definition2")).toEqual(result);
     });
   });
 });

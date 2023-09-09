@@ -1,14 +1,14 @@
-import { type Word } from "~/words/types";
+import { type SeenWord, type UnseenWord } from "~/words/types";
 
 export const timeNow = 100_000;
 
-export const unseenWord: Word = {
+export const unseenWord: UnseenWord = {
   type: "unseen",
   japanese: "0",
   english: "0",
 };
 
-export const wordSeenOnce20SecondsAgo: Word = {
+export const wordSeenOnce20SecondsAgo: SeenWord = {
   type: "seen",
   japanese: "20",
   english: "20",
@@ -16,7 +16,7 @@ export const wordSeenOnce20SecondsAgo: Word = {
   seenCount: 1,
 };
 
-export const wordSeenOnce15SecondsAgo: Word = {
+export const wordSeenOnce15SecondsAgo: SeenWord = {
   type: "seen",
   japanese: "15",
   english: "15",
@@ -24,7 +24,7 @@ export const wordSeenOnce15SecondsAgo: Word = {
   seenCount: 1,
 };
 
-export const wordSeenOnce10SecondsAgo: Word = {
+export const wordSeenOnce10SecondsAgo: SeenWord = {
   type: "seen",
   japanese: "10",
   english: "10",
@@ -32,7 +32,7 @@ export const wordSeenOnce10SecondsAgo: Word = {
   seenCount: 1,
 };
 
-export const wordSeenTwice30SecondsAgo: Word = {
+export const wordSeenTwice30SecondsAgo: SeenWord = {
   type: "seen",
   japanese: "30",
   english: "30",
