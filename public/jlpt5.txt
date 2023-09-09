@@ -90,7 +90,6 @@
 おいしい;delicious
 多い;おおい;many
 大きい;おおきい;big
-大きな;おおきな;big
 大勢;おおぜい;great number of people
 お母さん;おかあさん;(honorable) mother
 お菓子;おかし;sweets, candy
