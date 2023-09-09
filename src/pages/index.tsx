@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { playEnglish, playJapanese, wait } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
-import { type Word } from "~/words/types";
+import { type SeenWord, type Word } from "~/words/types";
 import { updateNextWord } from "~/words/update-next-word";
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
     })();
   }, [autoplay, wordPlaying, words, playWord]);
 
-  const seenWords = words.filter((x) => x.type === "seen");
+  const seenWords = words.filter((x): x is SeenWord => x.type === "seen");
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
@@ -52,6 +52,19 @@ export default function Home() {
                 <div>{word.kanji}</div>
                 <div>{word.kana}</div>
                 <div>{word.definition}</div>
+                <input
+                  type="checkbox"
+                  checked={word.known}
+                  onChange={() =>
+                    setWords(
+                      words.map((w) =>
+                        w.order === word.order && w.type === "seen"
+                          ? { ...w, known: !w.known }
+                          : w,
+                      ),
+                    )
+                  }
+                />
               </li>
             );
           })}
