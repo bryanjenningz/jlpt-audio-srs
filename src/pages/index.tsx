@@ -81,7 +81,12 @@ export default function Home() {
 
         {wordPlaying && <div>{wordPlaying.definition}</div>}
 
-        {wordPlaying && japaneseShown && <div>{wordPlaying.kanji}</div>}
+        {wordPlaying && japaneseShown && (
+          <div className="flex gap-3">
+            <div>{wordPlaying.kanji}</div>
+            <div>{wordPlaying.kana}</div>
+          </div>
+        )}
       </div>
     </main>
   );
