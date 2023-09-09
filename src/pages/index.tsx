@@ -70,7 +70,7 @@ export default function Home() {
           })}
         </ul>
 
-        <label>
+        <label className="flex gap-3">
           Autoplay
           <input
             type="checkbox"
