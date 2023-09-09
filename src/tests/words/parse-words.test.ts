@@ -34,6 +34,7 @@ describe("parseWords", () => {
           type: "unseen",
           definition: "definition",
           kanji: "word",
+          kana: "pronunciation",
         },
       ];
       expect(parseWords("word;pronunciation;definition")).toEqual(result);
@@ -41,8 +42,18 @@ describe("parseWords", () => {
 
     it("Parses 2 lines with word, pronunciation, and definition separated by semi-colons", () => {
       const result: Word[] = [
-        { type: "unseen", definition: "definition", kanji: "word" },
-        { type: "unseen", definition: "definition2", kanji: "word2" },
+        {
+          type: "unseen",
+          definition: "definition",
+          kanji: "word",
+          kana: "pronunciation",
+        },
+        {
+          type: "unseen",
+          definition: "definition2",
+          kanji: "word2",
+          kana: "pronunciation2",
+        },
       ];
       expect(
         parseWords(
@@ -57,11 +68,13 @@ describe("parseWords", () => {
           type: "unseen",
           definition: "definition, definition-b",
           kanji: "word",
+          kana: "pronunciation",
         },
         {
           type: "unseen",
           definition: "definition2, definition-b, definition-c",
           kanji: "word2",
+          kana: "pronunciation2",
         },
       ];
       expect(
@@ -75,15 +88,30 @@ describe("parseWords", () => {
   describe("Lines with word and definition", () => {
     it("Parses a line with word and definition separated by a semi-colon", () => {
       const result: Word[] = [
-        { type: "unseen", definition: "definition", kanji: "word" },
+        {
+          type: "unseen",
+          definition: "definition",
+          kanji: "word",
+          kana: "word",
+        },
       ];
       expect(parseWords("word;definition")).toEqual(result);
     });
 
     it("Parses 2 lines with word and definition separated by a semi-colon", () => {
       const result: Word[] = [
-        { type: "unseen", definition: "definition", kanji: "word" },
-        { type: "unseen", definition: "definition2", kanji: "word2" },
+        {
+          type: "unseen",
+          definition: "definition",
+          kanji: "word",
+          kana: "word",
+        },
+        {
+          type: "unseen",
+          definition: "definition2",
+          kanji: "word2",
+          kana: "word2",
+        },
       ];
       expect(parseWords("word;definition\nword2;definition2")).toEqual(result);
     });

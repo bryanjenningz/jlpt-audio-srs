@@ -7,12 +7,14 @@ export type Word = z.infer<typeof wordSchema>;
 const unseenWordSchema = z.object({
   type: z.literal("unseen"),
   kanji: z.string(),
+  kana: z.string(),
   definition: z.string(),
 });
 
 const seenWordSchema = z.object({
   type: z.literal("seen"),
   kanji: z.string(),
+  kana: z.string(),
   definition: z.string(),
   lastSeen: z.number(),
   seenCount: z.number(),
