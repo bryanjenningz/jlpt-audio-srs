@@ -43,6 +43,25 @@ describe("parseWords", () => {
         { type: "unseen", english: "definition2", japanese: "word2" },
       ]);
     });
+
+    it("Parses 2 lines with word, pronunciation, and definition separated by semi-colons with definitions separated by commas", () => {
+      expect(
+        parseWords(
+          "word;pronunciation;definition,definition-b\nword2;pronunciation2;definition2,definition-b,definition-c",
+        ),
+      ).toEqual([
+        {
+          type: "unseen",
+          english: "definition,definition-b",
+          japanese: "word",
+        },
+        {
+          type: "unseen",
+          english: "definition2,definition-b,definition-c",
+          japanese: "word2",
+        },
+      ]);
+    });
   });
 
   describe("Lines with word and definition", () => {
