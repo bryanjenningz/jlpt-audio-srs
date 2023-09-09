@@ -32,5 +32,5 @@ export function nextWord(words: Word[], now: number): Word | undefined {
     }
   });
 
-  return words[0];
+  return words.filter((word) => word.type === "unseen" || !word.known)[0];
 }
