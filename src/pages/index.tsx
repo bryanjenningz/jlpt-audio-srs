@@ -50,6 +50,7 @@ export default function Home() {
                 className="flex gap-3"
               >
                 <div>{word.kanji}</div>
+                <div>{word.kana}</div>
                 <div>{word.definition}</div>
               </li>
             );
