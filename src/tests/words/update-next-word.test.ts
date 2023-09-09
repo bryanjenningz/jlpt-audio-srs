@@ -86,10 +86,15 @@ describe("updateNextWord", () => {
   });
 
   it("Updates the unseen word if there's an unseen word and a word seen once 10 seconds ago", () => {
-    const result: Word[] = [
-      wordSeenOnce10SecondsAgo,
-      { ...unseenWord, type: "seen", lastSeen: timeNow, seenCount: 1 },
-    ];
+    const newlySeenWord: Word = {
+      ...unseenWord,
+      type: "seen",
+      lastSeen: timeNow,
+      seenCount: 1,
+    };
+    const result: Word[] = [wordSeenOnce10SecondsAgo, newlySeenWord].sort(
+      (a, b) => a.order - b.order,
+    );
     expect(
       updateNextWord([unseenWord, wordSeenOnce10SecondsAgo], timeNow),
     ).toEqual(result);
@@ -104,7 +109,7 @@ describe("updateNextWord", () => {
         lastSeen: timeNow,
         seenCount: 2,
       },
-    ];
+    ].sort((a, b) => a.order - b.order);
     expect(
       updateNextWord(
         [unseenWord, wordSeenOnce10SecondsAgo, wordSeenOnce15SecondsAgo],
@@ -123,7 +128,7 @@ describe("updateNextWord", () => {
         lastSeen: timeNow,
         seenCount: 2,
       },
-    ];
+    ].sort((a, b) => a.order - b.order);
     expect(
       updateNextWord(
         [
@@ -147,7 +152,7 @@ describe("updateNextWord", () => {
         lastSeen: timeNow,
         seenCount: 3,
       },
-    ];
+    ].sort((a, b) => a.order - b.order);
     expect(
       updateNextWord(
         [
@@ -172,7 +177,7 @@ describe("updateNextWord", () => {
         lastSeen: timeNow,
         seenCount: 2,
       },
-    ];
+    ].sort((a, b) => a.order - b.order);
     expect(
       updateNextWord(
         [

@@ -25,5 +25,5 @@ export function updateNextWord(words: Word[], now: number): Word[] {
           };
       }
     })(),
-  ];
+  ].sort((a, b) => a.order - b.order);
 }
