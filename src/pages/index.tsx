@@ -39,55 +39,57 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
-      <div className="flex w-full max-w-2xl flex-col items-center p-5">
+      <div className="flex w-full max-w-2xl flex-col items-center gap-5 p-5">
         <p>{`Unique words seen: ${seenWords.length}`}</p>
 
-        <article className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
-          <div
-            className="flex h-full items-center justify-center pr-0"
-            title="Skip (already known)"
-          >
-            <div className="mr-3 text-xl">{`⏩`}</div>
-          </div>
+        <div>
+          <article className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
+            <div
+              className="flex h-full items-center justify-center pr-0"
+              title="Skip (already known)"
+            >
+              <div className="mr-3 text-xl">{`⏩`}</div>
+            </div>
 
-          {["Kanji", "Kana", "Definition"].map((col) => {
-            return (
-              <div key={col} className="flex grow basis-1 items-center">
-                {col}
-              </div>
-            );
-          })}
-        </article>
+            {["Kanji", "Kana", "Definition"].map((col) => {
+              return (
+                <div key={col} className="flex grow basis-1 items-center">
+                  {col}
+                </div>
+              );
+            })}
+          </article>
 
-        <ul className="max-h-52 w-full max-w-2xl overflow-auto text-lg">
-          {seenWords.map((word) => {
-            return (
-              <li
-                key={`${word.kanji}-${word.definition}`}
-                className="flex items-center p-2 odd:bg-slate-800"
-              >
-                <input
-                  className="mr-3 h-5 w-5"
-                  type="checkbox"
-                  checked={word.known}
-                  onChange={() =>
-                    setWords(
-                      words.map((w) =>
-                        w.order === word.order && w.type === "seen"
-                          ? { ...w, known: !w.known }
-                          : w,
-                      ),
-                    )
-                  }
-                />
+          <ul className="max-h-52 w-full max-w-2xl overflow-auto text-lg">
+            {seenWords.map((word) => {
+              return (
+                <li
+                  key={`${word.kanji}-${word.definition}`}
+                  className="flex items-center p-2 odd:bg-slate-800"
+                >
+                  <input
+                    className="mr-3 h-5 w-5"
+                    type="checkbox"
+                    checked={word.known}
+                    onChange={() =>
+                      setWords(
+                        words.map((w) =>
+                          w.order === word.order && w.type === "seen"
+                            ? { ...w, known: !w.known }
+                            : w,
+                        ),
+                      )
+                    }
+                  />
 
-                <div className="grow basis-1">{word.kanji}</div>
-                <div className="grow basis-1">{word.kana}</div>
-                <div className="grow basis-1">{word.definition}</div>
-              </li>
-            );
-          })}
-        </ul>
+                  <div className="grow basis-1">{word.kanji}</div>
+                  <div className="grow basis-1">{word.kana}</div>
+                  <div className="grow basis-1">{word.definition}</div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
         <label className="flex gap-3">
           Autoplay
