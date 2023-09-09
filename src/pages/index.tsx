@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center gap-5 p-5">
-        <p>{`Unique words seen: ${seenWords.length}`}</p>
+        <p className="text-lg">{`Unique words seen: ${seenWords.length}`}</p>
 
         <table className="flex w-full flex-col">
           <thead>
@@ -93,7 +93,7 @@ export default function Home() {
           </tbody>
         </table>
 
-        <label className="flex gap-3">
+        <label className="flex gap-3 text-lg">
           Autoplay
           <input
             type="checkbox"
@@ -103,6 +103,7 @@ export default function Home() {
         </label>
 
         <button
+          className="text-lg"
           onClick={() => {
             void (async () => {
               if (!autoplay && !wordPlaying) {
@@ -116,10 +117,10 @@ export default function Home() {
           Play next word
         </button>
 
-        {wordPlaying && <div>{wordPlaying.definition}</div>}
+        {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
 
         {wordPlaying && japaneseShown && (
-          <div className="flex gap-3">
+          <div className="flex gap-3 text-lg">
             <div>{wordPlaying.kanji}</div>
             <div>{wordPlaying.kana}</div>
           </div>
