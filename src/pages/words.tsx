@@ -36,11 +36,11 @@ export default function Words() {
                   <input
                     className="mr-3 h-5 w-5"
                     type="checkbox"
-                    // checked={word.known}
+                    checked={word.known}
                     onChange={() =>
                       setWords(
                         words.map((w) =>
-                          w.order === word.order && w.type === "seen"
+                          w.order === word.order
                             ? { ...w, known: !w.known }
                             : w,
                         ),
