@@ -5,11 +5,23 @@ import { nextWord } from "~/words/next-word";
 import { type SeenWord, type Word } from "~/words/types";
 import { updateNextWord } from "~/words/update-next-word";
 
+type ToggleRange =
+  | { type: "CLOSED" }
+  | { type: "TOGGLING_FIRST" }
+  | { type: "TOGGLING_SECOND"; firstIndex: number };
+
+function classNames(...classes: (string | false)[]): string {
+  return classes.filter(Boolean).join(" ");
+}
+
 export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
   const [japaneseShown, setJapaneseShown] = useState(false);
   const [words, setWords] = useWords();
   const [wordPlaying, setWordPlaying] = useState<Word>();
+  const [toggleRange, setToggleRange] = useState<ToggleRange>({
+    type: "CLOSED",
+  });
 
   const playWord = useCallback(
     async (word: Word): Promise<void> => {
@@ -46,10 +58,42 @@ export default function Home() {
           <thead>
             <tr className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
               <th
-                className="flex h-full items-center justify-center pr-0"
-                title="Skip (already known)"
+                className="flex h-full items-center justify-center"
+                onClick={() => {
+                  switch (toggleRange.type) {
+                    case "CLOSED":
+                      return setToggleRange({ type: "TOGGLING_FIRST" });
+
+                    case "TOGGLING_FIRST":
+                    case "TOGGLING_SECOND":
+                      return setToggleRange({ type: "CLOSED" });
+                  }
+                  toggleRange satisfies never;
+                }}
               >
-                <div className="mr-3 text-xl">{`⏩`}</div>
+                {(() => {
+                  switch (toggleRange.type) {
+                    case "CLOSED":
+                      return (
+                        <button
+                          title="Toggle known words"
+                          className="mr-3 text-xl"
+                        >{`⏩`}</button>
+                      );
+
+                    case "TOGGLING_FIRST":
+                    case "TOGGLING_SECOND":
+                      return (
+                        <button
+                          className="mr-3 text-xl"
+                          onClick={() => setToggleRange({ type: "CLOSED" })}
+                          title="Cancel toggle range"
+                        >
+                          {`❌`}
+                        </button>
+                      );
+                  }
+                })()}
               </th>
 
               {["Kanji", "Kana", "Definition"].map((col) => {
@@ -63,11 +107,57 @@ export default function Home() {
           </thead>
 
           <tbody className="max-h-52 w-full max-w-2xl overflow-auto text-lg">
-            {words.map((word) => {
+            {words.map((word, i) => {
               return (
                 <tr
                   key={`${word.kanji}-${word.definition}`}
-                  className="flex items-center p-2 odd:bg-slate-800"
+                  className={classNames(
+                    "flex items-center p-2",
+                    ((): string => {
+                      switch (toggleRange.type) {
+                        case "CLOSED":
+                        case "TOGGLING_FIRST":
+                          return "odd:bg-slate-800";
+
+                        case "TOGGLING_SECOND":
+                          return i === toggleRange.firstIndex
+                            ? "bg-blue-500"
+                            : "odd:bg-slate-800";
+                      }
+                    })(),
+                  )}
+                  onClick={() => {
+                    switch (toggleRange.type) {
+                      case "CLOSED":
+                        return;
+
+                      case "TOGGLING_FIRST":
+                        return setToggleRange({
+                          type: "TOGGLING_SECOND",
+                          firstIndex: i,
+                        });
+
+                      case "TOGGLING_SECOND": {
+                        const [first, second] =
+                          toggleRange.firstIndex <= i
+                            ? [toggleRange.firstIndex, i]
+                            : [i, toggleRange.firstIndex];
+                        const allKnown = words
+                          .slice(first, second + 1)
+                          .every((word) => word.known);
+                        setWords(
+                          words.map((word, i) => {
+                            if (i >= first && i <= second) {
+                              return { ...word, known: !allKnown };
+                            }
+                            return word;
+                          }),
+                        );
+                        return setToggleRange({ type: "CLOSED" });
+                      }
+                    }
+                    toggleRange satisfies never;
+                  }}
                 >
                   <input
                     className="mr-3 h-5 w-5"
