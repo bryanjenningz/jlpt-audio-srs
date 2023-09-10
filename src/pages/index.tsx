@@ -102,7 +102,7 @@ export default function Home() {
             </tr>
           </thead>
 
-          <tbody className="h-96 w-full max-w-2xl overflow-auto text-lg">
+          <tbody className="h-80 w-full max-w-2xl overflow-auto text-lg">
             {words.map((word, i) => {
               return (
                 <tr
