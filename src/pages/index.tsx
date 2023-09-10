@@ -188,7 +188,7 @@ export default function Home() {
 
         <label
           className={classNames(
-            "flex w-full cursor-pointer justify-center gap-3 rounded-full px-4 py-2 text-lg",
+            "flex w-full cursor-pointer justify-center rounded-full px-4 py-2 text-lg",
             autoplay ? "bg-blue-700" : "bg-slate-700",
           )}
         >
@@ -200,6 +200,33 @@ export default function Home() {
             onChange={() => setAutoplay(!autoplay)}
           />
         </label>
+
+        {wordPlaying &&
+          ((): JSX.Element => {
+            const known = words.find((word) => word.order === wordPlaying.order)
+              ?.known;
+
+            return (
+              <button
+                className={classNames(
+                  "flex w-full cursor-pointer justify-center rounded-full px-4 py-2 text-lg",
+                  known ? "bg-blue-700" : "bg-slate-700",
+                )}
+                onClick={() =>
+                  setWords((words) =>
+                    words.map((word) => {
+                      if (word.order === wordPlaying.order) {
+                        return { ...word, known: !word.known };
+                      }
+                      return word;
+                    }),
+                  )
+                }
+              >
+                {known ? `I don't know this word` : `I already know this word`}
+              </button>
+            );
+          })()}
 
         {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
 
