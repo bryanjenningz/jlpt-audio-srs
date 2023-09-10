@@ -63,7 +63,7 @@ export default function Home() {
           </thead>
 
           <tbody className="max-h-52 w-full max-w-2xl overflow-auto text-lg">
-            {seenWords.map((word) => {
+            {words.map((word) => {
               return (
                 <tr
                   key={`${word.kanji}-${word.definition}`}
