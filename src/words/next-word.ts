@@ -7,30 +7,36 @@ function nextSeenTime({ lastSeen, seenCount }: SeenWord): number {
 }
 
 export function nextWord(words: Word[], now: number): Word | undefined {
-  words = words.slice().sort((a, b) => {
-    switch (a.type) {
-      case "unseen":
-        switch (b.type) {
-          case "unseen":
-            return 0;
+  words = words
+    .filter((word) => !word.known)
+    .sort((a, b) => {
+      switch (a.type) {
+        case "unseen":
+          switch (b.type) {
+            case "unseen":
+              return 0;
 
-          case "seen":
-            return nextSeenTime(b) <= now ? 1 : -1;
-        }
+            case "seen":
+              return 1;
+          }
 
-      case "seen":
-        switch (b.type) {
-          case "unseen":
-            return nextSeenTime(a) <= now ? -1 : 1;
+        case "seen":
+          switch (b.type) {
+            case "unseen":
+              return -1;
 
-          case "seen":
-            if (nextSeenTime(a) - nextSeenTime(b) === 0) {
-              return b.seenCount - a.seenCount;
-            }
-            return nextSeenTime(a) - nextSeenTime(b);
-        }
-    }
-  });
+            case "seen":
+              if (nextSeenTime(a) - nextSeenTime(b) === 0) {
+                return b.seenCount - a.seenCount;
+              }
+              return nextSeenTime(a) - nextSeenTime(b);
+          }
+      }
+    });
 
-  return words.filter((word) => word.type === "unseen" || !word.known)[0];
+  return (
+    words.filter(
+      (word) => word.type === "unseen" || nextSeenTime(word) <= now,
+    )[0] ?? words[0]
+  );
 }
