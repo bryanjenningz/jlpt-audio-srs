@@ -183,9 +183,15 @@ export default function Home() {
           </tbody>
         </table>
 
-        <label className="flex gap-3 text-lg">
-          Autoplay
+        <label
+          className={classNames(
+            "flex w-full cursor-pointer justify-center gap-3 rounded-full px-4 py-2 text-lg",
+            autoplay ? "bg-blue-700" : "bg-slate-700",
+          )}
+        >
+          {autoplay ? `Autoplaying` : `Autoplay`}
           <input
+            className="hidden"
             type="checkbox"
             checked={autoplay}
             onChange={() => setAutoplay(!autoplay)}
