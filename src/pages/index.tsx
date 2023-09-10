@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { playEnglish, playJapanese, wait } from "~/segments/play";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
-import { type SeenWord, type Word } from "~/words/types";
+import { type Word } from "~/words/types";
 import { updateNextWord } from "~/words/update-next-word";
 
 type ToggleRange =
