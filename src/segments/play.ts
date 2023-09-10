@@ -20,7 +20,7 @@ export async function playEnglish(
   utterance.text = english;
   utterance.lang = "en-US";
   utterance.rate = 0.8;
-  utterance.volume = 0.5;
+  utterance.volume = 0.7;
   speechSynthesis.speak(utterance);
   await waitUntil(() => !speechSynthesis.speaking && !speechSynthesis.pending);
 }
