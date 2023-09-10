@@ -10,6 +10,7 @@ const unseenWordSchema = z.object({
   kana: z.string(),
   definition: z.string(),
   order: z.number(),
+  known: z.boolean(),
 });
 
 const seenWordSchema = z.object({

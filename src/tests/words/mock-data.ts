@@ -8,6 +8,7 @@ export const unseenWord: UnseenWord = {
   kana: "0",
   definition: "0",
   order: 1,
+  known: false,
 };
 
 export const wordSeenOnce20SecondsAgo: SeenWord = {

@@ -16,6 +16,7 @@ export function parseWords(text: string): Word[] {
       kana,
       definition,
       order: i + 1,
+      known: false,
     };
   });
   return words;
