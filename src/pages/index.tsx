@@ -47,13 +47,9 @@ export default function Home() {
     })();
   }, [autoplay, wordPlaying, words, playWord]);
 
-  const seenWords = words.filter((x): x is SeenWord => x.type === "seen");
-
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center gap-5 p-5">
-        <p className="text-lg">{`Unique words seen: ${seenWords.length}`}</p>
-
         <table className="flex w-full flex-col">
           <thead>
             <tr className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
@@ -117,11 +113,15 @@ export default function Home() {
                       switch (toggleRange.type) {
                         case "CLOSED":
                         case "TOGGLING_FIRST":
-                          return "odd:bg-slate-800";
+                          return word.type === "seen"
+                            ? "odd:bg-blue-800 even:bg-blue-900"
+                            : "odd:bg-slate-800";
 
                         case "TOGGLING_SECOND":
                           return i === toggleRange.firstIndex
                             ? "bg-blue-500"
+                            : word.type === "seen"
+                            ? "odd:bg-blue-800 even:bg-blue-900"
                             : "odd:bg-slate-800";
                       }
                     })(),
