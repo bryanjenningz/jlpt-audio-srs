@@ -192,21 +192,6 @@ export default function Home() {
           />
         </label>
 
-        <button
-          className="text-lg"
-          onClick={() => {
-            void (async () => {
-              if (!autoplay && !wordPlaying) {
-                const word = nextWord(words, Date.now());
-                if (!word) return;
-                await playWord(word);
-              }
-            })();
-          }}
-        >
-          Play next word
-        </button>
-
         {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
 
         {wordPlaying && japaneseShown && (
