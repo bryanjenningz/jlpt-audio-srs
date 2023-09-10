@@ -7,10 +7,15 @@ const localStorageKey = "words";
 export function useWords() {
   const [words, setWords] = useState<Word[]>([]);
 
-  const saveWords = useCallback((words: Word[]): void => {
-    setWords(words);
-    localStorage.setItem(localStorageKey, JSON.stringify(words));
-  }, []);
+  const saveWords = useCallback(
+    (updateWords: (words: Word[]) => Word[]): void => {
+      setWords((words: Word[]): Word[] => {
+        localStorage.setItem(localStorageKey, JSON.stringify(words));
+        return updateWords(words);
+      });
+    },
+    [],
+  );
 
   useEffect(() => {
     try {
@@ -21,7 +26,7 @@ export function useWords() {
     } catch {
       void (async () => {
         const words = await fetchWords();
-        saveWords(words);
+        saveWords(() => words);
       })();
     }
   }, [saveWords]);

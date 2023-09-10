@@ -32,9 +32,9 @@ export default function Home() {
       await playJapanese(word.kanji, speechSynthesis);
       setJapaneseShown(false);
       setWordPlaying(undefined);
-      setWords(updateNextWord(words, Date.now()));
+      setWords((words) => updateNextWord(words, Date.now()));
     },
-    [words, setWords],
+    [setWords],
   );
 
   useEffect(() => {
@@ -142,10 +142,12 @@ export default function Home() {
                           toggleRange.firstIndex <= i
                             ? [toggleRange.firstIndex, i]
                             : [i, toggleRange.firstIndex];
+
                         const allKnown = words
                           .slice(first, second + 1)
                           .every((word) => word.known);
-                        setWords(
+
+                        setWords((words) =>
                           words.map((word, i) => {
                             if (i >= first && i <= second) {
                               return { ...word, known: !allKnown };
@@ -153,6 +155,7 @@ export default function Home() {
                             return word;
                           }),
                         );
+
                         return setToggleRange({ type: "CLOSED" });
                       }
                     }
@@ -164,7 +167,7 @@ export default function Home() {
                     type="checkbox"
                     checked={word.known}
                     onChange={() =>
-                      setWords(
+                      setWords((words) =>
                         words.map((w) =>
                           w.order === word.order
                             ? { ...w, known: !w.known }
