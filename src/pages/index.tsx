@@ -76,7 +76,7 @@ export default function Home() {
                     onChange={() =>
                       setWords(
                         words.map((w) =>
-                          w.order === word.order && w.type === "seen"
+                          w.order === word.order
                             ? { ...w, known: !w.known }
                             : w,
                         ),
