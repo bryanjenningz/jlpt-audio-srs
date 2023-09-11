@@ -24,7 +24,7 @@ export default function Home() {
   });
 
   const playWord = useCallback(
-    async (word: Word): Promise<void> => {
+    async (word: Word, now: number): Promise<void> => {
       setWordPlaying(word);
       await playEnglish(word.definition, speechSynthesis);
       await wait(1000);
@@ -32,7 +32,7 @@ export default function Home() {
       await playJapanese(word.kanji, speechSynthesis);
       setJapaneseShown(false);
       setWordPlaying(undefined);
-      setWords((words) => updateNextWord(words, Date.now()));
+      setWords((words) => updateNextWord(words, now));
     },
     [setWords],
   );
@@ -40,9 +40,10 @@ export default function Home() {
   useEffect(() => {
     void (async () => {
       if (autoplay && !wordPlaying) {
-        const word = nextWord(words, Date.now());
+        const now = Date.now();
+        const word = nextWord(words, now);
         if (!word) return;
-        await playWord(word);
+        await playWord(word, now);
       }
     })();
   }, [autoplay, wordPlaying, words, playWord]);
