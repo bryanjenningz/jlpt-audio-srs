@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
-      <div className="flex w-full max-w-2xl flex-col items-center gap-5 p-5">
+      <div className="flex w-full max-w-2xl flex-col items-center gap-3 p-4">
         <table className="flex w-full flex-col">
           <thead>
             <tr className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
@@ -210,7 +210,7 @@ export default function Home() {
             return (
               <button
                 className={classNames(
-                  "flex w-full cursor-pointer justify-center rounded-full px-4 py-2 text-lg",
+                  "flex w-full justify-center rounded-full px-4 py-2 text-lg",
                   known ? "bg-blue-700" : "bg-slate-700",
                 )}
                 onClick={() =>
@@ -228,6 +228,24 @@ export default function Home() {
               </button>
             );
           })()}
+
+        {wordPlaying && (
+          <button
+            className="flex w-full justify-center rounded-full bg-slate-700 px-4 py-2 text-lg"
+            onClick={() => {
+              setWords((words) =>
+                words.map((w) => {
+                  if (w.order === wordPlaying.order) {
+                    return { ...w, seenCount: -1 };
+                  }
+                  return w;
+                }),
+              );
+            }}
+          >
+            Reset word
+          </button>
+        )}
 
         {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
 
