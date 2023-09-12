@@ -354,7 +354,7 @@
 食べる;たべる;to eat
 卵;たまご;egg
 誰;だれ;who
-誰;だれか;somebody
+誰か;だれか;somebody
 誕生日;たんじょうび;birthday
 だんだん;gradually
 小さい;ちいさい;little
@@ -367,7 +367,6 @@
 ちゃわん;rice bowl
 ちょうど;exactly
 ちょっと;somewhat
-一日;ついたち;first of month
 使う;つかう;to use
 疲れる;つかれる;to get tired
 次;つぎ;next
@@ -619,7 +618,6 @@
 昨夜;ゆうべ;last night
 有名;ゆうめい;famous
 雪;ゆき;snow
-行く;ゆく;to go (alternative)
 ゆっくりと;slowly
 八日;ようか;eight days, eighth day of the month
 洋服;ようふく;western-style clothes
@@ -652,7 +650,6 @@
 若い;わかい;young
 分かる;わかる;to be understood
 忘れる;わすれる;to forget
-私;わたくし;(humble) I,myself
 私;わたし;I,myself
 渡す;わたす;to hand over
 渡る;わたる;to go across
