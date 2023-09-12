@@ -51,7 +51,7 @@ export default function Home() {
         setLastWord(word);
       }
     })();
-  }, [autoplay, wordPlaying, words, playWord]);
+  }, [autoplay, wordPlaying, words, playWord, lastWord]);
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
