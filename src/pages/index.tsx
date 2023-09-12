@@ -208,50 +208,47 @@ export default function Home() {
         </label>
 
         {lastWord && (
-          <button
-            className="flex w-full justify-center rounded-full bg-slate-700 px-4 py-2 text-lg"
-            onClick={() => {
-              setWords((words) =>
-                words.map((w) => {
-                  if (w.order === lastWord.order) {
-                    return { ...w, type: "unseen", seenCount: 0, lastSeen: 0 };
-                  }
-                  return w;
-                }),
-              );
-              setLastWord(undefined);
-            }}
-          >
-            {`Reset ${lastWord.kanji}`}
-          </button>
+          <div className="flex w-full gap-3">
+            <button
+              className="flex grow basis-1 justify-center rounded-full bg-red-700 px-4 py-2 text-lg"
+              onClick={() => {
+                setWords((words) =>
+                  words.map((w) => {
+                    if (w.order === lastWord.order) {
+                      return {
+                        ...w,
+                        type: "unseen",
+                        seenCount: 0,
+                        lastSeen: 0,
+                      };
+                    }
+                    return w;
+                  }),
+                );
+                setLastWord(undefined);
+              }}
+            >
+              {`Reset ${lastWord.kanji}`}
+            </button>
+
+            <button
+              className="flex grow basis-1 justify-center rounded-full bg-blue-700 px-4 py-2 text-lg"
+              onClick={() => {
+                setWords((words) =>
+                  words.map((w) => {
+                    if (w.order === lastWord.order) {
+                      return { ...w, known: true };
+                    }
+                    return w;
+                  }),
+                );
+                setLastWord(undefined);
+              }}
+            >
+              {`Know ${lastWord.kanji}`}
+            </button>
+          </div>
         )}
-
-        {wordPlaying &&
-          ((): JSX.Element => {
-            const known = words.find((word) => word.order === wordPlaying.order)
-              ?.known;
-
-            return (
-              <button
-                className={classNames(
-                  "flex w-full justify-center rounded-full px-4 py-2 text-lg",
-                  known ? "bg-blue-700" : "bg-slate-700",
-                )}
-                onClick={() =>
-                  setWords((words) =>
-                    words.map((word) => {
-                      if (word.order === wordPlaying.order) {
-                        return { ...word, known: !word.known };
-                      }
-                      return word;
-                    }),
-                  )
-                }
-              >
-                {known ? `I don't know this word` : `I already know this word`}
-              </button>
-            );
-          })()}
 
         {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
 
