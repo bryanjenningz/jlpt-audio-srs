@@ -22,6 +22,7 @@ export default function Home() {
   const [toggleRange, setToggleRange] = useState<ToggleRange>({
     type: "CLOSED",
   });
+  const [lastWord, setLastWord] = useState<Word>();
 
   const playWord = useCallback(
     async (word: Word, now: number): Promise<void> => {
@@ -42,8 +43,12 @@ export default function Home() {
       if (autoplay && !wordPlaying) {
         const now = Date.now();
         const word = nextWord(words, now);
+        if (!lastWord) {
+          setLastWord(word);
+        }
         if (!word) return;
         await playWord(word, now);
+        setLastWord(word);
       }
     })();
   }, [autoplay, wordPlaying, words, playWord]);
@@ -202,6 +207,25 @@ export default function Home() {
           />
         </label>
 
+        {lastWord && (
+          <button
+            className="flex w-full justify-center rounded-full bg-slate-700 px-4 py-2 text-lg"
+            onClick={() => {
+              setWords((words) =>
+                words.map((w) => {
+                  if (w.order === lastWord.order) {
+                    return { ...w, type: "unseen", seenCount: 0, lastSeen: 0 };
+                  }
+                  return w;
+                }),
+              );
+              setLastWord(undefined);
+            }}
+          >
+            {`Reset ${lastWord.kanji}`}
+          </button>
+        )}
+
         {wordPlaying &&
           ((): JSX.Element => {
             const known = words.find((word) => word.order === wordPlaying.order)
@@ -228,24 +252,6 @@ export default function Home() {
               </button>
             );
           })()}
-
-        {wordPlaying && (
-          <button
-            className="flex w-full justify-center rounded-full bg-slate-700 px-4 py-2 text-lg"
-            onClick={() => {
-              setWords((words) =>
-                words.map((w) => {
-                  if (w.order === wordPlaying.order) {
-                    return { ...w, seenCount: -1 };
-                  }
-                  return w;
-                }),
-              );
-            }}
-          >
-            Reset word
-          </button>
-        )}
 
         {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
 
