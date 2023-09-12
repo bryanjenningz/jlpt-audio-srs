@@ -1,6 +1,6 @@
 import { type SeenWord, type Word } from "~/words/types";
 
-export const intervalTime = 15_000;
+export const intervalTime = 30_000;
 
 function nextSeenTime({ lastSeen, seenCount }: SeenWord): number {
   return 2 ** (seenCount - 1) * intervalTime + lastSeen;
