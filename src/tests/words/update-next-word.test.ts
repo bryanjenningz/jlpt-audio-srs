@@ -3,10 +3,10 @@ import { updateNextWord } from "~/words/update-next-word";
 import {
   timeNow,
   unseenWord,
-  wordSeenOnce10SecondsAgo,
-  wordSeenOnce15SecondsAgo,
-  wordSeenOnce20SecondsAgo,
-  wordSeenTwice30SecondsAgo,
+  wordSeenOnceLessThanIntervalAgo,
+  wordSeenOnceIntervalAgo,
+  wordSeenOnceMoreThanIntervalAgo,
+  wordSeenTwiceTwoIntervalsAgo,
 } from "~/tests/words/mock-data";
 import { type Word } from "~/words/types";
 
@@ -56,49 +56,47 @@ describe("updateNextWord", () => {
 
     const result2: Word[] = [
       {
-        ...wordSeenOnce10SecondsAgo,
+        ...wordSeenOnceLessThanIntervalAgo,
         type: "seen",
         lastSeen: timeNow,
         seenCount: 2,
       },
     ];
-    expect(updateNextWord([wordSeenOnce10SecondsAgo], timeNow)).toEqual(
+    expect(updateNextWord([wordSeenOnceLessThanIntervalAgo], timeNow)).toEqual(
       result2,
     );
 
     const result3: Word[] = [
       {
-        ...wordSeenOnce15SecondsAgo,
+        ...wordSeenOnceIntervalAgo,
         type: "seen",
         lastSeen: timeNow,
         seenCount: 2,
       },
     ];
-    expect(updateNextWord([wordSeenOnce15SecondsAgo], timeNow)).toEqual(
-      result3,
-    );
+    expect(updateNextWord([wordSeenOnceIntervalAgo], timeNow)).toEqual(result3);
 
     const result4: Word[] = [
       {
-        ...wordSeenOnce20SecondsAgo,
+        ...wordSeenOnceMoreThanIntervalAgo,
         type: "seen",
         lastSeen: timeNow,
         seenCount: 2,
       },
     ];
-    expect(updateNextWord([wordSeenOnce20SecondsAgo], timeNow)).toEqual(
+    expect(updateNextWord([wordSeenOnceMoreThanIntervalAgo], timeNow)).toEqual(
       result4,
     );
 
     const result5: Word[] = [
       {
-        ...wordSeenTwice30SecondsAgo,
+        ...wordSeenTwiceTwoIntervalsAgo,
         type: "seen",
         lastSeen: timeNow,
         seenCount: 3,
       },
     ];
-    expect(updateNextWord([wordSeenTwice30SecondsAgo], timeNow)).toEqual(
+    expect(updateNextWord([wordSeenTwiceTwoIntervalsAgo], timeNow)).toEqual(
       result5,
     );
   });
@@ -111,27 +109,28 @@ describe("updateNextWord", () => {
       lastSeen: timeNow,
       seenCount: 1,
     };
-    const result: Word[] = [wordSeenOnce10SecondsAgo, newlySeenWord].sort(
-      (a, b) => a.order - b.order,
-    );
+    const result: Word[] = [
+      wordSeenOnceLessThanIntervalAgo,
+      newlySeenWord,
+    ].sort((a, b) => a.order - b.order);
     expect(
-      updateNextWord([unseenWord, wordSeenOnce10SecondsAgo], timeNow),
+      updateNextWord([unseenWord, wordSeenOnceLessThanIntervalAgo], timeNow),
     ).toEqual(result);
   });
 
   it("Updates the word 15 seconds ago if there's an unseen word, word seen once 10 seconds ago, and a word seen once 15 seconds ago", () => {
     const result: Word[] = [
       unseenWord,
-      wordSeenOnce10SecondsAgo,
+      wordSeenOnceLessThanIntervalAgo,
       {
-        ...wordSeenOnce15SecondsAgo,
+        ...wordSeenOnceIntervalAgo,
         lastSeen: timeNow,
         seenCount: 2,
       },
     ].sort((a, b) => a.order - b.order);
     expect(
       updateNextWord(
-        [unseenWord, wordSeenOnce10SecondsAgo, wordSeenOnce15SecondsAgo],
+        [unseenWord, wordSeenOnceLessThanIntervalAgo, wordSeenOnceIntervalAgo],
         timeNow,
       ),
     ).toEqual(result);
@@ -140,10 +139,10 @@ describe("updateNextWord", () => {
   it("Updates the word seen 20 seconds ago if there's an unseen word, word seen once 10 seconds ago, a word seen once 15 seconds ago, and a word seen once 20 seconds ago", () => {
     const result: Word[] = [
       unseenWord,
-      wordSeenOnce10SecondsAgo,
-      wordSeenOnce15SecondsAgo,
+      wordSeenOnceLessThanIntervalAgo,
+      wordSeenOnceIntervalAgo,
       {
-        ...wordSeenOnce20SecondsAgo,
+        ...wordSeenOnceMoreThanIntervalAgo,
         lastSeen: timeNow,
         seenCount: 2,
       },
@@ -152,9 +151,9 @@ describe("updateNextWord", () => {
       updateNextWord(
         [
           unseenWord,
-          wordSeenOnce10SecondsAgo,
-          wordSeenOnce15SecondsAgo,
-          wordSeenOnce20SecondsAgo,
+          wordSeenOnceLessThanIntervalAgo,
+          wordSeenOnceIntervalAgo,
+          wordSeenOnceMoreThanIntervalAgo,
         ],
         timeNow,
       ),
@@ -164,10 +163,10 @@ describe("updateNextWord", () => {
   it("Updates the word seen twice 30 seconds ago if there's an unseen word, word seen once 10 seconds ago, a word seen once 15 seconds ago, and a word seen twice 30 seconds ago", () => {
     const result: Word[] = [
       unseenWord,
-      wordSeenOnce10SecondsAgo,
-      wordSeenOnce15SecondsAgo,
+      wordSeenOnceLessThanIntervalAgo,
+      wordSeenOnceIntervalAgo,
       {
-        ...wordSeenTwice30SecondsAgo,
+        ...wordSeenTwiceTwoIntervalsAgo,
         lastSeen: timeNow,
         seenCount: 3,
       },
@@ -176,9 +175,9 @@ describe("updateNextWord", () => {
       updateNextWord(
         [
           unseenWord,
-          wordSeenOnce10SecondsAgo,
-          wordSeenOnce15SecondsAgo,
-          wordSeenTwice30SecondsAgo,
+          wordSeenOnceLessThanIntervalAgo,
+          wordSeenOnceIntervalAgo,
+          wordSeenTwiceTwoIntervalsAgo,
         ],
         timeNow,
       ),
@@ -188,11 +187,11 @@ describe("updateNextWord", () => {
   it("Updates the word seen once 20 seconds ago if there's an unseen word, word seen once 10 seconds ago, a word seen once 15 seconds ago, word seen once 20 seconds ago, and a word seen twice 30 seconds ago", () => {
     const result: Word[] = [
       unseenWord,
-      wordSeenOnce10SecondsAgo,
-      wordSeenOnce15SecondsAgo,
-      wordSeenTwice30SecondsAgo,
+      wordSeenOnceLessThanIntervalAgo,
+      wordSeenOnceIntervalAgo,
+      wordSeenTwiceTwoIntervalsAgo,
       {
-        ...wordSeenOnce20SecondsAgo,
+        ...wordSeenOnceMoreThanIntervalAgo,
         lastSeen: timeNow,
         seenCount: 2,
       },
@@ -201,10 +200,10 @@ describe("updateNextWord", () => {
       updateNextWord(
         [
           unseenWord,
-          wordSeenOnce10SecondsAgo,
-          wordSeenOnce15SecondsAgo,
-          wordSeenOnce20SecondsAgo,
-          wordSeenTwice30SecondsAgo,
+          wordSeenOnceLessThanIntervalAgo,
+          wordSeenOnceIntervalAgo,
+          wordSeenOnceMoreThanIntervalAgo,
+          wordSeenTwiceTwoIntervalsAgo,
         ],
         timeNow,
       ),
