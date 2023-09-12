@@ -338,8 +338,7 @@
 大好き;だいすき;to be very likeable
 大切;たいせつ;important
 台所;だいどころ;kitchen
-たいへん;very much
-たいへん;difficult situation
+たいへん;very much,difficult situation
 高い;たかい;tall, expensive
 たくさん;many,a lot
 タクシー;taxi
