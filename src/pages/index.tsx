@@ -210,7 +210,7 @@ export default function Home() {
         {lastWord && (
           <div className="flex w-full gap-3">
             <button
-              className="flex grow basis-1 justify-center rounded-full bg-red-700 px-4 py-2 text-lg"
+              className="flex h-11 grow basis-1 items-center justify-center overflow-hidden rounded-full bg-red-700 px-4 py-2 text-xs"
               onClick={() => {
                 setWords((words) =>
                   words.map((w) => {
@@ -232,7 +232,7 @@ export default function Home() {
             </button>
 
             <button
-              className="flex grow basis-1 justify-center rounded-full bg-blue-700 px-4 py-2 text-lg"
+              className="flex h-11 grow basis-1 items-center justify-center overflow-hidden rounded-full bg-blue-700 px-4 py-2 text-xs"
               onClick={() => {
                 setWords((words) =>
                   words.map((w) => {
