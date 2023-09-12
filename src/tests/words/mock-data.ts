@@ -1,4 +1,4 @@
-import { intervalMilliseconds } from "~/words/next-word";
+import { intervalTime } from "~/words/next-word";
 import { type SeenWord, type UnseenWord } from "~/words/types";
 
 export const timeNow = 100_000;
@@ -19,7 +19,7 @@ export const wordSeenOnceMoreThanIntervalAgo: SeenWord = {
   definition: "20",
   order: 2,
   known: false,
-  lastSeen: timeNow - intervalMilliseconds - 1,
+  lastSeen: timeNow - intervalTime - 1,
   seenCount: 1,
 };
 
@@ -30,7 +30,7 @@ export const wordSeenOnceIntervalAgo: SeenWord = {
   definition: "15",
   order: 3,
   known: false,
-  lastSeen: timeNow - intervalMilliseconds,
+  lastSeen: timeNow - intervalTime,
   seenCount: 1,
 };
 
@@ -41,7 +41,7 @@ export const wordSeenOnceLessThanIntervalAgo: SeenWord = {
   definition: "10",
   order: 4,
   known: false,
-  lastSeen: timeNow - intervalMilliseconds + 1,
+  lastSeen: timeNow - intervalTime + 1,
   seenCount: 1,
 };
 
@@ -52,6 +52,6 @@ export const wordSeenTwiceTwoIntervalsAgo: SeenWord = {
   definition: "30",
   order: 5,
   known: false,
-  lastSeen: timeNow - intervalMilliseconds * 2,
+  lastSeen: timeNow - intervalTime * 2,
   seenCount: 2,
 };

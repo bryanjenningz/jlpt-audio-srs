@@ -1,9 +1,9 @@
 import { type SeenWord, type Word } from "~/words/types";
 
-export const intervalMilliseconds = 15_000;
+export const intervalTime = 15_000;
 
 function nextSeenTime({ lastSeen, seenCount }: SeenWord): number {
-  return 2 ** (seenCount - 1) * intervalMilliseconds + lastSeen;
+  return 2 ** (seenCount - 1) * intervalTime + lastSeen;
 }
 
 export function nextWord(words: Word[], now: number): Word | undefined {
