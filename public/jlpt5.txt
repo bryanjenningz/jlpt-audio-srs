@@ -18,7 +18,6 @@
 新しい;あたらしい;new
 あちら;there
 暑い;あつい;hot
-熱い;あつい;hot to the touch
 厚い;あつい;kind, deep, thick
 あっち;over there (shortened)
 後;あと;afterwards
