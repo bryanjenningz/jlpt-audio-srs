@@ -14,6 +14,12 @@ function classNames(...classes: (string | false)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
+const progressBarStates = {
+  0: "percent",
+  1: "complete",
+  2: "seenOrComplete",
+} as const;
+
 export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
   const [japaneseShown, setJapaneseShown] = useState(false);
@@ -23,8 +29,12 @@ export default function Home() {
     type: "CLOSED",
   });
   const [lastWord, setLastWord] = useState<Word>();
-  const [percentCompleteShown, setPercentCompleteShown] = useState(true);
+  const [percentCompleteShown, setPercentCompleteShown] =
+    useState<keyof typeof progressBarStates>(0);
   const completeCount = words.filter((word) => word.known).length;
+  const completeOrSeenCount = words.filter(
+    (word) => word.known || word.type === "seen",
+  ).length;
   const percentComplete = Math.floor((completeCount / words.length) * 100);
 
   const playWord = useCallback(
@@ -62,7 +72,18 @@ export default function Home() {
         <button
           aria-hidden
           className="relative h-5 w-full overflow-hidden rounded-full bg-slate-800"
-          onClick={() => setPercentCompleteShown((x) => !x)}
+          onClick={() =>
+            setPercentCompleteShown((x): keyof typeof progressBarStates => {
+              switch (x) {
+                case 0:
+                  return 1;
+                case 1:
+                  return 2;
+                case 2:
+                  return 0;
+              }
+            })
+          }
         >
           <div
             className="absolute bottom-0 left-0 top-0 bg-blue-700 text-center"
@@ -70,11 +91,19 @@ export default function Home() {
           ></div>
 
           <div className="absolute inset-0 flex items-center justify-center">
-            {words.length === 0
-              ? ""
-              : percentCompleteShown
-              ? `${percentComplete}%`
-              : `${completeCount} / ${words.length}`}
+            {((): string => {
+              if (words.length === 0) {
+                return "";
+              }
+              switch (progressBarStates[percentCompleteShown]) {
+                case "percent":
+                  return `${percentComplete}% complete`;
+                case "complete":
+                  return `${completeCount} / ${words.length} complete`;
+                case "seenOrComplete":
+                  return `${completeOrSeenCount} / ${words.length} seen or complete`;
+              }
+            })()}
           </div>
         </button>
 
