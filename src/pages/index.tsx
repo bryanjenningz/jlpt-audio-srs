@@ -185,20 +185,22 @@ export default function Home() {
                     toggleRange satisfies never;
                   }}
                 >
-                  <input
-                    className="mr-3 h-5 w-5"
-                    type="checkbox"
-                    checked={word.known}
-                    onChange={() =>
-                      setWords((words) =>
-                        words.map((w) =>
-                          w.order === word.order
-                            ? { ...w, known: !w.known }
-                            : w,
-                        ),
-                      )
-                    }
-                  />
+                  <td className="mr-3 flex items-center">
+                    <input
+                      className="h-5 w-5"
+                      type="checkbox"
+                      checked={word.known}
+                      onChange={() =>
+                        setWords((words) =>
+                          words.map((w) =>
+                            w.order === word.order
+                              ? { ...w, known: !w.known }
+                              : w,
+                          ),
+                        )
+                      }
+                    />
+                  </td>
 
                   <td className="grow basis-1">{word.kanji}</td>
                   <td className="grow basis-1">{word.kana}</td>
