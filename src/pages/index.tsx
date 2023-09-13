@@ -36,6 +36,9 @@ export default function Home() {
     (word) => word.known || word.type === "seen",
   ).length;
   const percentComplete = Math.floor((completeCount / words.length) * 100);
+  const percentCompleteOrSeen = Math.floor(
+    (completeOrSeenCount / words.length) * 100,
+  );
 
   const playWord = useCallback(
     async (word: Word, now: number): Promise<void> => {
@@ -87,7 +90,17 @@ export default function Home() {
         >
           <div
             className="absolute bottom-0 left-0 top-0 bg-blue-700 text-center"
-            style={{ width: `${percentComplete}%` }}
+            style={{
+              width: ((): `${string}%` => {
+                switch (progressBarStates[percentCompleteShown]) {
+                  case "percent":
+                  case "complete":
+                    return `${percentComplete}%`;
+                  case "seenOrComplete":
+                    return `${percentCompleteOrSeen}%`;
+                }
+              })(),
+            }}
           ></div>
 
           <div className="absolute inset-0 flex items-center justify-center">
