@@ -29,16 +29,6 @@ export default function Home() {
     type: "CLOSED",
   });
   const [lastWord, setLastWord] = useState<Word>();
-  const [percentCompleteShown, setPercentCompleteShown] =
-    useState<keyof typeof progressBarStates>(0);
-  const completeCount = words.filter((word) => word.known).length;
-  const completeOrSeenCount = words.filter(
-    (word) => word.known || word.type === "seen",
-  ).length;
-  const percentComplete = Math.floor((completeCount / words.length) * 100);
-  const percentCompleteOrSeen = Math.floor(
-    (completeOrSeenCount / words.length) * 100,
-  );
 
   const playWord = useCallback(
     async (word: Word, now: number): Promise<void> => {
@@ -72,53 +62,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center gap-3 p-4">
-        <button
-          aria-hidden
-          className="relative h-5 w-full overflow-hidden rounded-full bg-slate-800"
-          onClick={() =>
-            setPercentCompleteShown((x): keyof typeof progressBarStates => {
-              switch (x) {
-                case 0:
-                  return 1;
-                case 1:
-                  return 2;
-                case 2:
-                  return 0;
-              }
-            })
-          }
-        >
-          <div
-            className="absolute bottom-0 left-0 top-0 bg-blue-700 text-center"
-            style={{
-              width: ((): `${string}%` => {
-                switch (progressBarStates[percentCompleteShown]) {
-                  case "percent":
-                  case "complete":
-                    return `${percentComplete}%`;
-                  case "seenOrComplete":
-                    return `${percentCompleteOrSeen}%`;
-                }
-              })(),
-            }}
-          ></div>
-
-          <div className="absolute inset-0 flex items-center justify-center">
-            {((): string => {
-              if (words.length === 0) {
-                return "";
-              }
-              switch (progressBarStates[percentCompleteShown]) {
-                case "percent":
-                  return `${percentComplete}% complete`;
-                case "complete":
-                  return `${completeCount} / ${words.length} complete`;
-                case "seenOrComplete":
-                  return `${completeOrSeenCount} / ${words.length} seen or complete`;
-              }
-            })()}
-          </div>
-        </button>
+        {ProgressBar(words)}
 
         <table className="flex w-full flex-col">
           <thead>
@@ -326,5 +270,68 @@ export default function Home() {
         )}
       </div>
     </main>
+  );
+}
+
+function ProgressBar(words: Word[]) {
+  const [percentCompleteShown, setPercentCompleteShown] =
+    useState<keyof typeof progressBarStates>(0);
+  const completeCount = words.filter((word) => word.known).length;
+  const completeOrSeenCount = words.filter(
+    (word) => word.known || word.type === "seen",
+  ).length;
+  const percentComplete = Math.floor((completeCount / words.length) * 100);
+  const percentCompleteOrSeen = Math.floor(
+    (completeOrSeenCount / words.length) * 100,
+  );
+
+  return (
+    <button
+      aria-hidden
+      className="relative h-5 w-full overflow-hidden rounded-full bg-slate-800"
+      onClick={() =>
+        setPercentCompleteShown((x): keyof typeof progressBarStates => {
+          switch (x) {
+            case 0:
+              return 1;
+            case 1:
+              return 2;
+            case 2:
+              return 0;
+          }
+        })
+      }
+    >
+      <div
+        className="absolute bottom-0 left-0 top-0 bg-blue-700 text-center"
+        style={{
+          width: ((): `${string}%` => {
+            switch (progressBarStates[percentCompleteShown]) {
+              case "percent":
+              case "complete":
+                return `${percentComplete}%`;
+              case "seenOrComplete":
+                return `${percentCompleteOrSeen}%`;
+            }
+          })(),
+        }}
+      ></div>
+
+      <div className="absolute inset-0 flex items-center justify-center">
+        {((): string => {
+          if (words.length === 0) {
+            return "";
+          }
+          switch (progressBarStates[percentCompleteShown]) {
+            case "percent":
+              return `${percentComplete}% complete`;
+            case "complete":
+              return `${completeCount} / ${words.length} complete`;
+            case "seenOrComplete":
+              return `${completeOrSeenCount} / ${words.length} seen or complete`;
+          }
+        })()}
+      </div>
+    </button>
   );
 }
