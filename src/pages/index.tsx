@@ -141,7 +141,7 @@ export default function Home() {
                       switch (toggleRange.type) {
                         case "CLOSED":
                         case "TOGGLING_FIRST":
-                          return word.type === "seen"
+                          return word.type === "seen" || word.known
                             ? "odd:bg-blue-800 even:bg-blue-900"
                             : "odd:bg-slate-800";
 
