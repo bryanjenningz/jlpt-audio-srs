@@ -23,6 +23,9 @@ export default function Home() {
     type: "CLOSED",
   });
   const [lastWord, setLastWord] = useState<Word>();
+  const percentComplete = Math.floor(
+    (words.filter((word) => word.known).length / words.length) * 100,
+  );
 
   const playWord = useCallback(
     async (word: Word, now: number): Promise<void> => {
@@ -56,6 +59,20 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center gap-3 p-4">
+        <div
+          aria-hidden
+          className="relative h-5 w-full overflow-hidden rounded-full bg-slate-800"
+        >
+          <div
+            className="absolute bottom-0 left-0 top-0 bg-blue-700 text-center"
+            style={{ width: `${percentComplete}%` }}
+          ></div>
+
+          <div className="absolute inset-0 flex items-center justify-center">
+            {isNaN(percentComplete) ? "" : `${percentComplete}%`}
+          </div>
+        </div>
+
         <table className="flex w-full flex-col">
           <thead>
             <tr className="flex w-full max-w-2xl bg-slate-900 p-2 text-lg">
