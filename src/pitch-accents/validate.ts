@@ -12,6 +12,10 @@ const errors = [
     name: "Lines must have 3 sections",
     lines: pitchAccentLines.filter((line) => line.length !== 3),
   },
+  {
+    name: "Pitch accents field must be non-empty",
+    lines: pitchAccentLines.filter((line) => !line[2]),
+  },
 ].filter((category) => category.lines.length > 0);
 
 if (errors.length > 0) {
