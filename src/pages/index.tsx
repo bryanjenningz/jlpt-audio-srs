@@ -5,7 +5,7 @@ import { nextWord } from "~/words/next-word";
 import { type Word } from "~/words/types";
 import { updateNextWord } from "~/words/update-next-word";
 import { ProgressBar } from "~/components/progress-bar";
-import { classNames } from "~/utils/classNames";
+import { classNames } from "~/utils/class-names";
 import { WordTable } from "~/components/word-table";
 
 export default function Home() {

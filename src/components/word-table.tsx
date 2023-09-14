@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { type Word } from "~/words/types";
-import { classNames } from "~/utils/classNames";
+import { classNames } from "~/utils/class-names";
 
 type ToggleRange =
   | { type: "CLOSED" }
