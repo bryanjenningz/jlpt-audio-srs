@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl flex-col items-center gap-3 p-4">
-        {ProgressBar(words)}
+        <ProgressBar words={words} />
 
         <WordTable words={words} setWords={setWords} />
 

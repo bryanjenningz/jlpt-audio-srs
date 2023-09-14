@@ -9,7 +9,7 @@ const progressBarStates = {
   2: "seenOrComplete",
 } as const;
 
-export function ProgressBar(words: Word[]) {
+export function ProgressBar({ words }: { words: Word[] }) {
   const [percentCompleteShown, setPercentCompleteShown] =
     useState<ProgressBarKey>(0);
   const completeCount = words.filter((word) => word.known).length;
