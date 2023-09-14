@@ -1,16 +1,4 @@
-export function wait(milliseconds: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, milliseconds));
-}
-
-function waitUntil(condition: () => boolean): Promise<void> {
-  return new Promise((resolve) => {
-    const intervalId = setInterval(() => {
-      if (!condition()) return;
-      clearTimeout(intervalId);
-      resolve();
-    }, 100);
-  });
-}
+import { waitUntil } from "~/utils/wait";
 
 export async function playEnglish(
   english: string,
