@@ -13,8 +13,14 @@ const errors = [
     lines: pitchAccentLines.filter((line) => line.length !== 3),
   },
   {
-    name: "Pitch accents field must be non-empty",
+    name: "Pitch accents fields must be non-empty",
     lines: pitchAccentLines.filter((line) => !line[2]),
+  },
+  {
+    name: "Pitch accents fields must be numbers separated by commas",
+    lines: pitchAccentLines.filter(
+      (line) => line[2]?.split(",").some((x) => isNaN(Number(x))),
+    ),
   },
 ].filter((category) => category.lines.length > 0);
 
