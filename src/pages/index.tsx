@@ -4,16 +4,13 @@ import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
 import { type Word } from "~/words/types";
 import { updateNextWord } from "~/words/update-next-word";
-import { ProgressBar } from "../components/progress-bar";
+import { ProgressBar } from "~/components/progress-bar";
+import { classNames } from "~/utils/classNames";
 
 type ToggleRange =
   | { type: "CLOSED" }
   | { type: "TOGGLING_FIRST" }
   | { type: "TOGGLING_SECOND"; firstIndex: number };
-
-function classNames(...classes: (string | false)[]): string {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
