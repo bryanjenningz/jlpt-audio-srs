@@ -19,7 +19,7 @@ const errors = [
   {
     name: "Pitch accents fields must be numbers separated by commas",
     lines: pitchAccentLines.filter(
-      (line) => line[2]?.split(",").some((x) => isNaN(Number(x))),
+      (line) => line[2]?.split(",").some((x) => !x || isNaN(Number(x))),
     ),
   },
 ].filter((category) => category.lines.length > 0);
