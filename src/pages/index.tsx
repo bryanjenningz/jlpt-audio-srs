@@ -5,8 +5,8 @@ import { nextWord } from "~/words/next-word";
 import { type Word } from "~/words/types";
 import { updateNextWord } from "~/words/update-next-word";
 import { ProgressBar } from "~/components/progress-bar";
-import { classNames } from "~/utils/class-names";
 import { WordTable } from "~/components/word-table";
+import { AutoplayButton } from "~/components/autoplay-button";
 
 export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
@@ -106,30 +106,5 @@ export default function Home() {
         )}
       </div>
     </main>
-  );
-}
-
-function AutoplayButton({
-  autoplay,
-  setAutoplay,
-}: {
-  autoplay: boolean;
-  setAutoplay: (updateAutoplay: (autoplay: boolean) => boolean) => void;
-}) {
-  return (
-    <label
-      className={classNames(
-        "flex w-full cursor-pointer justify-center rounded-full px-4 py-2 text-lg",
-        autoplay ? "bg-blue-700" : "bg-slate-700",
-      )}
-    >
-      {autoplay ? `Autoplaying` : `Autoplay`}
-      <input
-        className="hidden"
-        type="checkbox"
-        checked={autoplay}
-        onChange={() => setAutoplay((autoplay) => !autoplay)}
-      />
-    </label>
   );
 }
