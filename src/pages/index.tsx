@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { playEnglish, playJapanese } from "~/segments/play";
+import { playEnglish, playJapanese } from "~/utils/play";
 import { wait } from "~/utils/wait";
 import { useWords } from "~/words/hooks";
 import { nextWord } from "~/words/next-word";
