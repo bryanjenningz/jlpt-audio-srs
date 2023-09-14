@@ -6,12 +6,12 @@ type ProgressBarState = "complete" | "seenOrComplete";
 export function ProgressBar({ words }: { words: Word[] }) {
   const [state, setState] = useState<ProgressBarState>("complete");
   const completeCount = words.filter((word) => word.known).length;
-  const completeOrSeenCount = words.filter(
+  const seenOrCompleteCount = words.filter(
     (word) => word.known || word.type === "seen",
   ).length;
-  const percentComplete = Math.floor((completeCount / words.length) * 100);
-  const percentCompleteOrSeen = Math.floor(
-    (completeOrSeenCount / words.length) * 100,
+  const completePercent = Math.floor((completeCount / words.length) * 100);
+  const seenOrCompletePercent = Math.floor(
+    (seenOrCompleteCount / words.length) * 100,
   );
 
   return (
@@ -27,8 +27,8 @@ export function ProgressBar({ words }: { words: Word[] }) {
         style={{
           width:
             state === "complete"
-              ? `${percentComplete}%`
-              : `${percentCompleteOrSeen}%`,
+              ? `${completePercent}%`
+              : `${seenOrCompletePercent}%`,
         }}
       ></div>
 
@@ -36,8 +36,8 @@ export function ProgressBar({ words }: { words: Word[] }) {
         {words.length === 0
           ? ""
           : state === "complete"
-          ? `${completeCount} / ${words.length} (${percentComplete}%) complete`
-          : `${completeOrSeenCount} / ${words.length} (${percentCompleteOrSeen}%) seen or complete`}
+          ? `${completeCount} / ${words.length} (${completePercent}%) complete`
+          : `${seenOrCompleteCount} / ${words.length} (${seenOrCompletePercent}%) seen or complete`}
       </div>
     </button>
   );
