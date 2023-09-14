@@ -9,7 +9,7 @@ const pitchAccentLines = (
 
 const errors = [
   {
-    name: "Line doesn't have 3 sections",
+    name: "Lines must have 3 sections",
     lines: pitchAccentLines.filter((line) => line.length !== 3),
   },
 ].filter((category) => category.lines.length > 0);
