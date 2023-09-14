@@ -10,7 +10,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "ts": "tsc",
-    "ts:watch": "tsc --watch"
+    "ts:watch": "tsc --watch",
+    "validate:pitch": "bun run src/pitch-accents/validate.ts"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.6.0",
@@ -27,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "autoprefixer": "^10.4.14",
+    "bun": "^1.0.1",
     "eslint": "^8.47.0",
     "eslint-config-next": "^13.4.13",
     "postcss": "^8.4.27",
