@@ -11,7 +11,7 @@
     "test:watch": "vitest",
     "ts": "tsc",
     "ts:watch": "tsc --watch",
-    "validate:pitch": "bun run src/validation/validate-pitch.ts"
+    "validate": "bun run src/scripts/validate-pitch.ts && bun run src/scripts/validate-jlpt-text.ts"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.6.0",
