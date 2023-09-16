@@ -32,8 +32,8 @@ export const SideMenu = ({
     {
       label: "Word lists",
       options: [
-        { label: "JLPT 5", href: "edit/5" },
-        { label: "JLPT 4", href: "edit/4" },
+        { label: "JLPT 5", href: "words/5" },
+        { label: "JLPT 4", href: "words/4" },
       ],
     },
     {
