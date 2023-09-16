@@ -63,19 +63,19 @@ export default function Home() {
 
         <section className="flex w-full flex-col items-center gap-3">
           {wordPlaying && (
-            <div className="text-lg">{wordPlaying.definition}</div>
-          )}
+            <>
+              <div className="text-lg">{wordPlaying.definition}</div>
 
-          {wordPlaying && (
-            <div
-              className={classNames(
-                "flex gap-3 text-lg",
-                !japaneseShown && "invisible",
-              )}
-            >
-              <div>{wordPlaying.kanji}</div>
-              <div>{wordPlaying.kana}</div>
-            </div>
+              <div
+                className={classNames(
+                  "flex gap-3 text-lg",
+                  !japaneseShown && "invisible",
+                )}
+              >
+                <div>{wordPlaying.kanji}</div>
+                <div>{wordPlaying.kana}</div>
+              </div>
+            </>
           )}
 
           <AutoplayButton autoplay={autoplay} setAutoplay={setAutoplay} />
