@@ -48,7 +48,7 @@ export default function Home() {
   }, [autoplay, wordPlaying, words, playWord]);
 
   return (
-    <main className="flex min-h-screen flex-col items-center bg-black text-white">
+    <main className="flex min-h-[100dvh] flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl grow flex-col items-center justify-between gap-3 p-4">
         <section className="flex w-full flex-col gap-3">
           <ProgressBar words={words} />
