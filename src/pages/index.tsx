@@ -6,7 +6,6 @@ import { nextWord } from "~/words/next-word";
 import { type Word } from "~/words/types";
 import { updateNextWord } from "~/words/update-next-word";
 import { ProgressBar } from "~/components/progress-bar";
-import { WordTable } from "~/components/word-table";
 import { AutoplayButton } from "~/components/autoplay-button";
 import { classNames } from "~/utils/class-names";
 
@@ -65,19 +64,6 @@ export default function Home() {
       <div className="flex w-full max-w-2xl flex-col items-center gap-3 p-4">
         <ProgressBar words={words} />
 
-        <WordTable words={words} setWords={setWords} />
-
-        <AutoplayButton autoplay={autoplay} setAutoplay={setAutoplay} />
-
-        {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
-
-        {wordPlaying && japaneseShown && (
-          <div className="flex gap-3 text-lg">
-            <div>{wordPlaying.kanji}</div>
-            <div>{wordPlaying.kana}</div>
-          </div>
-        )}
-
         {wordHistoryWithWords.length > 0 && (
           <article className="flex w-full flex-col gap-2">
             <h2 className="font-bold">Word history</h2>
@@ -121,6 +107,17 @@ export default function Home() {
               })}
             </ul>
           </article>
+        )}
+
+        <AutoplayButton autoplay={autoplay} setAutoplay={setAutoplay} />
+
+        {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
+
+        {wordPlaying && japaneseShown && (
+          <div className="flex gap-3 text-lg">
+            <div>{wordPlaying.kanji}</div>
+            <div>{wordPlaying.kana}</div>
+          </div>
         )}
       </div>
     </main>
