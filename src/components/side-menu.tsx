@@ -10,6 +10,7 @@ type SideMenuOptionGroup = {
 type SideMenuOption = {
   label: string;
   href: string;
+  matches?: boolean;
 };
 
 export const SideMenu = ({
@@ -24,21 +25,18 @@ export const SideMenu = ({
   const sideMenuOptionGroups: SideMenuOptionGroup[] = [
     {
       label: "Learn / review",
-      options: [
-        { label: "JLPT 5", href: "/" },
-        { label: "JLPT 4", href: "/4" },
-      ],
+      options: [{ label: "JLPT 5 SRS", href: "/" }],
     },
     {
       label: "Word lists",
       options: [
-        { label: "JLPT 5", href: "words/5" },
-        { label: "JLPT 4", href: "words/4" },
+        {
+          label: "JLPT 5 Words",
+          href: "/words/5",
+          matches:
+            router.pathname === "/words/[level]" && router.query.level === "5",
+        },
       ],
-    },
-    {
-      label: "Settings",
-      options: [{ label: "Settings", href: "/settings" }],
     },
   ];
 
@@ -78,7 +76,8 @@ export const SideMenu = ({
                       <Link
                         className={classNames(
                           "flex w-full items-center gap-2 px-4 py-2 text-left text-lg",
-                          router.pathname === option.href &&
+                          (router.pathname === option.href ||
+                            !!option.matches) &&
                             "bg-blue-900 text-white",
                         )}
                         href={option.href}
