@@ -22,6 +22,13 @@ const errors = [
       (line) => line[2]?.split(",").some((x) => !x || isNaN(Number(x))),
     ),
   },
+  {
+    name: "Pitch accents fields must have no duplicates",
+    lines: pitchAccentLines.filter((line) => {
+      const pitchAccents = line[2]?.split(",").map(Number) ?? [];
+      return pitchAccents.length !== new Set(pitchAccents).size;
+    }),
+  },
 ].filter((category) => category.lines.length > 0);
 
 if (errors.length > 0) {
