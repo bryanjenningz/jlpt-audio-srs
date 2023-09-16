@@ -10,6 +10,8 @@ import { AutoplayButton } from "~/components/autoplay-button";
 import { WordHistory } from "~/word-history/word-history";
 import { useWordHistory } from "~/word-history/use-word-history";
 import { classNames } from "~/utils/class-names";
+import { SideMenu } from "~/components/side-menu";
+import { MenuIcon } from "~/icons/menu-icon";
 
 export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
@@ -20,6 +22,8 @@ export default function Home() {
   const wordHistoryWithWords = wordHistory
     .map((word) => words.find((w) => w.order === word.order))
     .filter(Boolean);
+
+  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
   const playWord = useCallback(
     async (word: Word, now: number): Promise<void> => {
@@ -51,7 +55,14 @@ export default function Home() {
     <main className="flex min-h-[100dvh] flex-col items-center bg-black text-white">
       <div className="flex w-full max-w-2xl grow flex-col items-center justify-between gap-3 p-4">
         <section className="flex w-full flex-col gap-3">
-          <ProgressBar words={words} />
+          <div className="flex items-center gap-3">
+            <button onClick={() => setIsSideMenuOpen((x) => !x)}>
+              <span className="sr-only">Open menu</span>
+              <MenuIcon />
+            </button>
+
+            <ProgressBar words={words} />
+          </div>
 
           {wordHistoryWithWords.length > 0 && (
             <WordHistory
@@ -60,6 +71,11 @@ export default function Home() {
             />
           )}
         </section>
+
+        <SideMenu
+          isSideMenuOpen={isSideMenuOpen}
+          closeSideMenu={() => setIsSideMenuOpen(false)}
+        />
 
         <section className="flex w-full flex-col items-center gap-3">
           {wordPlaying && (
