@@ -48,26 +48,32 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
-      <div className="flex w-full max-w-2xl flex-col items-center gap-3 p-4">
-        <ProgressBar words={words} />
+      <div className="flex w-full max-w-2xl grow flex-col items-center justify-between gap-3 p-4">
+        <section className="flex w-full flex-col gap-3">
+          <ProgressBar words={words} />
 
-        {wordHistoryWithWords.length > 0 && (
-          <WordHistory
-            wordHistoryWithWords={wordHistoryWithWords}
-            setWords={setWords}
-          />
-        )}
+          {wordHistoryWithWords.length > 0 && (
+            <WordHistory
+              wordHistoryWithWords={wordHistoryWithWords}
+              setWords={setWords}
+            />
+          )}
+        </section>
 
-        <AutoplayButton autoplay={autoplay} setAutoplay={setAutoplay} />
+        <section className="flex w-full flex-col items-center gap-3">
+          {wordPlaying && (
+            <div className="text-lg">{wordPlaying.definition}</div>
+          )}
 
-        {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
+          {wordPlaying && japaneseShown && (
+            <div className="flex gap-3 text-lg">
+              <div>{wordPlaying.kanji}</div>
+              <div>{wordPlaying.kana}</div>
+            </div>
+          )}
 
-        {wordPlaying && japaneseShown && (
-          <div className="flex gap-3 text-lg">
-            <div>{wordPlaying.kanji}</div>
-            <div>{wordPlaying.kana}</div>
-          </div>
-        )}
+          <AutoplayButton autoplay={autoplay} setAutoplay={setAutoplay} />
+        </section>
       </div>
     </main>
   );
