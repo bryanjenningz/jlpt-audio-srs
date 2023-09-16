@@ -9,6 +9,7 @@ import { ProgressBar } from "~/components/progress-bar";
 import { AutoplayButton } from "~/components/autoplay-button";
 import { WordHistory } from "~/word-history/word-history";
 import { useWordHistory } from "~/word-history/use-word-history";
+import { classNames } from "~/utils/class-names";
 
 export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
@@ -65,8 +66,13 @@ export default function Home() {
             <div className="text-lg">{wordPlaying.definition}</div>
           )}
 
-          {wordPlaying && japaneseShown && (
-            <div className="flex gap-3 text-lg">
+          {wordPlaying && (
+            <div
+              className={classNames(
+                "flex gap-3 text-lg",
+                !japaneseShown && "invisible",
+              )}
+            >
               <div>{wordPlaying.kanji}</div>
               <div>{wordPlaying.kana}</div>
             </div>
