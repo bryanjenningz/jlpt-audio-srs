@@ -8,7 +8,6 @@ import { updateNextWord } from "~/words/update-next-word";
 import { ProgressBar } from "~/components/progress-bar";
 import { WordTable } from "~/components/word-table";
 import { AutoplayButton } from "~/components/autoplay-button";
-import { LastWordButtons } from "~/components/last-word-buttons";
 import { classNames } from "~/utils/class-names";
 
 const WORD_HISTORY_SIZE = 5;
@@ -30,7 +29,6 @@ export default function Home() {
   const [japaneseShown, setJapaneseShown] = useState(false);
   const [words, setWords] = useWords();
   const [wordPlaying, setWordPlaying] = useState<Word>();
-  const [lastWord, setLastWord] = useState<Word>();
   const { wordHistory, addToWordHistory } = useWordHistory();
   const wordHistoryWithWords = wordHistory
     .map((word) => words.find((w) => w.order === word.order))
@@ -56,15 +54,11 @@ export default function Home() {
       if (autoplay && !wordPlaying) {
         const now = Date.now();
         const word = nextWord(words, now);
-        if (!lastWord) {
-          setLastWord(word);
-        }
         if (!word) return;
         await playWord(word, now);
-        setLastWord(word);
       }
     })();
-  }, [autoplay, wordPlaying, words, playWord, lastWord]);
+  }, [autoplay, wordPlaying, words, playWord]);
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-black text-white">
@@ -74,14 +68,6 @@ export default function Home() {
         <WordTable words={words} setWords={setWords} />
 
         <AutoplayButton autoplay={autoplay} setAutoplay={setAutoplay} />
-
-        {lastWord && (
-          <LastWordButtons
-            lastWord={lastWord}
-            setLastWord={setLastWord}
-            setWords={setWords}
-          />
-        )}
 
         {wordPlaying && <div className="text-lg">{wordPlaying.definition}</div>}
 
