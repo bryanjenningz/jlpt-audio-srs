@@ -21,6 +21,8 @@ export function WordHistory({
                 "flex items-center gap-3 rounded-full px-4",
                 wordHistoryEntry.known
                   ? "bg-blue-700 even:bg-blue-800"
+                  : wordHistoryEntry.type === "unseen"
+                  ? "bg-red-700"
                   : "bg-slate-700 even:bg-slate-800",
               )}
             >
@@ -32,6 +34,28 @@ export function WordHistory({
                   {wordHistoryEntry.definition}
                 </p>
               </div>
+
+              <button
+                className="line-clamp-1 shrink-0 rounded-full bg-red-600 px-2 py-1 text-xs"
+                onClick={() =>
+                  setWords((words) =>
+                    words.map((word) =>
+                      wordHistoryEntry.order === word.order
+                        ? {
+                            ...word,
+                            known: !word.known,
+                            type: "unseen",
+                            lastSeen: 0,
+                            seenCount: 0,
+                          }
+                        : word,
+                    ),
+                  )
+                }
+              >
+                Reset
+              </button>
+
               <button
                 className="line-clamp-1 shrink-0 rounded-full bg-slate-600 px-2 py-1 text-xs"
                 onClick={() =>
