@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 
-const PITCH_ACCENT_FILE = "./src/pitch-accents/pitch-accents.txt";
+const PITCH_ACCENT_FILE = "./src/validation/pitch-accents.txt";
 
 const pitchAccentLines = (await fs.readFile(PITCH_ACCENT_FILE))
   .toString()
