@@ -162,8 +162,7 @@
 厳しい;きびしい;strict
 気分;きぶん;mood
 決る;きまる;to be decided
-君;きみ;(informal) You (used by men towards
-women);;
+君;きみ;(informal) You (used by men towards women)
 決める;きめる;to decide
 気持ち;きもち;feeling,mood
 着物;きもの;kimono
@@ -185,7 +184,6 @@ women);;
 比べる;くらべる;to compare
 くれる;to give
 暮れる;くれる;to get dark,to come to an end
-君;くん;suffix for familiar young male
 毛;け;hair or fur
 計画;けいかく・する;to plan
 経験;けいけん・する;to experience
@@ -596,7 +594,6 @@ station;;
 やっと;at last
 やはり/やっぱり;as I thought,absolutely
 止む;やむ;to stop
-止める;やめる;to stop
 柔らかい;やわらかい;soft
 湯;ゆ;hot water
 輸出;ゆしゅつ・する;to export
