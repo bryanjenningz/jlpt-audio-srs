@@ -1,11 +1,39 @@
 import fs from "fs/promises";
 
-const pitchAccentLines = (
-  await fs.readFile("./src/pitch-accents/pitch-accents.txt")
-)
+const PITCH_ACCENT_FILE = "./src/pitch-accents/pitch-accents.txt";
+
+const pitchAccentLines = (await fs.readFile(PITCH_ACCENT_FILE))
   .toString()
   .split("\n")
   .map((line) => line.split("\t"));
+
+// This code removes duplicate pitch accents
+// await fs.writeFile(
+//   PITCH_ACCENT_FILE,
+//   pitchAccentLines
+//     .map((line) => {
+//       if (!line[2]) {
+//         throw new Error(`Expect non-empty pitch field for: ${line.join("\t")}`);
+//       }
+//       return [line[0], line[1], unique(line[2].split(",")).join(",")].join(
+//         "\t",
+//       );
+//     })
+//     .join("\n"),
+// );
+
+// function unique<T>(values: T[]): T[] {
+//   const seen = new Set<T>();
+//   const result: T[] = [];
+//   for (const value of values) {
+//     if (seen.has(value)) {
+//       continue;
+//     }
+//     seen.add(value);
+//     result.push(value);
+//   }
+//   return result;
+// }
 
 const errors = [
   {
