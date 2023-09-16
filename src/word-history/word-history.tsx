@@ -43,7 +43,7 @@ export function WordHistory({
                       wordHistoryEntry.order === word.order
                         ? {
                             ...word,
-                            known: !word.known,
+                            known: false,
                             type: "unseen",
                             lastSeen: 0,
                             seenCount: 0,
