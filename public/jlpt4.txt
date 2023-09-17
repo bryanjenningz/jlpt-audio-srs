@@ -29,7 +29,7 @@
 以下;いか;less than
 以外;いがい;with the exception of
 医学;いがく;medical science
-生きる;いきる;to live
+生きる;いきる;to live,to exist
 意見;いけん;opinion
 石;いし;stone
 いじめる;to tease
@@ -41,12 +41,12 @@
 一生懸命;いっしょうけんめい;with utmost effort
 いっぱい;full 
 糸;いと;thread
-以内;いない;within
+以内;いない;within,not more than
 田舎;いなか;countryside
 祈る;いのる;to pray
 いらっしゃる;(respectful) to be,to come or to go
 植える;うえる;to plant,to grow
-うかがう;to visit
+うかがう;to pay a visit
 受付;うけつけ;receipt
 受ける;うける;to take a lesson or test
 動く;うごく;to move
@@ -114,15 +114,15 @@
 会場;かいじょう;assembly hall or meeting place
 会話;かいわ;conversation
 帰り;かえり;return
-変える;かえる;to change
+変える;かえる;to change something else
 科学;かがく;science
 鏡;かがみ;mirror
 掛ける;かける;to hang something
 飾る;かざる;to decorate
 火事;かじ;fire
-ガス;petrol 
-ガソリン;petrol 
-ガソリンスタンド;petrol station
+ガス;gas
+ガソリン;gasoline
+ガソリンスタンド;gas station
 堅/硬/固い;かたい;hard
 形;かたち;shape
 片付ける;かたづける;to tidy up
@@ -182,7 +182,7 @@
 首;くび;neck
 雲;くも;cloud
 比べる;くらべる;to compare
-くれる;to give
+くれる;to give me
 暮れる;くれる;to get dark,to come to an end
 毛;け;hair or fur
 計画;けいかく・する;to plan
@@ -212,7 +212,7 @@
 校長;こうちょう;headmaster
 交通;こうつう;traffic,transportation
 講堂;こうどう;auditorium
-高等学校;こうとうがっこう;high school
+高等学校;こうとうがっこう;senior high school
 公務員;こうむいん;government worker
 国際;こくさい;international
 心;こころ;core,heart
@@ -268,7 +268,7 @@
 地震;じしん;earthquake
 時代;じだい;era
 下着;したぎ;underwear
-支度;したく・する;to prepare
+支度;したく・する;to prepare to go somewhere
 しっかり;firmly,steadily 
 失敗;しっぱい;failure,mistake
 辞典;じてん;dictionary
@@ -308,7 +308,7 @@
 新聞社;しんぶんしゃ;newspaper company
 水泳;すいえい;swimming
 水道;すいどう;water supply
-ずいぶん;extremely 
+ずいぶん;extremely,remarkable
 数学;すうがく;mathematics,arithmetic
 スーツ;suit 
 スーツケース;suitcase 
@@ -329,7 +329,7 @@
 済む;すむ;to finish
 すり;pickpocket 
 すると;then 
-生活;せいかつ・する;to live
+生活;せいかつ・する;to live,to make a living
 生産;せいさん・する;to produce
 政治;せいじ;politics,government
 西洋;せいよう;western countries
@@ -449,7 +449,7 @@ express;train)
 投げる;なげる;to throw or cast away
 なさる;(respectful) to do
 鳴る;なる;to sound
-なるべく;as much as possible
+なるべく;as much as possible (softer)
 なるほど;now I understand
 慣れる;なれる;to grow accustomed to
 におい;a smell
@@ -495,7 +495,7 @@ express;train)
 反対;はんたい;opposition
 ハンドバッグ;handbag 
 日;ひ;day, sun
-火;ひ;fire
+火;ひ;flame
 ピアノ;piano 
 冷える;ひえる;to grow cold
 光;ひかり;light
@@ -503,11 +503,11 @@ express;train)
 引き出し;ひきだし;drawer,drawing out
 引き出す;ひきだす;to withdraw
 ひげ;beard 
-飛行場;ひこうじょう;airport
+飛行場;ひこうじょう;airfield
 久しぶり;ひさしぶり;after a long time
 美術館;びじゅつかん;art gallery
-非常に;ひじょうに;extremely
-びっくり・する;to be surprised
+非常に;ひじょうに;very,extremely
+びっくり・する;to be surprised,to be taken aback
 引っ越す;ひっこす;to move house
 必要;ひつよう;necessary
 ひどい;awful 
@@ -523,7 +523,6 @@ express;train)
 復習;ふくしゅう;revision
 部長;ぶちょう;head of a section
 普通;ふつう;usually, or a train that stops at every
-station;;
 ぶどう;grapes 
 太る;ふとる;to become fat
 布団;ふとん;Japanese bedding, futon
@@ -580,7 +579,7 @@ station;;
 もうすぐ;soon 
 もし;if 
 もちろん;of course
-もっとも;extremely 
+もっとも;most,extremely 
 戻る;もどる;to turn back
 木綿;もめん;cotton
 もらう;to receive
@@ -594,7 +593,7 @@ station;;
 やっと;at last
 やはり/やっぱり;as I thought,absolutely
 止む;やむ;to stop
-柔らかい;やわらかい;soft
+柔らかい;やわらかい;soft,tender
 湯;ゆ;hot water
 輸出;ゆしゅつ・する;to export
 輸入;ゆにゅう・する;to import
@@ -609,7 +608,7 @@ station;;
 予習;よしゅう;preparation for a lesson
 予定;よてい;arrangement
 予約;よやく;reservation
-寄る;よる;to visit
+寄る;よる;to stop by
 喜ぶ;よろこぶ;to be delighted
 よろしい;(respectful) OK,all right
 理由;りゆう;reason
@@ -630,5 +629,5 @@ station;;
 忘れ物;わすれもの;lost article
 笑う;わらう;to laugh,to smile
 割合;わりあい;rate,ratio,percentage
-割れる;われる;to break
+割れる;われる;to break,to split
 泳ぎ方;およぎかた;way of swimming 
