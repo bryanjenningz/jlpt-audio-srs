@@ -25,7 +25,7 @@ export default function Learn() {
   const [japaneseShown, setJapaneseShown] = useState(false);
   const [words, setWords] = useWords(level);
   const [wordPlaying, setWordPlaying] = useState<Word>();
-  const { wordHistory, addToWordHistory } = useWordHistory();
+  const { wordHistory, addToWordHistory } = useWordHistory(level);
   const wordHistoryWithWords = wordHistory
     .map((word) => words.find((w) => w.order === word.order))
     .filter(Boolean);
@@ -38,7 +38,7 @@ export default function Learn() {
       await playEnglish(word.definition, speechSynthesis);
       await wait(1000);
       setJapaneseShown(true);
-      addToWordHistory(word);
+      addToWordHistory(level, word);
       await playJapanese(word.kanji, speechSynthesis);
       setJapaneseShown(false);
       setWordPlaying(undefined);

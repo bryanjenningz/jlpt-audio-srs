@@ -3,14 +3,20 @@ import { type Word } from "~/words/types";
 
 const WORD_HISTORY_SIZE = 5;
 
-export function useWordHistory() {
-  const [wordHistory, setWordHistory] = useState<Word[]>([]);
+type Level = 5 | 4;
 
-  function addToWordHistory(word: Word) {
-    setWordHistory((wordHistory) =>
-      [...wordHistory, word].slice(-WORD_HISTORY_SIZE),
-    );
+export function useWordHistory(level: Level) {
+  const [wordHistory, setWordHistory] = useState<Record<Level, Word[]>>({
+    5: [],
+    4: [],
+  });
+
+  function addToWordHistory(level: Level, word: Word) {
+    setWordHistory((wordHistory) => ({
+      ...wordHistory,
+      [level]: [...wordHistory[level], word].slice(-WORD_HISTORY_SIZE),
+    }));
   }
 
-  return { wordHistory, addToWordHistory };
+  return { wordHistory: wordHistory[level], addToWordHistory };
 }
