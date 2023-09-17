@@ -47,9 +47,13 @@ for (const filePath of FILE_PATHS) {
       name: `All kanji must be unique`,
       lines: (() => {
         const kanjiCounts = count(entries.map((entry) => entry.kanji));
-        return entries.filter(
-          (entry) => (kanjiCounts.get(entry.kanji) ?? 0) > 1,
-        );
+        return entries
+          .filter((entry) => (kanjiCounts.get(entry.kanji) ?? 0) > 1)
+          .sort((a, b) => {
+            if (a.kanji < b.kanji) return -1;
+            if (a.kanji > b.kanji) return 1;
+            return 0;
+          });
 
         function count<T>(values: Iterable<T>): Map<T, number> {
           const counts = new Map<T, number>();
