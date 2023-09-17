@@ -25,7 +25,10 @@ export const SideMenu = ({
   const sideMenuOptionGroups: SideMenuOptionGroup[] = [
     {
       label: "Learn / review",
-      options: [{ label: "JLPT 5 SRS", href: "/" }],
+      options: [
+        { label: "JLPT 5 SRS", href: "/learn/5" },
+        { label: "JLPT 4 SRS", href: "/learn/4" },
+      ],
     },
     {
       label: "Word lists",
@@ -35,6 +38,12 @@ export const SideMenu = ({
           href: "/words/5",
           matches:
             router.pathname === "/words/[level]" && router.query.level === "5",
+        },
+        {
+          label: "JLPT 4 Words",
+          href: "/words/4",
+          matches:
+            router.pathname === "/words/[level]" && router.query.level === "4",
         },
       ],
     },
