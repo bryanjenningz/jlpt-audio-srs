@@ -9166,11 +9166,13 @@
       const tbody = document.querySelector("tbody");
       const rows = Array.from(tbody.querySelectorAll("tr"));
       const words = rows.map((row) => {
-        const kanji = row.children[0].textContent.trim().replace(/ +/g, " ");
-        const kana = row.children[1].textContent.trim().replace(/ +/g, " ");
+        const kanji = row.children[0].textContent
+          .trim()
+          .replace(/[ \n]+/g, " ");
+        const kana = row.children[1].textContent.trim().replace(/[ \n]+/g, " ");
         const definition = row.children[2].textContent
           .trim()
-          .replace(/ +/g, " ");
+          .replace(/[ \n]+/g, " ");
         return { kanji: kanji || kana, kana, definition };
       });
       const invalidWords = words.filter((word) => {

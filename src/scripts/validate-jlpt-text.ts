@@ -1,6 +1,10 @@
 import fs from "fs/promises";
 
-const FILE_PATHS = ["./public/jlpt5.txt", "./public/jlpt4.txt"];
+const FILE_PATHS = [
+  "./public/jlpt5.txt",
+  "./public/jlpt4.txt",
+  "./public/jlpt3.txt",
+];
 const ENTRY_SEPARATOR = "\n";
 const FIELD_SEPARATOR = ";";
 

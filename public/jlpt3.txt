@@ -36,8 +36,7 @@
 表す;あらわす;to express, to show, to reveal
 現す;あらわす;to show, to indicate, to display
 現れ;あらわれ;embodiment, materialization
-現れる;あらわれる;(1) to appear, to come in sight, to become visible,(2) to express
- oneself
+現れる;あらわれる;(1) to appear, to come in sight, to become visible,(2) to express oneself
 ありがとう;ありがとう;(conj,exp,int) Thank you
 有る;ある;to be, to have(used for inanimate objects)
 或;ある;a certain...,some...
@@ -92,14 +91,12 @@
 一瞬;いっしゅん;a moment, an instant
 一生;いっしょう;whole life, a lifetime, all through life
 一層;いっそう;much more, still more, all the more
-一体;いったい;(1) one object, one body,(2) what on earth?, really?,(3)
- generally
+一体;いったい;(1) one object, one body,(2) what on earth?, really?,(3) generally
 一致;いっち;(1) coincidence, agreement,(2) conformity
 いつでも;いつでも;(at) any time, always, at all times, never (neg)
 一般;いっぱん;general, liberal, universal, ordinary, average
 一方;いっぽう;(1) on the other hand,(2) meanwhile,(3) only, simple, in turn
-いつまでも;いつまでも;forever, for good, eternally, as long as one likes,
- indefinitely
+いつまでも;いつまでも;forever, for good, eternally, as long as one likes, indefinitely
 いつも;いつも;always, usually, every time, never (with neg. verb)
 移動;いどう;removal, migration, movement
 従兄弟;いとこ;cousin (male)
@@ -182,8 +179,7 @@
 追う;おう;to chase, to run after
 王様;おうさま;king
 王子;おうじ;prince
-応じる;おうじる;to respond, to satisfy, to accept, to comply with, to apply
- for
+応じる;おうじる;to respond, to satisfy, to accept, to comply with, to apply for
 横断;おうだん;crossing
 終える;おえる;to finish
 大いに;おおいに;very, much, greatly
@@ -242,8 +238,7 @@
 外出;がいしゅつ;outing, going out
 改善;かいぜん;betterment, improvement
 快適;かいてき;pleasant, agreeable, comfortable
-回復;かいふく;recovery (from illness),improvement, rehabilitation,
- restoration
+回復;かいふく;recovery (from illness),improvement, rehabilitation, restoration
 飼う;かう;to keep, to raise, to feed
 替える/換える;かえる;to exchange, to interchange, to substitute, to replace
 香り;かおり;aroma, fragrance, scent, smell
@@ -696,8 +691,7 @@
 支店;してん;branch store (office)
 指導;しどう;leadership,guidance,coaching
 自動;じどう;automatic,self-motion
-品;しな;thing,article,goods,dignity,article (goods),counter for meal
- courses
+品;しな;thing,article,goods,dignity,article (goods),counter for meal courses
 支配;しはい;rule,control,direction
 芝居;しばい;play,drama
 しばしば;しばしば;often,again and again,frequently
@@ -712,8 +706,7 @@
 自慢;じまん;pride,boast
 事務;じむ;business,office work
 示す;しめす;to denote,to show,to point out,to indicate
-占める;しめる;(1) to comprise,to account for,to make up (of),(2) to hold,to
- occupy
+占める;しめる;(1) to comprise,to account for,to make up (of),(2) to hold,to occupy
 下;しも;under,below,beneath
 霜;しも;frost
 借金;しゃっきん;debt,loan,liabilities
@@ -945,11 +938,9 @@
 速度;そくど;speed,velocity,rate
 底;そこ;bottom,sole
 そこで;そこで;so (conj),accordingly,now,then,thereupon
-組織;そしき;(1) organization,(2) structure,construction,(3) tissue,(4)
- system
+組織;そしき;(1) organization,(2) structure,construction,(3) tissue,(4) system
 そして;そして;and
-注ぐ;そそぐ;to pour (into),to irrigate,to pay,to fill,to feed (e.g. a
- fire)
+注ぐ;そそぐ;to pour (into),to irrigate,to pay,to fill,to feed (e.g. a fire)
 育つ;そだつ;to raise (child),to be brought up,to grow (up)
 そっくり;そっくり;all,altogether,entirely,be just like,the splitting image of
 そっと;そっと;face of the earth
@@ -982,8 +973,7 @@
 滞在;たいざい;stay,sojourn
 大使;たいし;ambassador
 大した;たいした;considerable,great,important,significant,a big deal
-対象;たいしょう;target,object (of worship, study, etc),subject (of taxation,
- etc)
+対象;たいしょう;target,object (of worship, study, etc),subject (of taxation, etc)
 大臣;だいじん;cabinet minister
 対する;たいする;to face,to confront,to oppose
 大戦;たいせん;great war,great battle
@@ -1088,8 +1078,7 @@
 調査;ちょうさ;investigation,examination,inquiry,survey
 調子;ちょうし;condition, form, shape, tune,tone,key
 頂上;ちょうじょう;top,summit,peak
-ちょうだい;ちょうだい;(1) please do for me (preceded by -te),(2) reception,being
- given,get (spoken)
+ちょうだい;ちょうだい;(1) please do for me (preceded by -te),(2) reception,being given,get (spoken)
 貯金;ちょきん;(bank) savings
 直接;ちょくせつ;direct,immediate,personal,firsthand
 著者;ちょしゃ;author,writer
@@ -1132,8 +1121,7 @@
 定期;ていき;fixed term
 抵抗;ていこう;resistance,opposition, electrical resistance,
 提出;ていしゅつ;presentation,submission,filing
-程度;ていど;degree,amount,grade,standard,of the order of (following a
- number)
+程度;ていど;degree,amount,grade,standard,of the order of (following a number)
 停留所;ていりゅうじょ;bus or tram stop
 敵;てき;enemy,rival
 出来事;できごと;incident,affair,happening,event
@@ -1205,8 +1193,7 @@
 土地;とち;plot of land,lot,soil
 突然;とつぜん;abruptly,suddenly,unexpectedly,all at once
 届く;とどく;to reach
-とにかく;とにかく;anyhow,at any rate,anyway,somehow or other,generally speaking,in
- any case
+とにかく;とにかく;anyhow,at any rate,anyway,somehow or other,generally speaking,in any case
 飛ばす;とばす;to skip over,to omit
 飛び出す;とびだす;to jump out,to rush out,to fly out
 留める;とめる;to fasten,to turn off,to detain
@@ -1305,8 +1292,7 @@
 後;のち;afterwards,since then,in the future
 喉;のど;throat
 伸ばす;のばす;to lengthen,to stretch,to reach out,to grow (beard)
-伸びる;のびる;to stretch,to extend,to make progress,to grow (beard, body
- height)
+伸びる;のびる;to stretch,to extend,to make progress,to grow (beard, body height)
 述べる;のべる;to state,to express,to mention
 昇る;のぼる;to arise,to ascend,to go up
 のんびり;のんびり;carefree,at leisure
@@ -1381,8 +1367,7 @@
 日付;ひづけ;date,dating
 必死;ひっし;inevitable death,desperation,frantic,inevitable result
 ぴったり;ぴったり;exactly,neatly,sharp
-引っ張る;ひっぱる;(1) to pull,to draw,to stretch,to drag,(2) to pull the ball
- (baseball)
+引っ張る;ひっぱる;(1) to pull,to draw,to stretch,to drag,(2) to pull the ball (baseball)
 否定;ひてい;negation,denial,repudiation
 一言;ひとこと;single word
 人込み;ひとごみ;crowd of people
@@ -1445,11 +1430,9 @@
 不平;ふへい;complaint,discontent,dissatisfaction
 不満;ふまん;dissatisfaction,displeasure,discontent,complaints,unhappiness
 不利;ふり;disadvantage,handicap,unfavorable,drawback
-振る;ふる;(1) to wave,to shake,to swing,(2) to sprinkle,(3) to cast
- (actor),to allocate (work)
+振る;ふる;(1) to wave,to shake,to swing,(2) to sprinkle,(3) to cast (actor),to allocate (work)
 震える;ふるえる;to shiver,to shake,to quake
-触れる;ふれる;to touch,to be touched,to touch on a subject,to feel,to violate
- (law, copyright, etc.),to perceive,t
+触れる;ふれる;to touch,to be touched,to touch on a subject,to feel,to violate (law, copyright, etc.),to perceive,t
 風呂;ふろ;bath
 分;ぶん;dividing,part,segment
 文;ぶん;sentence
@@ -1512,8 +1495,7 @@
 まさに;まさに;correctly, surely
 真面目;まじめ;diligent,serious,honest
 増す;ます;to increase,to grow
-先ず;まず;first (of all),to start with,about,almost,hardly (with neg.
- verb)
+先ず;まず;first (of all),to start with,about,almost,hardly (with neg. verb)
 貧しい;まずしい;poor, needy
 ますます;ますます;increasingly,more and more
 又;また;again,and
@@ -1595,10 +1577,8 @@
 元;もと;(1) origin,original,(2) former
 基;もと;basis
 戻す;もどす;to restore,to put back,to return
-基づく;もとづく;to be grounded on,to be based on,to be due to,to originate
- from
-求める;もとめる;to seek,to request,to demand,to want,to wish for,to search for,to
- pursue (pleasure),to hunt (a job),
+基づく;もとづく;to be grounded on,to be based on,to be due to,to originate from
+求める;もとめる;to seek,to request,to demand,to want,to wish for,to search for,to pursue (pleasure),to hunt (a job),
 者;もの;person
 物音;ものおと;sounds
 物語;ものがたり;tale,story,legend
@@ -1669,8 +1649,7 @@
 嫁;よめ;bride,daughter-in-law
 余裕;よゆう;surplus,composure,margin,room,time,allowance,scope,rope
 よると;よると;according to
-喜び;よろこび;(a) joy,(a)
- delight,rapture,pleasure,gratification,rejoicing,congratulations,felicitations
+喜び;よろこび;(a) joy,(a) delight,rapture,pleasure,gratification,rejoicing,congratulations,felicitations
 宜しい;よろしい;(hon) good,OK,all right,fine,very well,will do,may,can
 よろしく;よろしく;well,properly,suitably,best regards,please remember me
 四;よん;four
@@ -1745,8 +1724,7 @@
 ゴール;ゴール;goal
 コピー;コピー;(1) a (photo)copy,(2) blurb on a book jacket
 コンピューター;コンピューター;computer
-サービス;サービス;(1) service,support system,(2) goods or services without
- charge
+サービス;サービス;(1) service,support system,(2) goods or services without charge
 サイン;サイン;(1) autograph,(2) sign,(3) sine
 ジーンズ;ジーンズ;jeans
 ジェット機;ジェットき;jet aeroplane
