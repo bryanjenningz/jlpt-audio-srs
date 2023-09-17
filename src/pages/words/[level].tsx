@@ -14,7 +14,6 @@ export default function Home() {
   const router = useRouter();
   const parsedLevel = levelSchema.safeParse(Number(router.query.level));
   const level = parsedLevel.success ? parsedLevel.data : 5;
-  console.log({ level });
   const [words, setWords] = useWords(level);
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 

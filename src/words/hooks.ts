@@ -19,7 +19,6 @@ export function useWords(level: 4 | 5) {
   );
 
   useEffect(() => {
-    console.log("useEffect level", { level });
     try {
       const words = wordsSchema.parse(
         JSON.parse(localStorage.getItem(key) ?? "0"),
