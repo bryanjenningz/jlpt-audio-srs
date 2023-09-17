@@ -16,7 +16,7 @@ import { MenuIcon } from "~/icons/menu-icon";
 export default function Home() {
   const [autoplay, setAutoplay] = useState(false);
   const [japaneseShown, setJapaneseShown] = useState(false);
-  const [words, setWords] = useWords();
+  const [words, setWords] = useWords(5);
   const [wordPlaying, setWordPlaying] = useState<Word>();
   const { wordHistory, addToWordHistory } = useWordHistory();
   const wordHistoryWithWords = wordHistory
@@ -35,7 +35,7 @@ export default function Home() {
       await playJapanese(word.kanji, speechSynthesis);
       setJapaneseShown(false);
       setWordPlaying(undefined);
-      setWords((words) => updateNextWord(words, now));
+      setWords(5, (words) => updateNextWord(words, now));
     },
     [setWords, addToWordHistory],
   );
@@ -67,7 +67,9 @@ export default function Home() {
           {wordHistoryWithWords.length > 0 && (
             <WordHistory
               wordHistoryWithWords={wordHistoryWithWords}
-              setWords={setWords}
+              setWords={(updateWords: (words: Word[]) => Word[]) =>
+                setWords(5, updateWords)
+              }
             />
           )}
         </section>

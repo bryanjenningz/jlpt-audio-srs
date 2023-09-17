@@ -12,11 +12,18 @@ import { useWordHistory } from "~/word-history/use-word-history";
 import { classNames } from "~/utils/class-names";
 import { SideMenu } from "~/components/side-menu";
 import { MenuIcon } from "~/icons/menu-icon";
+import { useRouter } from "next/router";
+import { z } from "zod";
+
+const levelSchema = z.union([z.literal(5), z.literal(4)]);
 
 export default function Learn() {
+  const router = useRouter();
+  const parsedLevel = levelSchema.safeParse(Number(router.query.level));
+  const level = parsedLevel.success ? parsedLevel.data : 5;
   const [autoplay, setAutoplay] = useState(false);
   const [japaneseShown, setJapaneseShown] = useState(false);
-  const [words, setWords] = useWords();
+  const [words, setWords] = useWords(level);
   const [wordPlaying, setWordPlaying] = useState<Word>();
   const { wordHistory, addToWordHistory } = useWordHistory();
   const wordHistoryWithWords = wordHistory
@@ -35,9 +42,9 @@ export default function Learn() {
       await playJapanese(word.kanji, speechSynthesis);
       setJapaneseShown(false);
       setWordPlaying(undefined);
-      setWords((words) => updateNextWord(words, now));
+      setWords(level, (words) => updateNextWord(words, now));
     },
-    [setWords, addToWordHistory],
+    [setWords, addToWordHistory, level],
   );
 
   useEffect(() => {
@@ -67,7 +74,9 @@ export default function Learn() {
           {wordHistoryWithWords.length > 0 && (
             <WordHistory
               wordHistoryWithWords={wordHistoryWithWords}
-              setWords={setWords}
+              setWords={(updateWords: (words: Word[]) => Word[]) =>
+                setWords(level, updateWords)
+              }
             />
           )}
         </section>

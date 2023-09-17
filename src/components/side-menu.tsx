@@ -26,8 +26,18 @@ export const SideMenu = ({
     {
       label: "Learn / review",
       options: [
-        { label: "JLPT 5 SRS", href: "/learn/5" },
-        { label: "JLPT 4 SRS", href: "/learn/4" },
+        {
+          label: "JLPT 5 SRS",
+          href: "/learn/5",
+          matches:
+            router.pathname === "/learn/[level]" && router.query.level === "5",
+        },
+        {
+          label: "JLPT 4 SRS",
+          href: "/learn/4",
+          matches:
+            router.pathname === "/learn/[level]" && router.query.level === "4",
+        },
       ],
     },
     {
