@@ -40193,9 +40193,11 @@
       const tbody = document.querySelector("tbody");
       const rows = Array.from(tbody.querySelectorAll("tr"));
       const words = rows.map((row) => {
-        const kanji = row.children[0].textContent;
-        const kana = row.children[1].textContent;
-        const definition = row.children[2].textContent;
+        const kanji = row.children[0].textContent.trim().replace(/ +/g, " ");
+        const kana = row.children[1].textContent.trim().replace(/ +/g, " ");
+        const definition = row.children[2].textContent
+          .trim()
+          .replace(/ +/g, " ");
         return { kanji: kanji || kana, kana, definition };
       });
       const invalidWords = words.filter((word) => {
@@ -40204,7 +40206,7 @@
       if (invalidWords.length > 0) {
         throw new Error("Invalid words:\n" + formatWords(invalidWords));
       }
-      const output = words.map(formatWord);
+      const output = formatWords(words);
       console.log(output);
 
       function formatWords(words) {
