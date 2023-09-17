@@ -100,4 +100,14 @@ for (const filePath of FILE_PATHS) {
           .join("\n\n"),
     );
   }
+
+  // Uncomment to overwrite files
+  // await fs.writeFile(
+  //   filePath,
+  //   entries
+  //     .map((entry) =>
+  //       [entry.kanji, entry.kana, entry.definition].join(FIELD_SEPARATOR),
+  //     )
+  //     .join(ENTRY_SEPARATOR),
+  // );
 }
