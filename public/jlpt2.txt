@@ -1,4 +1,3 @@
-Kanji;Hiragana;English
 あいかわらず;あいかわらず;as ever,as usual,the same
 アイデア/アイディア;アイデア/アイディア;idea
 あいまい;あいまい;vague,ambiguous
