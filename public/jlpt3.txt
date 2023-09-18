@@ -146,14 +146,12 @@
 生まれ;うまれ;birth, birth-place
 梅;うめ;plum, plum-tree, lowest (of a three-tier ranking system)
 裏切る;うらぎる;to betray, to turn traitor to, to double-cross
-得る;うる;to get, to gain, to win
 嬉しい;うれしい;happy, glad, pleasant
 売れる;うれる;to be sold
 噂;うわさ;rumour, report, gossip, common talk
 運;うん;fortune, luck
 運転;うんてん・する;operation, motion, driving, to drive
 運動;うんどう・する;motion, exercise, to exercise
-柄;え;handle, grip
 永遠;えいえん;eternity, perpetuity, immortality, permanence
 永久;えいきゅう;eternity ,perpetuity, immortality
 影響;えいきょう;influence, effect
@@ -161,7 +159,6 @@
 衛星;えいせい;satellite
 栄養;えいよう;nutrition, nourishment
 笑顔;えがお;smiling face
-描く;えがく;to draw, to paint, to sketch, to depict, to describe
 餌;えさ;feed, bait
 得る;える;to get, to gain, to win
 円;えん;circle, money
@@ -298,13 +295,11 @@
 悲しむ;かなしむ;to be sad,to mourn for,to regret
 必ずしも;かならずしも;(not) always,(not) necessarily,(not) all,(not) entirely
 かなり;かなり;considerably,fairly,quite
-金;かね;(1) gold,(2) gold general (shogi) (abbr)
 可能;かのう;possible,practicable,feasible
 株;かぶ;share,stock,stump (of tree)
 被る;かぶる;to put on , wear, cover (one's) head,
 構う;かまう;to mind,to care about,to be concerned about
 我慢;がまん;patience,endurance,perseverance
-上;かみ;(1) first volume,(2) superior quality,(3) governmental
 神;かみ;god
 雷;かみなり;thunder
 髪の毛;かみのけ;hair (head)
@@ -387,7 +382,6 @@
 旧;きゅう;ex-
 級;きゅう;class, grade, rank,school class, grade
 球;きゅう;globe,sphere,ball
-九;きゅう / く;nine
 休暇;きゅうか;holiday,day off,furlough
 休憩;きゅうけい;rest,break,recess,intermission
 急激;きゅうげき;sudden,precipitous,radical
@@ -417,7 +411,7 @@
 霧;きり;fog,mist
 切れ;きれ;cloth,piece,cut,chop
 切れる;きれる;(1) to cut well,to be sharp,(2) to break (off)
-キロ;キロ;(abbr) kilo-,kilogram,kilometre,10^3
+キロ;キロ;(abbr) kilo-,kilogram,kilometre
 記録;きろく;record,minutes,document
 議論;ぎろん;argument,discussion,dispute
 金;きん;(1) gold,(2) gold general (shogi) (abbr)
@@ -433,7 +427,6 @@
 筋肉;きんにく;muscle,sinew
 金融;きんゆう;finance, monetary circulation,
 金曜;きんよう;(abbr) Friday
-九;く;nine
 句;く;sentence
 食う;くう;(male) (vulg) to eat
 偶然;ぐうぜん;(by) chance,unexpectedly,suddenly
@@ -468,7 +461,6 @@
 軍;ぐん;army,force,troops
 軍隊;ぐんたい;army,troops
 訓練;くんれん;practice,training
-下;げ;under,below,beneath
 敬意;けいい;respect,honour
 経営;けいえい;management,administration
 計画;けいかく・する;plan,project,schedule,scheme,program,to plan
@@ -499,7 +491,6 @@
 煙;けむり;smoke,fumes
 券;けん;ticket,coupon,bond,certificate
 県;けん;prefecture
-軒;けん;a couter for house
 喧嘩;けんか;quarrel,(drunken) brawl,failure
 見解;けんかい;opinion,point of view
 限界;げんかい;limit,bound
@@ -645,9 +636,7 @@
 散歩;さんぽ;walk,stroll
 氏;し;family name,lineage,birth
 詩;し;poem,verse of poetry
-四;し/よん;four
 幸せ;しあわせ;happiness,good fortune,luck,blessing
-ジェット機;ジェットき;jet aeroplane
 直に;じかに;immediately,readily,directly
 しかも;しかも;moreover,furthermore,nevertheless,and yet
 叱る;しかる;to scold
@@ -676,7 +665,6 @@
 したがって;したがって;therefore,consequently,in accordance with
 支度;したく・する;preparation, to prepare
 親しい;したしい;intimate,close (e.g. friend)
-七;しち・なな;seven
 質;しつ;quality,nature (of person)
 失業;しつぎょう;unemployment
 実験;じっけん;experiment
@@ -691,7 +679,6 @@
 支店;してん;branch store (office)
 指導;しどう;leadership,guidance,coaching
 自動;じどう;automatic,self-motion
-品;しな;thing,article,goods,dignity,article (goods),counter for meal courses
 支配;しはい;rule,control,direction
 芝居;しばい;play,drama
 しばしば;しばしば;often,again and again,frequently
@@ -707,14 +694,12 @@
 事務;じむ;business,office work
 示す;しめす;to denote,to show,to point out,to indicate
 占める;しめる;(1) to comprise,to account for,to make up (of),(2) to hold,to occupy
-下;しも;under,below,beneath
 霜;しも;frost
 借金;しゃっきん;debt,loan,liabilities
 しゃべる;しゃべる;to talk,to chat,to chatter
 邪魔;じゃま;hindrance,intrusion
 週;しゅう;week
 州;しゅう;a state, province, county
-十;じゅう;10,ten
 銃;じゅう;gun
 周囲;しゅうい;surroundings,circumference,environs
 収穫;しゅうかく;harvest,crop,ingathering
@@ -756,7 +741,6 @@
 章;しょう;(1) chapter,section,(2) medal
 賞;しょう;prize,award
 使用;しよう;use,application,employment,utilization
-上;じょう;(1) first volume,(2) superior quality,
 障害;しょうがい;obstacle,impediment (fault),damage
 奨学金;しょうがくきん;scholarship
 乗客;じょうきゃく;passenger
@@ -836,14 +820,12 @@
 信頼;しんらい;reliance,trust,confidence
 心理;しんり;pshcyology, mental state
 人類;じんるい;mankind,humanity
-州;す;sandbank
 巣;す;nest,rookery,breeding place,beehive,cobweb
 図;ず;figure (e.g. Fig 1),drawing,picture,illustration
 水準;すいじゅん;(1) level, standard, (2) water level
 推薦;すいせん;recommendation
 随分;ずいぶん;extremely
 睡眠;すいみん;sleep
-数;すう;number,figure
 数字;すうじ;numeral,figure
 末;すえ;the end of,powder
 姿;すがた;figure,shape,appearance
@@ -862,7 +844,6 @@
 既に;すでに;already,too late
 すなわち;すなわち;that is,namely,i.e.
 素晴らしい;すばらしい;wonderful,splendid,magnificent
-全て;すべて;all,the whole,entirely,in general,wholly
 全て;すべて;all,whole,entire,complete,overall,pan
 済ませる;すませる;to be finished
 すみません;すみません;sorry,excuse me
@@ -940,7 +921,6 @@
 そこで;そこで;so (conj),accordingly,now,then,thereupon
 組織;そしき;(1) organization,(2) structure,construction,(3) tissue,(4) system
 そして;そして;and
-注ぐ;そそぐ;to pour (into),to irrigate,to pay,to fill,to feed (e.g. a fire)
 育つ;そだつ;to raise (child),to be brought up,to grow (up)
 そっくり;そっくり;all,altogether,entirely,be just like,the splitting image of
 そっと;そっと;face of the earth
@@ -1009,7 +989,6 @@
 立場;たちば;standpoint,position,situation
 経つ;たつ;to pass,to lapse
 達する;たっする;to reach,to get to
-唯;たった;only (use with a word which indicates numbers)
 だって;だって;but,because,even,also,too
 たっぷり;たっぷり;full,in plenty,ample
 縦;たて;length,height
@@ -1018,12 +997,10 @@
 他人;たにん;another person,unrelated person,outsider,stranger
 種;たね;(1) seed,(2) material,(3) cause,source
 束;たば;handbreadth,bundle
-度;たび;counter for occurrences
 旅;たび;travel,trip,journey
 たびたび;たびたび;often,repeatedly,frequently
 多分;たぶん;perhaps,probably
 玉;たま;ball,sphere,coin
-球;たま;globe,sphere,ball
 弾;たま;bullet,shot,shell
 偶々;たまたま;casually,unexpectedly,accidentally,by chance
 たまらない;たまらない;intolerable, unbearable, unendurable
@@ -1165,7 +1142,6 @@
 同様;どうよう;identical,equal to,same (kind),like
 同僚;どうりょう;coworker,colleague,associate
 道路;どうろ;road,highway
-十;とお;10,ten
 通す;とおす;to let pass,to overlook,to continue
 通り;とおり;in accordance with ~,following ~,~ Street,~ Avenue
 通り過ぎる;とおりすぎる;to pass,to pass through
@@ -1185,7 +1161,6 @@
 ところで;ところで;by the way,even if,no matter what
 登山;とざん;mountain-climbing
 都市;とし;town,city,municipal,urban
-年月;としつき(ねんげつ）;months and years
 図書;としょ;books
 年寄;としより;old people,the aged
 閉じる;とじる;to close (e.g. book, eyes),to shut
@@ -1226,18 +1201,15 @@
 謎;なぞ;riddle,puzzle,enigma
 納得;なっとく;consent,assent,understanding
 等;など;et cetera,etc.,and the like
-七;なな;seven
 何;なに;what
 何か;なにか;something
 なにも;なにも;nothing
 鍋;なべ;saucepan,pot
 生;なま;(1) draft (beer),(2) raw,unprocessed
-生;なま;(1) draft (beer),(2) raw,unprocessed
 怠ける;なまける;to be idle,to neglect
 波;なみ;wave
 涙;なみだ;tear
 悩む;なやむ;to be worried,to be troubled
-為る;なる;to change,to be of use,to reach to
 成る;なる;to become
 縄;なわ;rope,hemp
 何で;なんで;Why?,What for?
@@ -1289,7 +1261,6 @@
 除く;のぞく;to remove,to exclude,to except
 望み;のぞみ;wish,desire,(a) hope
 望む;のぞむ;to desire,to wish for,to see,to command (a view of)
-後;のち;afterwards,since then,in the future
 喉;のど;throat
 伸ばす;のばす;to lengthen,to stretch,to reach out,to grow (beard)
 伸びる;のびる;to stretch,to extend,to make progress,to grow (beard, body height)
@@ -1299,7 +1270,6 @@
 場;ば;place,field (physics)
 はあ;はあ;Yes, Uh-huh, I see,
 灰;はい;ash
-梅雨;ばいう;rainy season,rain during the rainy season
 配達;はいたつ;delivery,distribution
 俳優;はいゆう;actor,actress,player,performer
 墓;はか;grave,tomb
@@ -1362,7 +1332,6 @@
 膝;ひざ;knee,lap
 非常;ひじょう;emergency,extraordinary,unusual
 美人;びじん;beautiful person (woman)
-額;ひたい;forehead,brow
 びっくり;びっくり;be surprised,be amazed,be frightened,astonishment
 日付;ひづけ;date,dating
 必死;ひっし;inevitable death,desperation,frantic,inevitable result
@@ -1393,8 +1362,6 @@
 瓶;びん;bottle
 便;びん;way,means
 不;ふ;un,non,negative prefix
-無;ぶ;nothing,naught,nil,zero
-分;ぶ;dividing,part
 不安;ふあん;anxiety,uneasiness,insecurity,suspense
 風景;ふうけい;scenery
 夫婦;ふうふ;married couple,husband and wife
@@ -1418,7 +1385,6 @@
 双子;ふたご;twins,a twin
 再び;ふたたび;again,once more,a second time
 普段;ふだん;usually,habitually,ordinarily,always
-縁;ふち;an edge, a brim, a rim,
 打つ;ぶつ;to hit,to strike
 物価;ぶっか;prices of commodities,prices (in general)
 物質;ぶっしつ;material,substance
@@ -1432,7 +1398,7 @@
 不利;ふり;disadvantage,handicap,unfavorable,drawback
 振る;ふる;(1) to wave,to shake,to swing,(2) to sprinkle,(3) to cast (actor),to allocate (work)
 震える;ふるえる;to shiver,to shake,to quake
-触れる;ふれる;to touch,to be touched,to touch on a subject,to feel,to violate (law, copyright, etc.),to perceive,t
+触れる;ふれる;to touch,to be touched,to touch on a subject,to feel,to violate (law, copyright, etc.),to perceive
 風呂;ふろ;bath
 分;ぶん;dividing,part,segment
 文;ぶん;sentence
@@ -1460,7 +1426,6 @@
 放送/放送する;ほうそう・する;broadcast,　broadcasting, to broadcast
 豊富;ほうふ;abundance,wealth,plenty,bounty
 方法;ほうほう;method,manner,way,means,technique
-方々;ほうぼう;persons,this and that,here and there,everywhere
 訪問;ほうもん;call,visit
 吠える;ほえる;to bark,to bay,to howl,to bellow,to roar,to cry
 頬;ほお;cheek (of face)
@@ -1474,7 +1439,6 @@
 仏;ほとけ;Buddha,merciful person,Buddhist image,the dead
 骨;ほね;bone
 炎;ほのお;flame
-頬;ほほ;cheek (of face)
 ほぼ;ほぼ;almost,roughly,approximately
 微笑む;ほほえむ;to smile
 褒める;ほめる;to praise,to admire,to speak well
@@ -1557,7 +1521,6 @@
 飯;めし;(sl) meals,food
 滅多に;めったに;rarely (with neg. verb),seldom
 面;めん;a mask, the face, the surface, an aspect, a side,
-綿;めん;cotton,padding
 免許;めんきょ;license,permit,licence,certificate
 面倒;めんどう;trouble,difficulty,care,attention
 申し込む;もうしこむ;to apply for,to make an application
@@ -1586,7 +1549,6 @@
 模様;もよう;pattern,figure,design
 貰う;もらう;to receive
 文句;もんく;phrase,complaint
-文字;もんじ;letter (of alphabet),character
 やがて;やがて;before long,soon,at length
 役;やく;use,service,role,position
 約;やく;approximately,about,some
@@ -1652,7 +1614,6 @@
 喜び;よろこび;(a) joy,(a) delight,rapture,pleasure,gratification,rejoicing,congratulations,felicitations
 宜しい;よろしい;(hon) good,OK,all right,fine,very well,will do,may,can
 よろしく;よろしく;well,properly,suitably,best regards,please remember me
-四;よん;four
 来;らい;,for (10 days),next (year)
 楽;らく;comfort,ease
 利益;りえき;profits,gains,(political, economic) interest
@@ -1710,7 +1671,6 @@
 カード;カード;card,curd
 キャプテン;キャプテン;captain
 キャンプ;キャンプ;camp
-キロ;キロ;(abbr) kilo-, kilogram, kilometre,
 クラシック;クラシック;classic(s)
 グラス;グラス;(1) glass,(2) grass
 グランド;グランド;gland,grand,(electrical) ground
@@ -1786,7 +1746,6 @@
 ホーム;ホーム;(1) platform,(2) home
 ボール;ボール;ball,bowl
 マーケット;マーケット;market
-マイク;マイク;mike
 マスター;マスター;proprietor,manager,barowner,master (e.g. arts, science)
 ママ;ママ;Mama
 ミス;ミス;miss (mistake, error, failure),Miss
