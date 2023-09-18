@@ -4,6 +4,8 @@ const FILE_PATHS = [
   "./public/jlpt5.txt",
   "./public/jlpt4.txt",
   "./public/jlpt3.txt",
+  "./public/jlpt2.txt",
+  "./public/jlpt1.txt",
 ];
 const ENTRY_SEPARATOR = "\n";
 const FIELD_SEPARATOR = ";";

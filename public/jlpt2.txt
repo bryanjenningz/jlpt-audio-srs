@@ -520,7 +520,6 @@
 鉱物;こうぶつ;mineral
 公務;こうむ;official business,public business
 項目;こうもく;item
-紅葉;こうよう;(1) (Japanese) maple
 合理;ごうり;rational
 交流;こうりゅう;alternating current,intercourse,(cultural) exchange,intermingling
 合流;ごうりゅう;confluence,union,linking up,merge
@@ -669,7 +668,6 @@
 自治;じち;self-government,autonomy
 実感;じっかん;feelings (actual, true)
 湿気;しっけ;moisture,humidity,dampness
-湿気;しっき;moisture,humidity,dampness
 しつこい;しつこい;insistent,obstinate
 実習;じっしゅう;practice,training
 実績;じっせき;achievements,actual results
@@ -1198,7 +1196,6 @@
 とっくに;とっくに;long ago,already,a long time ago
 どっと;どっと;suddenly
 整う;ととのう;to be prepared,to be in order,to be put in order,to be arranged
-留まる;とどまる;(1) to be fixed,(2) to abide,to stay (in the one place)
 どなる;どなる;to shout,to yell
 飛び込む;とびこむ;to jump in,to leap in,to plunge into,to dive
 跳ぶ;とぶ;to jump,to fly,to leap
@@ -1292,7 +1289,6 @@
 糊;のり;paste,starch
 乗換;のりかえ;(n) transfer (trains, buses, etc.)
 載る;のる;to appear (in print),to be recorded
-鈍い;のろい;dull (e.g. a knife),thickheaded,slow (opposite of fast),stupid
 のろのろ;のろのろ;slowly,sluggishly
 呑気;のんき;carefree,optimistic,careless,reckless,heedless
 灰色;はいいろ;grey,gray,ashen
