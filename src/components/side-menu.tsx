@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { classNames } from "~/utils/class-names";
+import { levels, type Level } from "~/utils/levels";
 
 type SideMenuOptionGroup = {
   label: string;
@@ -22,52 +23,34 @@ export const SideMenu = ({
 }) => {
   const router = useRouter();
 
+  function getLearnSideMenuOption(level: Level): SideMenuOption {
+    return {
+      label: `JLPT ${level} SRS`,
+      href: `/learn/${level}`,
+      matches:
+        router.pathname === "/learn/[level]" &&
+        router.query.level === `${level}`,
+    };
+  }
+
+  function getWordsSideMenuOption(level: Level): SideMenuOption {
+    return {
+      label: `JLPT ${level} Words`,
+      href: `/words/${level}`,
+      matches:
+        router.pathname === "/words/[level]" &&
+        router.query.level === `${level}`,
+    };
+  }
+
   const sideMenuOptionGroups: SideMenuOptionGroup[] = [
     {
       label: "Learn / review",
-      options: [
-        {
-          label: "JLPT 5 SRS",
-          href: "/learn/5",
-          matches:
-            router.pathname === "/learn/[level]" && router.query.level === "5",
-        },
-        {
-          label: "JLPT 4 SRS",
-          href: "/learn/4",
-          matches:
-            router.pathname === "/learn/[level]" && router.query.level === "4",
-        },
-        {
-          label: "JLPT 3 SRS",
-          href: "/learn/3",
-          matches:
-            router.pathname === "/learn/[level]" && router.query.level === "3",
-        },
-      ],
+      options: levels.map(getLearnSideMenuOption),
     },
     {
       label: "Word lists",
-      options: [
-        {
-          label: "JLPT 5 Words",
-          href: "/words/5",
-          matches:
-            router.pathname === "/words/[level]" && router.query.level === "5",
-        },
-        {
-          label: "JLPT 4 Words",
-          href: "/words/4",
-          matches:
-            router.pathname === "/words/[level]" && router.query.level === "4",
-        },
-        {
-          label: "JLPT 3 Words",
-          href: "/words/3",
-          matches:
-            router.pathname === "/words/[level]" && router.query.level === "3",
-        },
-      ],
+      options: levels.map(getWordsSideMenuOption),
     },
   ];
 

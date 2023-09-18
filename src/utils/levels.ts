@@ -3,6 +3,8 @@ import { z } from "zod";
 
 export type Level = z.infer<typeof levelSchema>;
 
+export const levels: readonly Level[] = [5, 4, 3];
+
 const levelSchema = z.union([z.literal(5), z.literal(4), z.literal(3)]);
 
 export function useLevel(): Level {
