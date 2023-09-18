@@ -221,7 +221,7 @@
 可;か;passable
 課;か;counter for chapters (of a book) section
 会;かい;meeting, assembly, party, association, club
-回;かい;counter for occurrences
+回;かい;counter for occurrences,rounds
 害;がい;injury, harm, evil influence, damage
 会員;かいいん;member, the membership
 絵画;かいが;picture, paintings
@@ -343,7 +343,7 @@
 関連;かんれん;relation,connection,relevance
 議員;ぎいん;member of the Diet, congress or parliament
 記憶;きおく;memory,recollection,remembrance
-気温;きおん;temperature
+気温;きおん;air temperature
 機械;きかい;machine,mechanism
 議会;ぎかい;Diet,congress,parliament
 期間;きかん;period,term
@@ -427,7 +427,7 @@
 筋肉;きんにく;muscle,sinew
 金融;きんゆう;finance, monetary circulation,
 金曜;きんよう;(abbr) Friday
-句;く;sentence
+句;く;sentence,clause
 食う;くう;(male) (vulg) to eat
 偶然;ぐうぜん;(by) chance,unexpectedly,suddenly
 臭い;くさい;stink, smelly (bad)
@@ -596,7 +596,7 @@
 才能;さいのう;talent,ability
 裁判;さいばん;trial,judgement
 材料;ざいりょう;ingredients,material
-幸い;さいわい;happiness,blessedness
+幸い;さいわい;happiness,blessedness,fortunately
 境;さかい;border,boundary,mental state
 逆らう;さからう;to go against,to oppose,to disobey,to defy
 盛り;さかり;the highest, the peak, prime
@@ -786,7 +786,7 @@
 助手;じょしゅ;helper,helpmeet,assistant,tutor
 徐々に;じょじょに;slowly,little by little,gradually,steadily,quietly
 署名;しょめい;signature
-書物;しょもつ;books
+書物;しょもつ;books,magazines
 女優;じょゆう;actress
 処理;しょり;processing,dealing with,treatment,disposition,disposal
 書類;しょるい;documents,official papers
@@ -970,7 +970,7 @@
 代理;だいり;representation,agency,proxy,deputy,agent
 大陸;たいりく;continent
 倒す;たおす;to throw down,to beat,to bring down,to blow down
-だが;だが;however
+だが;だが;but
 互い;たがい;mutual,reciprocal
 宝;たから;treasure
 だから;だから;so,therefore
@@ -1125,7 +1125,7 @@
 電子;でんし;electron
 伝統;でんとう;tradition,convention
 天然;てんねん;nature,spontaneity
-度;ど;counter for occurrences
+度;ど;counter for occurrences,degrees
 問い;とい;question,query
 党;とう;party (political)
 塔;とう;tower,pagoda
@@ -1150,7 +1150,7 @@
 解く;とく;to unfasten, to solve
 毒;どく;poison,toxicant
 得意;とくい;pride,triumph,prosperity
-読書;どくしょ;reading
+読書;どくしょ;reading books
 独身;どくしん;bachelorhood,single,unmarried,celibate
 特徴;とくちょう;distinctive feature,characteristic
 独特;どくとく;peculiarity,uniqueness,characteristic
@@ -1161,7 +1161,7 @@
 ところで;ところで;by the way,even if,no matter what
 登山;とざん;mountain-climbing
 都市;とし;town,city,municipal,urban
-図書;としょ;books
+図書;としょ;(academic) books
 年寄;としより;old people,the aged
 閉じる;とじる;to close (e.g. book, eyes),to shut
 途端;とたん;just (now, at the moment, etc.)
@@ -1248,7 +1248,7 @@
 年中;ねんじゅう;whole year,always,everyday
 年代;ねんだい;age,era,period,date
 年齢;ねんれい;age,years
-野;の;field
+野;の;(wild) field
 能;のう;ability, talent, a Noh play
 農家;のうか;farmer,farm family
 農業;のうぎょう;agriculture
@@ -1291,16 +1291,16 @@
 旗;はた;flag
 肌;はだ;skin
 裸;はだか;naked,nude
-畑;はたけ;field
+畑;はたけ;(artificial) field
 二十（歳）;はたち;20 years old,
 働き;はたらき;work,labor
 発見;はっけん;discovery,detection,finding
 発行;はっこう;issue (publications)
 発車;はっしゃ;departure of a vehicle
 罰する;ばっする;to punish,to penalize
-発達;はったつ;development,growth
+発達;はったつ;development,growth,maturity
 ばったり;ばったり;with a clash (thud),with a bang,plump,flop
-発展;はってん;development,growth
+発展;はってん;development,growth,prosperity
 発表;はっぴょう;announcement,publication
 発明;はつめい;invention
 話し合う;はなしあう;to discuss,to talk together
@@ -1416,7 +1416,6 @@
 勉強/勉強する;べんきょう・する;study, work, to study, to sell (a thing) cheap
 変更;へんこう;change,modification,alteration
 弁当;べんとう;box lunch
-方;ほう;side
 法;ほう;Act (law: the X Act)
 棒;ぼう;pole,rod,stick
 冒険;ぼうけん;risk,venture,adventure
