@@ -38,6 +38,12 @@ export const SideMenu = ({
           matches:
             router.pathname === "/learn/[level]" && router.query.level === "4",
         },
+        {
+          label: "JLPT 3 SRS",
+          href: "/learn/3",
+          matches:
+            router.pathname === "/learn/[level]" && router.query.level === "3",
+        },
       ],
     },
     {
@@ -54,6 +60,12 @@ export const SideMenu = ({
           href: "/words/4",
           matches:
             router.pathname === "/words/[level]" && router.query.level === "4",
+        },
+        {
+          label: "JLPT 3 Words",
+          href: "/words/3",
+          matches:
+            router.pathname === "/words/[level]" && router.query.level === "3",
         },
       ],
     },

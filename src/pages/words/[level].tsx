@@ -4,16 +4,11 @@ import { ProgressBar } from "~/components/progress-bar";
 import { SideMenu } from "~/components/side-menu";
 import { MenuIcon } from "~/icons/menu-icon";
 import { WordTable } from "~/components/word-table";
-import { useRouter } from "next/router";
-import { z } from "zod";
 import { type Word } from "~/words/types";
-
-const levelSchema = z.union([z.literal(5), z.literal(4)]);
+import { useLevel } from "~/utils/levels";
 
 export default function Home() {
-  const router = useRouter();
-  const parsedLevel = levelSchema.safeParse(Number(router.query.level));
-  const level = parsedLevel.success ? parsedLevel.data : 5;
+  const level = useLevel();
   const [words, setWords] = useWords(level);
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 

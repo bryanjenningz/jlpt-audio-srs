@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { type Level } from "~/utils/levels";
 import { type Word } from "~/words/types";
 
 const WORD_HISTORY_SIZE = 5;
 
-type Level = 5 | 4;
+type WordHistoryRecord = Record<Level, Word[]>;
 
 export function useWordHistory(level: Level) {
-  const [wordHistory, setWordHistory] = useState<Record<Level, Word[]>>({
+  const [wordHistory, setWordHistory] = useState<WordHistoryRecord>({
     5: [],
     4: [],
+    3: [],
   });
 
   function addToWordHistory(level: Level, word: Word) {

@@ -12,15 +12,10 @@ import { useWordHistory } from "~/word-history/use-word-history";
 import { classNames } from "~/utils/class-names";
 import { SideMenu } from "~/components/side-menu";
 import { MenuIcon } from "~/icons/menu-icon";
-import { useRouter } from "next/router";
-import { z } from "zod";
-
-const levelSchema = z.union([z.literal(5), z.literal(4)]);
+import { useLevel } from "~/utils/levels";
 
 export default function Learn() {
-  const router = useRouter();
-  const parsedLevel = levelSchema.safeParse(Number(router.query.level));
-  const level = parsedLevel.success ? parsedLevel.data : 5;
+  const level = useLevel();
   const [autoplay, setAutoplay] = useState(false);
   const [japaneseShown, setJapaneseShown] = useState(false);
   const [words, setWords] = useWords(level);
