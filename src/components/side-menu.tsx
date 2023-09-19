@@ -95,6 +95,7 @@ export const SideMenu = ({
                             "bg-blue-900 text-white",
                         )}
                         href={option.href}
+                        onClick={closeSideMenu}
                       >
                         {option.label}
                       </Link>
