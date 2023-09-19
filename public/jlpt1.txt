@@ -52,7 +52,6 @@
 他人;あだびと;another person, unrelated person, outsider, stranger
 彼方此方;あちこち;here and there
 彼方;あちら;1. there, yonder, that
-彼方此方;あちらこちら;here and there
 悪化;あっか;deterioration, growing worse, aggravation, degeneration, corruption
 呆気ない;あっけない;not enough, too quick (short long etc.)
 悪口;あっこう;abuse, insult, slander, evil speaking
@@ -92,7 +91,7 @@
 あら;あら;oh, ah, saw-edged perch (Niphon spinosus)
 予め;あらかじめ;beforehand, in advance, previously
 荒らす;あらす;to lay waste, to devastate, to damage, to invade, to break into
-粗筋;あらすじ;outline, summary
+粗筋;あらすじ;outline, summary (of a story)
 争い;あらそい;dispute, strife, quarrel, dissension, conflict, rivalry, contest
 改まる;あらたまる;to be renewed
 荒っぽい;あらっぽい;rough, rude
@@ -118,13 +117,12 @@
 案の定;あんのじょう;sure enough, as usual
 余り;あんまり;not very (this form only used as adverb), not much, remainder, rest, remnant, surplus, balance, excess, rema
 依;い;depending on
-良い;いい;good
 伊井;いい;that one, Italy
 否;いいえ;no, nay, yes, well
 いい加減;いいかげん;moderate, right, random, not thorough, vague, irresponsible, halfhearted
 言い訳;いいわけ;excuse, explanation
 家出;いえで;running away from home, leaving home
-家主;いえぬし;landlord
+家主;いえぬし;landlord of house
 如何;いかが;how, in what way
 生かす;いかす;to revive, to resuscitate, to make use of
 雷;いかずち;thunder
@@ -141,12 +139,11 @@
 行き成り;いきなり;suddenly
 異議;いぎ;objection, dissent, protest
 いく;いく;to come, to orgasm
-軍;いくさ;war, battle, campaign, fight
 戦;いくさ;war, battle, campaign, fight
 育成;いくせい;rearing, training, nurture, cultivation, promotion
 幾多;いくた;many, numerous
 活ける;いける;to arrange (flowers)
-異見;いけん;different opinion, objection
+異見;いけん;different viewpoint
 意向;いこう;intention, idea, inclination
 移行;いこう;switching over to
 いざ;いざ;now, come (now), well, crucial moment
@@ -229,7 +226,7 @@
 入る;いる;to get in, to go in, to come in, to flow into, to set, to set in
 衣類;いるい;clothes, clothing, garments
 色々;いろいろ;various
-異論;いろん;different opinion, objection
+異論;いろん;different theory
 所謂;いわゆる;the so-called, so to speak
 印;いん;seal, stamp, mark, print
 員;いん;member
@@ -327,7 +324,6 @@
 遠方;えんぽう;long way, distant place
 円満;えんまん;perfection, harmony, peace, smoothness, completeness, satisfaction, integrity
 尾;お;tail, ridge
-於;お;at, in, on
 甥;おい;nephew
 追い込む;おいこむ;to herd, to corner, to drive
 美味しい;おいしい;delicious, tasty
@@ -368,7 +364,6 @@
 押さえる;おさえる;to stop, to restrain, to seize, to repress, to suppress, to press down
 お先に;おさきに;before, ahead, previously
 収まる;おさまる;to be obtained, to end, to settle into, to fit into, to be settled, to be paid, to be delivered
-納まる;おさまる;to be obtained, to end, to settle into, to fit into, to be settled, to be paid, to be delivered
 治まる;おさまる;to be at peace, to clamp down, to lessen (storm terror anger)
 お産;おさん;(giving) birth
 教え;おしえ;teachings, precept, lesson, doctrine
@@ -380,7 +375,7 @@
 お祖父さん;おじいさん;grandfather, male senior-citizen
 お邪魔します;おじゃまします;Excuse me for disturbing (interrupting) you
 雄;おす;male (animal)
-お世辞;おせじ;flattery, compliment
+お世辞;おせじ;flattery, compliment (formal)
 襲う;おそう;to attack
 遅くとも;おそくとも;at the latest
 恐らく;おそらく;perhaps
@@ -411,8 +406,7 @@
 驚き;おどろき;surprise, astonishment, wonder
 同い年;おないどし;of the same age
 女子;おなご;woman, girl
-お願いします;おねがいします;please
-各;おのおの;each, every, either, respectively, severally
+各々;おのおの;each, every, either, respectively, severally
 自ずから;おのずから;naturally, as a matter of course
 お早う;おはよう;Good morning
 お祖母さん;おばあさん;grandmother, female senior-citizen
@@ -520,7 +514,6 @@
 駆けっこ;かけっこ;(foot) race
 駆ける;かける;to run (race esp. horse), to gallop, to canter
 賭ける;かける;to wager, to bet, to risk, to stake, to gamble
-ヶ月;かげつ;#NAME?
 加工;かこう;manufacturing, processing, treatment
 化合;かごう;chemical combination
 嵩張る;かさばる;to be bulky, to be unwieldy, to grow voluminous
@@ -598,7 +591,6 @@
 涸れる;かれる;to dry up, to run out
 過労;かろう;overwork, strain
 辛うじて;かろうじて;barely, narrowly, just manage to do st
-側;かわ;side, row, surroundings, part, (watch) case
 可愛い;かわいい;pretty, cute, lovely, charming, dear, darling, pet
 可愛がる;かわいがる;to love, to be affectionate
 可哀想;かわいそう;poor, pitiable, pathetic
@@ -607,7 +599,7 @@
 代わる;かわる;to take the place of, to relieve, to be substituted for, to be exchanged, to change places with, to take
 代わる代わる;かわるがわる;alternately
 乾;かん;heaven, emperor
-管;かん;pipe, tube
+管;かん;pipe, tube (may be bent)
 幹;かん;(tree) trunk
 冠;かん;crown, diadem, first, best, peerless, cap, naming, designating, initiating on coming of age, top character ra
 観;かん;look, appearance, spectacle
@@ -634,7 +626,7 @@
 幹線;かんせん;main line, trunk line
 関税;かんぜい;customs, duty, tariff
 簡素;かんそ;simplicity, plain
-観点;かんてん;point of view
+観点;かんてん;point of view, viewpoint
 感度;かんど;sensitivity, severity (quake)
 幹部;かんぶ;management, (executive) staff, leaders
 勘弁;かんべん;pardon, forgiveness, forbearance
@@ -664,7 +656,7 @@
 概略;がいりゃく;outline, summary, gist, in brief
 学芸;がくげい;arts and sciences, liberal arts
 学士;がくし;university graduate
-学説;がくせつ;theory
+学説;がくせつ;theory, hypothesis
 楽譜;がくふ;score (music)
 学歴;がくれき;academic background
 崖;がけ;cliff
@@ -712,7 +704,6 @@
 記載;きさい;mention, entry
 気障;きざ;affectation, conceit, snobbery
 兆し;きざし;signs, omen, symptoms
-兆;きざし;signs, omen, symptoms
 軋む;きしむ;to jar, to creak, to grate
 気象;きしょう;weather, climate
 期日;きじつ;fixed date, settlement date
@@ -937,13 +928,13 @@
 決算;けっさん;balance sheet, settlement of accounts
 決勝;けっしょう;decision of a contest, finals (in sports)
 結晶;けっしょう;crystal, crystallization
-結成;けっせい;formation
+結成;けっせい;formation (of a structure)
 結束;けっそく;union, unity
 傑;けつ;excellence
-決意;けつい;decision, determination
+決意;けつい;decision, determination (strong will)
 決議;けつぎ;resolution, vote, decision
 結合;けつごう;combination, union
-決断;けつだん;decision, determination
+決断;けつだん;decision, determination (after thinking)
 欠乏;けつぼう;want, shortage, famine
 蹴飛ばす;けとばす;to kick away, to kick off, to kick (someone), to refuse, to reject
 貶す;けなす;to speak ill of
@@ -992,7 +983,7 @@
 原文;げんぶん;the text, original
 厳密;げんみつ;strict, close
 原油;げんゆ;crude oil
-言論;げんろん;discussion
+言論;げんろん;talking discussion
 故;こ;the late (deceased)
 戸;こ;counter for houses
 児;こ;child, the young of animals
@@ -1030,7 +1021,7 @@
 控除;こうじょ;subsidy, deduction
 向上;こうじょう;elevation, rise, improvement, advancement, progress
 降水;こうすい;rainfall, precipitation
-洪水;こうずい;flood
+洪水;こうずい;flood, deluge
 公然;こうぜん;open (e.g. secret), public, official
 抗争;こうそう;dispute, resistance
 構想;こうそう;plan, plot, idea, conception
@@ -1046,7 +1037,7 @@
 公認;こうにん;official recognition, authorization, licence, accreditation
 光熱費;こうねつひ;cost of fuel and light
 荒廃;こうはい;ruin
-購買;こうばい;purchase, buy
+購買;こうばい;purchasing, buying
 好評;こうひょう;popularity, favorable reputation
 交付;こうふ;delivering, furnishing (with copies)
 降伏;こうふく;capitulation, surrender, submission
@@ -1093,7 +1084,6 @@
 小銭;こぜに;coins, small change
 固体;こたい;solid (body)
 答え;こたえ;answer, response
-堪える;こたえる;to bear, to stand, to endure, to put up with, to support, to withstand, to resist, to brave, to be fit for, t
 火燵;こたつ;table with heater, (orig) charcoal brazier in a floor well
 古代;こだい;ancient times
 こだわる;こだわる;to fuss over, to be particular about, to be concerned about
@@ -1110,7 +1100,6 @@
 事によると;ことによると;depending on the circumstances
 孤独;こどく;isolation, loneliness, solitude
 粉々;こなごな;in very small pieces
-此の;この;this
 この間;このあいだ;the other day, lately, recently
 この頃;このごろ;recently
 好ましい;このましい;nice, likeable, desirable
@@ -1124,10 +1113,8 @@
 固有;こゆう;characteristic, tradition, peculiar, inherent, eigen-
 雇用;こよう;employment (long term), hire
 暦;こよみ;calendar, almanac
-堪える;こらえる;to bear, to stand, to endure, to put up with, to support, to withstand, to resist, to brave, to be fit for, t
 孤立;こりつ;isolation, helplessness
 懲りる;こりる;to learn by experience, to be disgusted with
-此れ;これ;this
 此れ等;これら;these
 魂;こん;soul, spirit
 根気;こんき;patience, perseverance, energy
@@ -1167,7 +1154,6 @@
 佐;さ;help
 再;さい;re-, again, repeated
 差異;さい;difference, disparity
-歳;さい;#NAME?
 再会;さいかい;another meeting, meeting again, reunion
 災害;さいがい;calamity, disaster, misfortune
 細菌;さいきん;bacillus, bacterium, germ
@@ -1309,7 +1295,7 @@
 視察;しさつ;inspection, observation
 資産;しさん;property, fortune, means, assets
 刺繍;ししゅう;embroidery
-支持;しじ;support, maintenance
+支持;しじ;support an idea
 指示;しじ;indication, instruction, directions
 雫;しずく;drop (of water)
 沈める;しずめる;to sink, to submerge
@@ -1498,7 +1484,7 @@
 進呈;しんてい;presentation
 進展;しんてん;progress, development
 神殿;しんでん;temple, sacred place
-進度;しんど;progress
+進度;しんど;progress amount
 振動;しんどう;oscillation, vibration
 新入生;しんにゅうせい;freshman, first-year student
 信任;しんにん;trust, confidence, credence
@@ -1531,7 +1517,7 @@
 自尊心;じそんしん;self-respect, conceit
 持続;じぞく;continuation
 字体;じたい;type, font, lettering
-辞退;じたい;refusal
+辞退;じたい;refusal (even though it would be good for you)
 じっくり;じっくり;deliberately, carefully
 実質;じっしつ;substance, essence
 実践;じっせん;practice, put into practice
@@ -1543,7 +1529,7 @@
 実情;じつじょう;real condition, actual circumstances, actual state of affairs
 自転;じてん;rotation, spin
 自動詞;じどうし;intransitive verb (no direct obj)
-地主;じぬし;landlord
+地主;じぬし;landlord of land
 耳鼻科;じびか;otolaryngology
 地元;じもと;local
 弱;じゃく;weakness, the weak, little less then
@@ -1568,7 +1554,6 @@
 準ずる;じゅんずる;to apply correspondingly, to correspond to, to be proportionate to, to conform to
 助;じょ;help, rescue, assistant
 情;じょう;feelings, emotion, passion
-畳;じょう;#NAME?
 尉;じょう;jailer, old man, rank, company officer
 嬢;じょう;young woman
 状;じょう;shape
@@ -1735,7 +1720,6 @@
 占領;せんりょう;occupation, capture, possession, have a room to oneself
 戦力;せんりょく;war potential
 税務署;ぜいむしょ;tax office
-是正;ぜせい;correction, revision
 絶版;ぜっぱん;out of print
 絶望;ぜつぼう;despair, hopelessness
 是非とも;ぜひとも;by all means (with sense of not taking no for an answer)
@@ -1782,7 +1766,6 @@
 其処ら;そこら;everywhere, somewhere, approximately, that area, around there
 素材;そざい;raw materials, subject matter
 阻止;そし;obstruction, check, hindrance, prevention, interdiction
-然して;そして;and
 訴訟;そしょう;litigation, lawsuit
 育ち;そだち;breeding, growth
 措置;そち;measure, step
@@ -1807,7 +1790,6 @@
 反り;そり;warp, curvature, curve, arch
 其れ;それ;it, that
 其れから;それから;and then, after that
-各々;それぞれ;each, every, either, respectively, severally
 其れで;それで;and (conj), thereupon, because of that
 其れでは;それでは;in that situation, well then ...
 其れでも;それでも;but (still), and yet, nevertheless, even so, notwithstanding
@@ -1877,7 +1859,6 @@
 達者;たっしゃ;skillful, in good health
 達成;たっせい;achievement
 たった;たった;only, merely, but, no more than
-尊い;たっとい;precious, valuable, priceless, noble, exalted, sacred
 貴い;たっとい;precious, valuable, priceless, noble, exalted, sacred
 尊ぶ;たっとぶ;to value, to prize, to esteem
 絶つ;たつ;to sever, to cut off, to suppress, to abstain (from)
@@ -1885,7 +1866,6 @@
 建前;たてまえ;face, official stance, public position or attitude (as opposed to private thoughts)
 奉る;たてまつる;to offer, to present, to revere, to do respectfully
 例え;たとえ;example, even if, if, though, although
-仮令;たとえ;example, even if, if, though, although
 他動詞;たどうし;transitive verb (direct obj)
 辿り着く;たどりつく;to grope along to, to struggle on to, to arrive somewhere after a struggle
 辿る;たどる;to follow (road), to pursue (course), to follow up
@@ -1939,7 +1919,7 @@
 妥結;だけつ;agreement
 打撃;だげき;1. blow, shock, strike, damage, 2. batting (baseball)
 駄作;ださく;poor work, rubbish
-脱出;だっしゅつ;escape
+脱出;だっしゅつ;escape (from prison)
 脱する;だっする;to escape from, to get out
 脱退;だったい;secession
 だぶだぶ;だぶだぶ;loose, baggy
@@ -1961,7 +1941,7 @@
 畜産;ちくさん;animal husbandry
 畜生;ちくしょう;beast, brute, damn
 蓄積;ちくせき;accumulation, accumulate, store
-知性;ちせい;intelligence
+知性;ちせい;intelligence, knowledge
 乳;ちち;milk, breast, loop
 父母;ちちはは;father and mother, parents
 縮まる;ちぢまる;to be shortened, to be contracted, to shrink
@@ -1969,7 +1949,6 @@
 些とも;ちっとも;not at all (neg. verb)
 秩序;ちつじょ;order, regularity, system, method
 知的;ちてき;intellectual
-著;ちゃく;counter for suits of clothing, arriving at ..
 着;ちゃく;counter for suits of clothing, arriving at ..
 着手;ちゃくしゅ;embarkation, launch
 着色;ちゃくしょく;colouring, coloring
@@ -2063,7 +2042,7 @@
 辻褄;つじつま;coherence, consistency
 途中;つちゅう;on the way, en route
 突っ張る;つっぱる;to support, to become stiff, to become taut, to thrust (ones opponent), to stick to (ones opinion), to in
-筒;つつ;pipe, tube
+筒;つつ;pipe, tube (straight)
 銃;つつ;gun
 突く;つつく;1. to thrust, to strike, to attack, 2. to poke, to nudge, to pick at
 慎む;つつしむ;to be careful, to be chaste or discreet, to abstain or refrain
@@ -2191,10 +2170,9 @@
 丁々;とうとう;clashing of swords, felling of trees, ringing of an ax
 投入;とうにゅう;throw, investment, making (an electrical circuit)
 当人;とうにん;the one concerned, the said person
-逃亡;とうぼう;escape
+逃亡;とうぼう;escape (from someone)
 冬眠;とうみん;hibernation, winter sleep
 登録;とうろく;registration, register, entry, record
-討論;とうろん;debate, discussion
 遠ざかる;とおざかる;to go far off
 遠回り;とおまわり;detour, roundabout way
 通りかかる;とおりかかる;to happen to pass by
@@ -2234,7 +2212,6 @@
 滞る;とどこおる;to stagnate, to be delayed
 止まる;とどまる;to be limited to
 留める;とどめる;to stop, to cease, to put an end to
-止める;とどめる;to stop, to cease, to put an end to
 唱える;となえる;to recite, to chant, to call upon
 兎に角;とにかく;anyhow, at any rate, anyway, somehow or other, generally speaking, in any case
 殿様;とのさま;feudal lord
@@ -2268,8 +2245,6 @@
 取り混ぜる;とりまぜる;to mix, to put together
 取り戻す;とりもどす;to take back, to regain
 取り寄せる;とりよせる;to order, to send away for
-取り分;とりわけ;especially, above all
-副;とりわけ;especially, above all
 蕩ける;とろける;to be enchanted with
 とんだ;とんだ;terrible, awful, serious, preposterous, absolutely not
 胴;どう;trunk, body, frame
@@ -2640,7 +2615,6 @@
 日々;ひび;every day, daily, day after day
 悲鳴;ひめい;shriek, scream
 百科事典;ひゃっかじてん;encyclopedia
-百科辞典;ひゃっかじてん;encyclopedia
 冷やかす;ひやかす;to banter, to make fun of, to jeer at, to cool, to refrigerate
 日焼け;ひやけ;sunburn
 票;ひょう;label, ballot, ticket, sign
@@ -2716,7 +2690,7 @@
 踏まえる;ふまえる;to be based on, to have origin in
 文;ふみ;letter, writings
 不明;ふめい;unknown, obscure, indistinct, uncertain, ambiguous, ignorant, lack of wisdom, anonymous, unidentified
-扶養;ふよう;support, maintenance
+扶養;ふよう;support someone's family
 振り;ふり;pretence, show, appearance
 振り出し;ふりだし;outset, starting point, drawing or issuing (draft)
 不良;ふりょう;badness, delinquent, inferiority, failure
@@ -2797,7 +2771,7 @@
 宝器;ほうき;treasured article or vessel, outstanding individual
 封建;ほうけん;feudalistic
 豊作;ほうさく;abundant harvest, bumper crop
-方策;ほうさく;plan, policy
+方策;ほうさく;plan, policy, method
 奉仕;ほうし;attendance, service
 方式;ほうしき;form, method, system
 放射;ほうしゃ;radiation, emission
@@ -2805,7 +2779,7 @@
 報酬;ほうしゅう;remuneration, recompense, reward, toll
 放出;ほうしゅつ;release, emit
 報じる;ほうじる;to inform, to report
-報ずる;ほうずる;to inform, to report
+報ずる;ほうずる;to inform, to report (literary)
 放置;ほうち;leave as is, leave to chance, leave alone, neglect
 法廷;ほうてい;courtroom
 報道;ほうどう;information, report
@@ -2987,7 +2961,6 @@
 民主;みんしゅ;democratic, the head of the nation
 民宿;みんしゅく;private home providing lodging for travelers
 民族;みんぞく;people, race, nation, racial customs, folk customs
-民俗;みんぞく;people, race, nation, racial customs, folk customs
 六;む;(num) six
 無意味;むいみ;nonsense, no meaning
 向き;むき;direction, situation, exposure, aspect, suitability
@@ -3054,8 +3027,6 @@
 模索;もさく;groping (for)
 若し;もし;if, in case, supposing
 若しかしたら;もしかしたら;perhaps, maybe, by some chance
-若しかして;もしかして;perhaps, possibly
-若しかすると;もしかすると;perhaps, maybe, by some chance
 若しくは;もしくは;or, otherwise
 若しも;もしも;if
 齎らす;もたらす;to bring, to take, to bring about
@@ -3097,7 +3068,6 @@
 優;やさ;gentle, affectionate
 屋敷;やしき;mansion
 養う;やしなう;to rear, to maintain, to cultivate
-社;やしろ;Shinto shrine
 野心;やしん;ambition, aspiration, designs, treachery
 易い;やすい;easy
 安っぽい;やすっぽい;cheap-looking, tawdry, insignificant
@@ -3149,7 +3119,6 @@
 緩める;ゆるめる;to loosen, to slow down
 緩やか;ゆるやか;lenient
 世;よ;world, society, age, generation
-好い;よい;good
 要因;よういん;primary factor, main cause
 溶液;ようえき;solution (liquid)
 用件;ようけん;business
@@ -3199,7 +3168,6 @@
 濫用;らんよう;abuse, misuse, misappropriation, using to excess
 理屈;りくつ;theory, reason
 利根;りこん;intelligence
-利子;りし;interest (bank)
 利潤;りじゅん;profit, returns
 理性;りせい;reason, sense
 利息;りそく;interest (bank)
@@ -3249,7 +3217,7 @@
 碌な;ろくな;satisfactory, decent
 碌に;ろくに;well, enough, sufficient
 露骨;ろこつ;1. frank, blunt, plain, outspoken, 2. conspicuous, open, 3. broad, suggestive
-論議;ろんぎ;discussion
+論議;ろんぎ;problem discussion
 論理;ろんり;logic
 和;わ;sum, harmony, peace
 我がまま;わがまま;selfishness, egoism, wilfulness, disobedience, whim
@@ -3298,7 +3266,7 @@
 オリエンテーション;オリエンテーション;orientation
 オレンジ;オレンジ;an orange
 オンライン;オンライン;on-line
-カーペット;カーペット;carpet
+カーペット;カーペット;carpet (katakana)
 カクテル;カクテル;cocktail
 カット;カット;cut, cutting
 カテゴリー;カテゴリー;category
@@ -3334,7 +3302,7 @@
 シート;シート;seat, sheet
 システム;システム;system
 シック;シック;chic
-シナリオ;シナリオ;scenario
+シナリオ;シナリオ;scenario (katakana)
 ショー;ショー;show
 ショック;ショック;shock
 ジーパン;ジーパン;jeans (lit: jeans pants), dungarees
@@ -3347,7 +3315,7 @@
 スチーム;スチーム;steam
 ストライキ;ストライキ;strike
 ストレス;ストレス;stress
-ストロー;ストロー;straw
+ストロー;ストロー;straw (katakana)
 ストロボ;ストロボ;stroboscope (lit: strobo), strobe lamp, stroboscopic lamp
 スピード;スピード;speed
 スプリング;スプリング;spring
@@ -3400,7 +3368,7 @@
 ナイター;ナイター;game under lights (e.g. baseball) (lit: nighter), night game
 ナプキン;ナプキン;napkin
 ナンセンス;ナンセンス;nonsense
-ニュー;ニュー;new
+ニュー;ニュー;new (katakana)
 ニュアンス;ニュアンス;nuance
 ネガ;ネガ;(photographic) negative
 ノイローゼ;ノイローゼ;(de:) (n) neurosis (de: Neurose)
@@ -3414,7 +3382,7 @@
 パンク;パンク;1. (abbr) puncture, bursting, 2. punk
 ヒント;ヒント;hint
 ビールス;ビールス;virus
-ビジネス;ビジネス;business
+ビジネス;ビジネス;business (katakana)
 ファイト;ファイト;fight
 ファイル;ファイル;file
 ファン;ファン;fan, fun
@@ -3455,7 +3423,7 @@
 モニター;モニター;(computer) monitor
 ヤング;ヤング;young
 ユニーク;ユニーク;unique
-ユニフォーム;ユニフォーム;uniform
+ユニフォーム;ユニフォーム;uniform (katakana)
 ライス;ライス;rice
 ラベル;ラベル;label
 ランプ;ランプ;lamp, ramp, headlight, light
