@@ -9,6 +9,8 @@ const localStorageKey = "words";
 type WordRecord = Record<Level, Word[]>;
 
 const wordRecordSchema = z.object({
+  1: wordsSchema,
+  2: wordsSchema,
   3: wordsSchema,
   4: wordsSchema,
   5: wordsSchema,
@@ -16,6 +18,8 @@ const wordRecordSchema = z.object({
 
 export function useWords(level: Level) {
   const [words, setWords] = useState<WordRecord>({
+    1: [],
+    2: [],
     3: [],
     4: [],
     5: [],

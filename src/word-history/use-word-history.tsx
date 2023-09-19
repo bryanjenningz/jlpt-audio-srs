@@ -11,6 +11,8 @@ export function useWordHistory(level: Level) {
     5: [],
     4: [],
     3: [],
+    2: [],
+    1: [],
   });
 
   function addToWordHistory(level: Level, word: Word) {

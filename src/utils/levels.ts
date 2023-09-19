@@ -3,9 +3,15 @@ import { z } from "zod";
 
 export type Level = z.infer<typeof levelSchema>;
 
-export const levels: readonly Level[] = [5, 4, 3];
+export const levels: readonly Level[] = [5, 4, 3, 2, 1];
 
-const levelSchema = z.union([z.literal(5), z.literal(4), z.literal(3)]);
+const levelSchema = z.union([
+  z.literal(5),
+  z.literal(4),
+  z.literal(3),
+  z.literal(2),
+  z.literal(1),
+]);
 
 export function useLevel(): Level {
   const router = useRouter();
