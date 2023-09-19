@@ -44,7 +44,14 @@ export function useWords(level: Level) {
       const words = wordRecordSchema.parse(
         JSON.parse(localStorage.getItem(localStorageKey) ?? "0"),
       );
-      setWords(words);
+      if (words[level].length === 0) {
+        void (async () => {
+          const words = await fetchWords(level);
+          saveWords(level, () => words);
+        })();
+      } else {
+        setWords(words);
+      }
     } catch {
       void (async () => {
         const words = await fetchWords(level);
