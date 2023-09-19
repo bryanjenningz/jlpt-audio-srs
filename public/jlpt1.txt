@@ -153,7 +153,6 @@
 苛める;いじめる;to tease, to torment, to persecute, to chastise
 移住;いじゅう;migration, immigration
 弄る;いじる;to touch, to tamper with
-何れ;いずれ;where, which, who, anyway, anyhow, at any rate
 異性;いせい;the opposite sex
 遺跡;いせき;historic ruins (remains relics)
 依然;いぜん;still, as yet
@@ -310,7 +309,6 @@
 縁;えん;chance, fate, destiny, relation, bonds, connection, karma
 塩;えん;salt
 艶;えん;charming, fascinating, voluptuous
-園;えん;garden (esp. man-made)
 円滑;えんかつ;harmony, smoothness
 縁側;えんがわ;veranda, porch, balcony, open corridor
 沿岸;えんがん;coast, shore
@@ -598,12 +596,10 @@
 交わす;かわす;to exchange (messages), to dodge, to parry, to avoid, to turn aside
 代わる;かわる;to take the place of, to relieve, to be substituted for, to be exchanged, to change places with, to take
 代わる代わる;かわるがわる;alternately
-乾;かん;heaven, emperor
 管;かん;pipe, tube (may be bent)
 幹;かん;(tree) trunk
 冠;かん;crown, diadem, first, best, peerless, cap, naming, designating, initiating on coming of age, top character ra
 観;かん;look, appearance, spectacle
-館;かん;house, hall, building, hotel, inn, guesthouse
 簡易;かんい;simplicity, easiness, quasi-
 感慨;かんがい;strong feelings, deep emotion
 寒気;かんき;cold, frost, chill
@@ -1775,7 +1771,6 @@
 外方;そっぽ;look (or turn) the other way
 備え付ける;そなえつける;to provide, to furnish, to equip, to install
 備わる;そなわる;to be furnished with, to be endowed with, to possess, to be among, to be one of, to be possessed of
-園;その;garden, park, plantation
 その上;そのうえ;in addition, furthermore
 その内;そのうち;eventually, sooner or later, of the previously mentioned
 その為;そのため;hence, for that reason
@@ -1852,7 +1847,6 @@
 助け;たすけ;assistance
 携わる;たずさわる;to participate, to take part
 漂う;ただよう;to drift about, to float, to hang in air
-館;たち;1. mansion, small castle
 立方;たちかた;dancing (geisha)
 忽ち;たちまち;at once, in a moment, suddenly, all at once
 立ち寄る;たちよる;to stop by, to drop in for a short visit
@@ -1915,7 +1909,6 @@
 代用;だいよう;substitution
 打開;だかい;break in the deadlock
 妥協;だきょう;compromise, giving in
-丈;だけ;only, just, as
 妥結;だけつ;agreement
 打撃;だげき;1. blow, shock, strike, damage, 2. batting (baseball)
 駄作;ださく;poor work, rubbish
@@ -2092,7 +2085,6 @@
 手掛かり;てがかり;contact, trail, scent, on hand, hand hold, clue, key
 手掛ける;てがける;to handle, to manage, to work with, to rear, to look after, to have experience with
 手軽;てがる;easy, simple, informal, offhand, cheap
-的;てき;-like, typical
 適応;てきおう;adaptation, accommodation, conformity
 適宜;てきぎ;suitability
 適性;てきせい;aptitude
@@ -2263,7 +2255,6 @@
 如何しても;どうしても;by all means, at any cost, no matter what, after all, in the long run, cravingly, at any rate, surely
 同情;どうじょう;sympathy, compassion, sympathize, pity, feel for
 道場;どうじょう;dojo, hall used for martial arts training, mandala
-何卒;どうぞ;please, kindly, by all means
 どうぞ宜しく;どうぞよろしく;pleased to meet you
 同調;どうちょう;sympathy, agree with, alignment, tuning
 動的;どうてき;dynamic, kinetic
@@ -2285,14 +2276,11 @@
 何処か;どこか;somewhere, anywhere, in some respects
 土産;どさん;product of the land
 土台;どだい;foundation, base, basis
-何方;どちら;which, who
 土手;どて;embankment, bank
-何方;どなた;who?
 怒鳴る;どなる;to shout, to yell
 何の;どの;which, what
 土俵;どひょう;arena
 土木;どぼく;public works
-何れ;どれ;well, now, let me see, which (of three or more)
 何々;どれどれ;which (emphatic)
 度忘れ;どわすれ;lapse of memory, forget for a moment
 鈍感;どんかん;thickheadedness, stolidity
@@ -2325,7 +2313,6 @@
 名付ける;なづける;to name (someone)
 何気ない;なにげない;casual, unconcerned
 何しろ;なにしろ;at any rate, anyhow, anyway, in any case
-何卒;なにとぞ;please
 何も;なにも;nothing
 何より;なにより;most, best
 七日;なぬか;seven days, the seventh day (of the month)
@@ -2525,7 +2512,6 @@
 破裂;はれつ;explosion, rupture, break off
 腫れる;はれる;to swell (from inflammation), to become swollen
 班;はん;group, party, section (mil)
-判;はん;seal, stamp, monogram signature, judgment
 版;はん;edition
 繁栄;はんえい;prospering, prosperity, thriving, flourishing
 反感;はんかん;antipathy, revolt, animosity
@@ -2558,7 +2544,6 @@
 ばてる;ばてる;to be exhausted, to be worn out
 発条;ばね;spring (e.g. coil leaf)
 散蒔く;ばらまく;to disseminate, to scatter, to give money freely
-判;ばん;size (of paper or books)
 万;ばん;many, all
 万人;ばんじん;all people, everybody, 10000 people
 万能;ばんのう;all-purpose, almighty, omnipotent
@@ -2798,7 +2783,6 @@
 誇る;ほこる;to boast of, to be proud of
 綻びる;ほころびる;to come apart at the seams, to begin to open, to smile broadly
 保護;ほご;care, protection, shelter, guardianship, favor, patronage
-乾;ほし;dried, cured
 干し物;ほしもの;dried washing (clothes)
 保守;ほしゅ;conservative, maintaining
 保障;ほしょう;guarantee, security, assurance, pledge, warranty
@@ -2894,7 +2878,6 @@
 区々;まちまち;1. several, various, divergent, conflicting, different, diverse, 2. trivial
 末期;まっき;closing years (period days), last stage
 真っ二つ;まっぷたつ;in two equal parts
-的;まと;mark, target
 纏まり;まとまり;conclusion, settlement, consistency
 纏め;まとめ;settlement, conclusion
 免れる;まぬかれる;to escape from, to be rescued from, to avoid, to evade, to avert, to elude, to be exempted, to be relieved
