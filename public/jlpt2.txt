@@ -87,11 +87,11 @@
 いよいよ;いよいよ;more and more,all the more,increasingly,at last,beyond doubt
 煎る;いる;to parch,to fry
 入れ物;いれもの;container,case,receptacle
-インキ;インキ;ink
-インタビュー;インタビュー;interview
-引力;いんりょく;gravity
-ウーマン;ウーマン;woman
-ウール;ウール;wool
+インキ;インキ;ink (katakana)
+インタビュー;インタビュー;interview (katakana)
+引力;いんりょく;gravity,pulling force
+ウーマン;ウーマン;woman (katakana)
+ウール;ウール;wool (katakana)
 ウエートレス;ウエートレス;waitress
 植木;うえき;garden shrubs,trees,potted plant
 飢える;うえる;to starve
@@ -176,8 +176,6 @@
 惜しい;おしい;regrettable,disappointing,precious
 御辞儀;おじぎ;bow
 伯父さん;おじさん;middle-aged gentleman,uncle
-小父さん;おじさん;middle-aged gentleman,uncle
-叔父さん;おじさん;middle-aged gentleman,uncle
 おしゃれ;おしゃれ;smartly dressed,someone smartly dressed,fashion-conscious
 おじゃまします;おじゃまします;Excuse me for disturbing you
 教わる;おそわる;to be taught
@@ -187,8 +185,6 @@
 お手伝いさん;おてつだいさん;maid
 おどかす;おどかす;to threaten,to coerce
 落し物;おとしもの;lost property
-おととい;おととい;day before yesterday
-おととし;おととし;year before last
 おとなしい;おとなしい;obedient,docile,quiet
 驚かす;おどろかす;to surprise,to frighten,to create a stir
 おねがいします;おねがいします;please
@@ -197,7 +193,6 @@
 叔母さん;おばさん;(1) aunt,(2) middle-aged lady
 おはよう;おはよう;(abbr) Good morning
 お参り;おまいり;worship,shrine visit
-おまたせしました;おまたせしました;Sorry to have kept you waiting
 おまちください;おまちください;Please wait a moment
 おまちどおさま;おまちどおさま;Sorry to have kept you waiting
 おめでたい;おめでたい;happy event,matter for congratulation,auspicious event,pregnancy
@@ -283,7 +278,7 @@
 下線;かせん;underline,underscore
 カセット;カセット;cassette (tape)
 加速;かそく;acceleration
-加速度;かそくど;acceleration
+加速度;かそくど;acceleration amount
 固い;かたい;stubborn,firm (not viscous or easily moved)
 堅い;かたい;hard (esp. wood),steadfast,honorable,stuffy writing
 片仮名;かたかな;katakana
@@ -366,19 +361,18 @@
 刻む;きざむ;to mince,to carve,to engrave
 儀式;ぎしき;ceremony,rite,ritual,service
 基準;きじゅん;standard,basis,criteria,norm
-規準;きじゅん;standard,basis,criteria,norm
 起床;きしょう;rising,getting out of bed
 着せる;きせる;to put on clothes
-基礎;きそ;foundation,basis
-気体;きたい;vapour,gas
+基礎;きそ;basis
+気体;きたい;vapor,gas
 基地;きち;base
 きっかけ;きっかけ;chance,start,cue,excuse
 ぎっしり;ぎっしり;tightly,fully
-基盤;きばん;foundation,basis
+基盤;きばん;foundation
 客席;きゃくせき;guest seating
 客間;きゃくま;parlor,guest room
 ギャング;ギャング;gang
-キャンパス;キャンパス;campus
+キャンパス;キャンパス;campus (katakana)
 休業;きゅうぎょう;closed (e.g. store),business suspended,shutdown,holiday
 休講;きゅうこう;lecture cancelled
 休息;きゅうそく;rest,relief,relaxation
@@ -489,7 +483,7 @@
 工員;こういん;factory worker
 強引;ごういん;overbearing,coercive,pushy,forcible,high-handed
 公害;こうがい;public nuisance,pollution
-高級;こうきゅう;high class,high grade
+高級;こうきゅう;high class,high grade,high price
 公共;こうきょう;public,community,public service,society,communal
 工芸;こうげい;industrial arts
 孝行;こうこう;filial piety
@@ -513,7 +507,7 @@
 校庭;こうてい;campus
 肯定;こうてい;positive,affirmation
 高度;こうど;altitude,height,advanced
-高等;こうとう;high class,high grade
+高等;こうとう;high class,high grade,high level
 合同;ごうどう;combination,incorporation,union,amalgamation
 後輩;こうはい;junior (at work or school)
 公表;こうひょう;official announcement,proclamation
@@ -633,7 +627,7 @@
 算数;さんすう;arithmetic
 酸性;さんせい;acidity
 産地;さんち;producing area
-サンプル;サンプル;sample
+サンプル;サンプル;sample (katakana)
 山林;さんりん;mountain forest,mountains and forest
 仕上がる;しあがる;to be finished
 しあさって;しあさって;two days after tomorrow
@@ -645,7 +639,6 @@
 塩辛い;しおからい;salty (taste)
 司会;しかい;chairmanship
 四角;しかく;square
-四角い;しかくい;square
 時間割;じかんわり;timetable,schedule
 四季;しき;four seasons
 敷地;しきち;site
@@ -711,7 +704,7 @@
 洒落;しゃれ;joke,pun,witticism
 じゃんけん;じゃんけん;(n) rock-scissors-paper game
 集会;しゅうかい;meeting,assembly
-住居;じゅうきょ;dwelling,house,residence,address
+住居;じゅうきょ;dwelling,house,residence
 集金;しゅうきん;money collection
 集合;しゅうごう;gathering,assembly,meeting,set (math)
 習字;しゅうじ;penmanship
@@ -746,7 +739,7 @@
 消化;しょうか;digestion
 小学生;しょうがくせい;grade school student
 将棋;しょうぎ;Japanese chess
-蒸気;じょうき;steam,vapour
+蒸気;じょうき;vapor
 定規;じょうぎ;(measuring) ruler
 上級;じょうきゅう;advanced level,high grade,senior
 商業;しょうぎょう;commerce,trade,business
@@ -848,7 +841,7 @@
 スピーカー;スピーカー;speaker
 図表;ずひょう;chart,diagram,graph
 スマート;スマート;smart,stylish,slim
-住まい;すまい;dwelling,house,residence,address
+住まい;すまい;dwelling,house,address
 すまない;すまない;sorry (phrase)
 墨;すみ;ink
 澄む;すむ;to clear (e.g. weather),to become transparent
@@ -860,7 +853,7 @@
 狡い;ずるい;sly,cunning
 すれちがう;すれちがう;to pass by one another,to disagree
 寸法;すんぽう;measurement,size,dimension
-姓;せい;surname,family name
+姓;せい;surname,family name (more common)
 税関;ぜいかん;customs house
 製作;せいさく;manufacture,production
 制作;せいさく;work (film, book)
@@ -877,7 +870,7 @@
 整備;せいび;adjustment,completion,consolidation
 成分;せいぶん;ingredient,component,composition
 性別;せいべつ;distinction by sex,sex,gender
-正方形;せいほうけい;square
+正方形;せいほうけい;square (used in math)
 正門;せいもん;main gate,main entrance
 成立;せいりつ;coming into existence,arrangements,establishment,completion
 西暦;せいれき;Christian Era,anno domini (A.D.)
@@ -934,7 +927,7 @@
 測量;そくりょう;measurement,surveying
 速力;そくりょく;speed
 素質;そしつ;character,qualities,genius
-祖先;そせん;ancestor
+祖先;そせん;ancestor (academic)
 そそっかしい;そそっかしい;careless,thoughtless
 卒直;そっちょく;frankness,candour,openheartedness
 具える;そなえる;to be furnished with
@@ -961,7 +954,7 @@
 対照;たいしょう;contrast,antithesis,comparison
 大小;だいしょう;size
 体制;たいせい;order,system,structure,set-up,organization
-体積;たいせき;capacity,volume
+体積;たいせき;capacity,body volume
 大層;たいそう;very much,exaggerated,very fine
 体操;たいそう;gymnastics,physical exercises,calisthenics
 大分;だいぶん;considerably,greatly,a lot
@@ -979,7 +972,7 @@
 高める;たかめる;to raise,to lift,to boost
 耕す;たがやす;to till,to plow,to cultivate
 滝;たき;waterfall
-炊く;たく;to boil,to cook
+炊く;たく;to boil,to cook (rice)
 焚く;たく;to burn,to kindle,to build a fire
 蓄える;たくわえる;to store,to lay in stock
 竹;たけ;bamboo,middle (of a three-tier ranking system)
@@ -1089,7 +1082,6 @@
 伝わる;つたわる;to be handed down,to be introduced,to be transmitted
 突っ込む;つっこむ;to plunge into,to go into deeply
 務める;つとめる;(1) to serve,to fill a post,to serve under,to work (for)
-努める;つとめる;(1) to serve,to fill a post,to serve under,to work (for)
 綱;つな;rope
 繋がり;つながり;connection,link,relationship
 繋がる;つながる;to be tied together,to be connected to,to be related to
@@ -1104,8 +1096,8 @@
 艶;つや;gloss,glaze
 強気;つよき;firm,strong
 釣り合う;つりあう;to balance,to be in harmony,to suit
-吊る;つる;to hang
-吊す;つるす;to hang
+吊る;つる;to hang up
+吊す;つるす;to hang down
 出合い;であい;an encounter
 手洗い;てあらい;restroom,lavatory,hand-washing
 定員;ていいん;fixed number of regular personnel,capacity (of boat, etc.)
@@ -1124,7 +1116,6 @@
 出来上がり;できあがり;be finished,ready,made for,cut out
 出来上がる;できあがる;(1) to be finished,to be ready,by definition,(2) to be very drunk
 的確;てきかく;precise,accurate
-適確;てきかく;precise,accurate
 手首;てくび;wrist
 凸凹;でこぼこ;unevenness,roughness,ruggedness
 手頃;てごろ;moderate,handy
@@ -1208,7 +1199,7 @@
 取り出す;とりだす;to take out,to produce,to pick out
 採る;とる;(1) to adopt (measure, proposal),(2) to pick (fruit)
 捕る;とる;to take,to catch (fish),to capture
-トレーニング;トレーニング;training
+トレーニング;トレーニング;training (katakana)
 丼;どんぶり;porcelain bowl,bowl of rice with food on top
 内科;ないか;internist clinic,internal medicine
 内線;ないせん;phone extension,indoor wiring,inner line
@@ -1218,7 +1209,6 @@
 仲直り;なかなおり;reconciliation,make peace with
 長引く;ながびく;to be prolonged,to drag on
 中身;なかみ;contents,interior,substance,filling,(sword) blade
-中味;なかみ;contents,interior,substance,filling,(sword) blade
 中指;なかゆび;middle finger
 仲良し;なかよし;intimate friend,bosom buddy,chum
 慰める;なぐさめる;to comfort,to console
@@ -1269,7 +1259,6 @@
 ネックレス;ネックレス;necklace
 熱する;ねっする;to heat
 寝間着;ねまき;sleep-wear,nightclothes,pyjamas,nightgown,nightdress
-寝巻;ねまき;sleep-wear,nightclothes,pyjamas,nightgown,nightdress
 狙い;ねらい;aim
 狙う;ねらう;to aim at
 年度;ねんど;year,fiscal year,school year,term
@@ -1302,7 +1291,6 @@
 ばからしい;ばからしい;absurd
 秤;はかり;scales,weighing machine
 量る;はかる;to measure,to weigh,to survey
-測る;はかる;to measure,to weigh,to survey
 吐き気;はきけ;nausea,sickness in the stomach
 はきはき;はきはき;lucidly
 掃く;はく;to sweep,to brush,to gather up
@@ -1458,7 +1446,6 @@
 踏切;ふみきり;railway crossing,level crossing,starting line,scratch,crossover
 麓;ふもと;the foot,the bottom,the base (of a mountain)
 増やす;ふやす;to increase,to add to,to augment
-殖やす;ふやす;to increase,to add to,to augment
 フライパン;フライパン;fry pan,frying pan
 ブラウス;ブラウス;blouse
 ぶらさげる;ぶらさげる;to hang,to suspend,to dangle,to swing
@@ -1552,9 +1539,7 @@
 まごまご;まごまご;confused
 摩擦;まさつ;friction,rubbing,rubdown,chafe
 混ざる;まざる;to be mixed,to be blended with,to associate with,to mingle with,to join
-交ざる;まざる;to be mixed,to be blended with,to associate with,to mingle with,to join
 混じる;まじる;to be mixed,to be blended with,to associate with
-交じる;まじる;to be mixed,to be blended with,to associate with
 マスク;マスク;mask
 混ぜる;まぜる;to mix,to stir
 交ぜる;まぜる;to be mixed,to be blended with
@@ -1605,7 +1590,7 @@
 見本;みほん;sample
 見舞う;みまう;to ask after (health),to visit
 未満;みまん;less than,insufficient
-名字;みょうじ;surname,family name
+名字;みょうじ;surname,family name (less common)
 ミリ;（メートル）;milli-,10^-3
 診る;みる;to examine (medical)
 民間;みんかん;private,civilian,civil,popular,folk,unofficial
@@ -1656,7 +1641,6 @@
 目次;もくじ;table of contents
 潜る;もぐる;(1) to drive,to pass through,(2) to evade,to hide,(3) to dive (into or under water),to go undergroun
 もしかしたら;もしかしたら;perhaps,maybe,by some chance
-もしかすると;もしかすると;perhaps,maybe,by some chance
 もたれる;もたれる;to lean against,to lean on,to recline on,to lie heavy (on the stomach)
 モダン;モダン;modern
 餅;もち;sticky rice cake
@@ -1703,7 +1687,7 @@
 悠々;ゆうゆう;quiet,calm,leisurely
 有料;ゆうりょう;admission-paid,toll
 浴衣;ゆかた;bathrobe,informal summer kimono,yukata
-湯気;ゆげ;steam,vapour
+湯気;ゆげ;steam
 輸血;ゆけつ;blood transfusion
 輸送;ゆそう;transport,transportation
 油断;ゆだん;negligence,unpreparedness
@@ -1715,7 +1699,7 @@
 用語;ようご;term,terminology
 要旨;ようし;gist,essentials,summary,fundamentals
 幼児;ようじ;infant,baby,child
-容積;ようせき;capacity,volume
+容積;ようせき;capacity,contained volume
 幼稚;ようち;infancy,childish,infantile
 幼稚園;ようちえん;kindergarten
 用途;ようと;use,usefulness
