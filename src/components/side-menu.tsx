@@ -52,6 +52,10 @@ export const SideMenu = ({
       label: "Word lists",
       options: levels.map(getWordsSideMenuOption),
     },
+    {
+      label: "Settings",
+      options: [{ label: "Settings", href: "/settings" }],
+    },
   ];
 
   return (
