@@ -14,6 +14,7 @@
 
   const CACHE_NAME = "jlpt-audio-srs-pages";
   const CACHED_FILES = [
+    "/favicon.ico",
     "/jlpt1.txt",
     "/jlpt2.txt",
     "/jlpt3.txt",
@@ -52,5 +53,20 @@
 
   self.addEventListener("activate", () => {
     console.log("Activating service worker");
+  });
+
+  self.addEventListener("fetch", (event) => {
+    event.respondWith(
+      (async () => {
+        const cache = await caches.open(CACHE_NAME);
+        const response = await cache.match(event.request.url, {
+          ignoreSearch: true,
+        });
+        if (!response) {
+          console.log("Uncached response for request", event.request);
+        }
+        return response ?? fetch(event.request);
+      })(),
+    );
   });
 })();
