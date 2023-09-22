@@ -1,9 +1,14 @@
 import Head from "next/head";
 import { type AppType } from "next/dist/shared/lib/utils";
+import { useEffect } from "react";
 
 import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
+  useEffect(() => {
+    void navigator.serviceWorker.register("/service-worker.mjs");
+  }, []);
+
   return (
     <>
       <Head>
