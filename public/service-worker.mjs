@@ -12,8 +12,42 @@
 
   console.log("Running service worker");
 
-  self.addEventListener("install", () => {
+  const CACHE_NAME = "jlpt-audio-srs-pages";
+  const CACHED_FILES = [
+    "/jlpt1.txt",
+    "/jlpt2.txt",
+    "/jlpt3.txt",
+    "/jlpt4.txt",
+    "/jlpt5.txt",
+
+    "/",
+
+    "/learn/5",
+    "/learn/4",
+    "/learn/3",
+    "/learn/2",
+    "/learn/1",
+
+    "/words/5",
+    "/words/4",
+    "/words/3",
+    "/words/2",
+    "/words/1",
+
+    "/settings",
+  ];
+
+  self.addEventListener("install", (event) => {
     console.log("Installing service worker");
+    event.waitUntil(
+      (async () => {
+        console.log("Opening caches");
+        const cache = await caches.open(CACHE_NAME);
+        console.log("Adding cached files");
+        await cache.addAll(CACHED_FILES);
+        console.log("Added all cached files");
+      })(),
+    );
   });
 
   self.addEventListener("activate", () => {
