@@ -10,8 +10,6 @@
   // prettier-ignore
   const self = /** @type {ServiceWorkerGlobalScope} */ (/** @type {unknown} */ (globalThis.self));
 
-  console.log("Running service worker");
-
   const CACHE_NAME = "jlpt-audio-srs-pages";
   const CACHED_FILES = [
     "/favicon.ico",
@@ -39,20 +37,12 @@
   ];
 
   self.addEventListener("install", (event) => {
-    console.log("Installing service worker");
     event.waitUntil(
       (async () => {
-        console.log("Opening caches");
         const cache = await caches.open(CACHE_NAME);
-        console.log("Adding cached files");
         await cache.addAll(CACHED_FILES);
-        console.log("Added all cached files");
       })(),
     );
-  });
-
-  self.addEventListener("activate", () => {
-    console.log("Activating service worker");
   });
 
   self.addEventListener("fetch", (event) => {
