@@ -1,6 +1,3 @@
-// @ts-check
-/// <reference no-default-lib="false"/>
-/// <reference lib="ES2015" />
 /// <reference lib="webworker" />
 
 // Using IIFE to provide closure to redefine `self`
