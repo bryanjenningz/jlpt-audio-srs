@@ -29,6 +29,8 @@ export default function Learn() {
     .filter(Boolean);
   const waitTimeAfterQuestion =
     useStore(useSettingsStore, (x) => x.waitTimeAfterQuestion) ?? 1000;
+  const waitTimeAfterAnswer =
+    useStore(useSettingsStore, (x) => x.waitTimeAfterAnswer) ?? 0;
 
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
@@ -40,11 +42,18 @@ export default function Learn() {
       setJapaneseShown(true);
       addToWordHistory(level, word);
       await playJapanese(word.kanji, speechSynthesis);
+      await wait(waitTimeAfterAnswer);
       setJapaneseShown(false);
       setWordPlaying(undefined);
       setWords(level, (words) => updateNextWord(words, now));
     },
-    [setWords, addToWordHistory, level, waitTimeAfterQuestion],
+    [
+      setWords,
+      addToWordHistory,
+      level,
+      waitTimeAfterQuestion,
+      waitTimeAfterAnswer,
+    ],
   );
 
   useEffect(() => {

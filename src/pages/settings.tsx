@@ -16,6 +16,11 @@ export default function Settings() {
   const setWaitTimeAfterQuestion = useSettingsStore(
     (x) => x.setWaitTimeAfterQuestion,
   );
+  const waitTimeAfterAnswer =
+    useStore(useSettingsStore, (x) => x.waitTimeAfterAnswer) ?? 0;
+  const setWaitTimeAfterAnswer = useSettingsStore(
+    (x) => x.setWaitTimeAfterAnswer,
+  );
 
   const settings = [
     {
@@ -30,6 +35,15 @@ export default function Settings() {
       description: "Time in milliseconds (0 to 5000)",
       value: waitTimeAfterQuestion,
       setValue: setWaitTimeAfterQuestion,
+      min: 0,
+      max: 5000,
+    },
+    {
+      type: "number",
+      name: "Wait time after answer",
+      description: "Time in milliseconds (0 to 5000)",
+      value: waitTimeAfterAnswer,
+      setValue: setWaitTimeAfterAnswer,
       min: 0,
       max: 5000,
     },

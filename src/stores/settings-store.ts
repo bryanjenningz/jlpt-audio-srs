@@ -6,6 +6,8 @@ type SettingsStore = {
   togglePitchAccentShown: () => void;
   waitTimeAfterQuestion: number;
   setWaitTimeAfterQuestion: (waitTimeAfterQuestion: number) => void;
+  waitTimeAfterAnswer: number;
+  setWaitTimeAfterAnswer: (waitTimeAfterAnswer: number) => void;
 };
 
 export const useSettingsStore = create<SettingsStore>()(
@@ -26,7 +28,16 @@ export const useSettingsStore = create<SettingsStore>()(
           ),
         });
       },
+      waitTimeAfterAnswer: 0,
+      setWaitTimeAfterAnswer: (waitTimeAfterAnswer: number) => {
+        set({
+          waitTimeAfterAnswer: Math.min(
+            5_000,
+            Math.max(0, waitTimeAfterAnswer),
+          ),
+        });
+      },
     }),
-    { name: "pitch-accent-settings" },
+    { name: "settings" },
   ),
 );
