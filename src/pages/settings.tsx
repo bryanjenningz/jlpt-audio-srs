@@ -1,29 +1,14 @@
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { SideMenu } from "~/components/side-menu";
 import { SimpleHeader } from "~/components/simple-header";
-
-function usePitchAccentShown() {
-  const key = "pitch-accent-shown";
-  const [pitchAccentShown, setPitchAccentShown] = useState(true);
-
-  useEffect(() => {
-    setPitchAccentShown((localStorage.getItem(key) ?? "true") === "true");
-  }, []);
-
-  const togglePitchAccentShown = useCallback(() => {
-    setPitchAccentShown((pitchAccentShown) => {
-      const result = !pitchAccentShown;
-      localStorage.setItem(key, String(result));
-      return result;
-    });
-  }, []);
-
-  return { pitchAccentShown, togglePitchAccentShown };
-}
+import { useSettings } from "~/stores/settings-store";
+import { useStore } from "~/stores/use-store";
 
 export default function Settings() {
-  const { pitchAccentShown, togglePitchAccentShown } = usePitchAccentShown();
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+  const pitchAccentShown =
+    useStore(useSettings, (x) => x.pitchAccentShown) ?? true;
+  const togglePitchAccentShown = useSettings((x) => x.togglePitchAccentShown);
 
   const settings = [
     {
