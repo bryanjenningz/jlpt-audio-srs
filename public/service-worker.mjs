@@ -29,6 +29,7 @@ const CACHED_FILES = [
 
   "/settings",
 ];
+const EXTRA_CACHE_NAME = "jlpt-audio-srs-extra";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -39,18 +40,33 @@ self.addEventListener("install", (event) => {
   );
 });
 
+self.addEventListener("activate", (event) => {
+  event.waitUntil(caches.delete(EXTRA_CACHE_NAME));
+});
+
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      const response = await cache.match(event.request.url, {
-        ignoreSearch: true,
-      });
-      if (!response) {
-        console.log("Uncached response for request", event.request);
-        return fetch(event.request);
+      try {
+        const response = await fetch(event.request);
+        if (!(await caches.has(event.request.url))) {
+          const cache = await caches.open(EXTRA_CACHE_NAME);
+          void cache.add(event.request.url);
+        }
+        return response;
+      } catch {
+        const response = await caches.match(event.request.url, {
+          ignoreSearch: true,
+        });
+        if (!response) {
+          console.log(
+            "Uncached response for request, retrying fetch...",
+            event.request,
+          );
+          return fetch(event.request);
+        }
+        return response;
       }
-      return response;
     })(),
   );
 });
