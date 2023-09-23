@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { type Word } from "~/words/types";
 import { classNames } from "~/utils/class-names";
+import { Pronunciation } from "~/components/pronunciation";
 
 type ToggleRange =
   | { type: "CLOSED" }
@@ -147,8 +148,14 @@ export function WordTable({
               </td>
 
               <td className="grow basis-1">{word.kanji}</td>
-              <td className="grow basis-1">{word.kana}</td>
-              <td className="grow basis-1">{word.definition}</td>
+              <td className="grow basis-1 text-sm">
+                <Pronunciation
+                  pronunciation={word.kana}
+                  pitchAccents={word.pitchAccents}
+                  pitchAccentsShown={1}
+                />
+              </td>
+              <td className="grow basis-1 text-sm">{word.definition}</td>
             </tr>
           );
         })}

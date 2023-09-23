@@ -5,16 +5,27 @@ export function parseWords(text: string): Word[] {
   const words = lines.map((line, i): Word => {
     const sections = line.split(";");
     const kanji = sections[0];
-    const definition = sections[sections.length - 1]?.replace(/,/g, ", ");
-    if (sections.length < 2 || sections.length > 3 || !kanji || !definition) {
-      throw new Error(`Expected 2 or 3 non-empty sections for line: "${line}"`);
+    const kana = sections[1];
+    const definition = sections[2]?.replace(/,/g, ", ");
+    const pitchAccents = (() => {
+      if (!sections[3]) return [];
+      return sections[3]?.split(",").map(Number);
+    })();
+    if (
+      sections.length !== 4 ||
+      !kanji ||
+      !kana ||
+      !definition ||
+      !pitchAccents
+    ) {
+      throw new Error(`Expected 4 sections for line: "${line}"`);
     }
-    const kana = sections.length === 3 && sections[1] ? sections[1] : kanji;
     return {
       type: "unseen",
       kanji,
       kana,
       definition,
+      pitchAccents,
       order: i + 1,
       known: false,
     };
