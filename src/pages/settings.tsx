@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { SideMenu } from "~/components/side-menu";
 import { SimpleHeader } from "~/components/simple-header";
-import { useSettings } from "~/stores/settings-store";
+import { useSettingsStore } from "~/stores/settings-store";
 import { useStore } from "~/stores/use-store";
 
 export default function Settings() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   const pitchAccentShown =
-    useStore(useSettings, (x) => x.pitchAccentShown) ?? true;
-  const togglePitchAccentShown = useSettings((x) => x.togglePitchAccentShown);
+    useStore(useSettingsStore, (x) => x.pitchAccentShown) ?? true;
+  const togglePitchAccentShown = useSettingsStore(
+    (x) => x.togglePitchAccentShown,
+  );
 
   const settings = [
     {

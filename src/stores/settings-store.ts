@@ -6,7 +6,7 @@ type SettingsStore = {
   togglePitchAccentShown: () => void;
 };
 
-export const useSettings = create<SettingsStore>()(
+export const useSettingsStore = create<SettingsStore>()(
   persist(
     (set) => ({
       pitchAccentShown: true,

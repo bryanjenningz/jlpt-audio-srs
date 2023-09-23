@@ -1,6 +1,6 @@
 import { getMoras } from "~/utils/get-moras";
 import { classNames } from "~/utils/class-names";
-import { useSettings } from "~/stores/settings-store";
+import { useSettingsStore } from "~/stores/settings-store";
 import { useStore } from "~/stores/use-store";
 
 export function Pronunciation({
@@ -13,7 +13,7 @@ export function Pronunciation({
   pitchAccentsShown: number;
 }) {
   const pitchAccentShown =
-    useStore(useSettings, (x) => x.pitchAccentShown) ?? true;
+    useStore(useSettingsStore, (x) => x.pitchAccentShown) ?? true;
 
   if (!pitchAccentShown) {
     return <div>{pronunciation}</div>;
