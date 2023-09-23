@@ -13,6 +13,7 @@ import { classNames } from "~/utils/class-names";
 import { SideMenu } from "~/components/side-menu";
 import { MenuIcon } from "~/icons/menu-icon";
 import { useLevel } from "~/utils/levels";
+import { Pronunciation } from "~/components/pronunciation";
 
 export default function Learn() {
   const level = useLevel();
@@ -93,7 +94,11 @@ export default function Learn() {
                 )}
               >
                 <div>{wordPlaying.kanji}</div>
-                <div>{wordPlaying.kana}</div>
+                <Pronunciation
+                  pronunciation={wordPlaying.kana}
+                  pitchAccents={wordPlaying.pitchAccents}
+                  pitchAccentsShown={1}
+                />
               </div>
             </>
           )}
