@@ -48,8 +48,9 @@ self.addEventListener("fetch", (event) => {
       });
       if (!response) {
         console.log("Uncached response for request", event.request);
+        return fetch(event.request);
       }
-      return response ?? fetch(event.request);
+      return response;
     })(),
   );
 });
