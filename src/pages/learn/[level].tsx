@@ -14,6 +14,8 @@ import { SideMenu } from "~/components/side-menu";
 import { MenuIcon } from "~/icons/menu-icon";
 import { useLevel } from "~/utils/levels";
 import { Pronunciation } from "~/components/pronunciation";
+import { useStore } from "~/stores/use-store";
+import { useSettingsStore } from "~/stores/settings-store";
 
 export default function Learn() {
   const level = useLevel();
@@ -25,6 +27,8 @@ export default function Learn() {
   const wordHistoryWithWords = wordHistory
     .map((word) => words.find((w) => w.order === word.order))
     .filter(Boolean);
+  const waitTimeAfterQuestion =
+    useStore(useSettingsStore, (x) => x.waitTimeAfterQuestion) ?? 1000;
 
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
@@ -32,7 +36,7 @@ export default function Learn() {
     async (word: Word, now: number): Promise<void> => {
       setWordPlaying(word);
       await playEnglish(word.definition, speechSynthesis);
-      await wait(1000);
+      await wait(waitTimeAfterQuestion);
       setJapaneseShown(true);
       addToWordHistory(level, word);
       await playJapanese(word.kanji, speechSynthesis);
@@ -40,7 +44,7 @@ export default function Learn() {
       setWordPlaying(undefined);
       setWords(level, (words) => updateNextWord(words, now));
     },
-    [setWords, addToWordHistory, level],
+    [setWords, addToWordHistory, level, waitTimeAfterQuestion],
   );
 
   useEffect(() => {
