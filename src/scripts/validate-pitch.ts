@@ -55,12 +55,13 @@ for (const file of JLPT_TEXT_FILES) {
     .map((line) => {
       const sections = line.split(FIELD_SEPARATOR);
       if (
-        sections.length < 2 ||
-        sections.length > 3 ||
+        sections.length !== 4 ||
         !sections[0] ||
-        !sections[1]
+        !sections[1] ||
+        !sections[2] ||
+        typeof sections[3] !== "string"
       ) {
-        throw new Error(`Each line must have 2 or 3 sections: "${line}"`);
+        throw new Error(`Each line must have 4 sections: "${line}"`);
       }
       if (sections[2]) {
         return {
@@ -125,4 +126,19 @@ for (const file of JLPT_TEXT_FILES) {
       (entriesWithoutPitchAccents.length / entries.length) * 100,
     )}%)`,
   );
+
+  // Uncomment to overwrite files
+  // await fs.writeFile(
+  //   file,
+  //   entriesWithPitchAccents
+  //     .map((entry) =>
+  //       [
+  //         entry.kanji,
+  //         entry.kana,
+  //         entry.definition,
+  //         entry.pitchAccents.join(","),
+  //       ].join(FIELD_SEPARATOR),
+  //     )
+  //     .join(ENTRY_SEPARATOR),
+  // );
 }

@@ -9,6 +9,7 @@ const FILE_PATHS = [
 ];
 const ENTRY_SEPARATOR = "\n";
 const FIELD_SEPARATOR = ";";
+const PITCH_ACCENT_SEPARATOR = ",";
 
 for (const filePath of FILE_PATHS) {
   const entries = (await fs.readFile(filePath))
@@ -17,32 +18,40 @@ for (const filePath of FILE_PATHS) {
     .map((line) => {
       const sections = line.split(FIELD_SEPARATOR);
       if (
-        sections.length < 2 ||
-        sections.length > 3 ||
+        sections.length !== 4 ||
         !sections[0] ||
-        !sections[1]
+        !sections[1] ||
+        !sections[2] ||
+        typeof sections[3] !== "string"
       ) {
-        throw new Error(`Each line must have 2 or 3 sections: "${line}"`);
+        throw new Error(`Each line must have 4 sections: "${line}"`);
       }
-      if (sections[2]) {
-        return {
-          kanji: sections[0].trim(),
-          kana: sections[1].trim(),
-          definition: sections[2].trim(),
-        };
-      }
+      const pitchAccents = (() => {
+        if (!sections[3]) return [];
+        return sections[3].split(PITCH_ACCENT_SEPARATOR).map((pitchAccent) => {
+          if (!pitchAccent.match(/^\d+$/) || Number.isNaN(pitchAccent)) {
+            throw new Error(`Each pitch accent must be a number: "${line}"`);
+          }
+          return Number(pitchAccent);
+        });
+      })();
       return {
         kanji: sections[0].trim(),
-        kana: sections[0].trim(),
-        definition: sections[1].trim(),
+        kana: sections[1].trim(),
+        definition: sections[2].trim(),
+        pitchAccents,
       };
     });
 
   const errors = [
     {
-      name: `Lines must have 2 or 3 sections separated by "${FIELD_SEPARATOR}"`,
+      name: `Lines must have 4 sections separated by "${FIELD_SEPARATOR}"`,
       lines: entries.filter(
-        (entry) => !entry.kanji || !entry.kana || !entry.definition,
+        (entry) =>
+          !entry.kanji ||
+          !entry.kana ||
+          !entry.definition ||
+          !entry.pitchAccents,
       ),
     },
     {

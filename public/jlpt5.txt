@@ -1,656 +1,656 @@
-会う;あう;to meet
-青い;あおい;blue
-赤い;あかい;red
-明るい;あかるい;bright
-秋;あき;autumn
-開く;あく;to open,to become open
-開ける;あける;to open
-上げる;あげる;to give
-朝;あさ;morning
-朝御飯;あさごはん;breakfast
-明後日;あさって;day after tomorrow
-足;あし;foot,leg
-明日;あした;tomorrow
-彼処;あそこ;over there
-遊ぶ;あそぶ;to play,to make a visit
-暖かい;あたたかい;warm
-頭;あたま;head
-新しい;あたらしい;new
-あちら;あちら;over that way
-暑い;あつい;hot
-厚い;あつい;kind, deep, thick
-あっち;あっち;over there (shortened)
-後;あと;afterwards
-あなた;あなた;you
-兄;あに;(humble) older brother
-姉;あね;(humble) older sister
-あの;あの;um... that over there
-アパート;アパート;apartment
-あびる;あびる;to bathe,to shower
-危ない;あぶない;dangerous
-甘い;あまい;sweet
-あまり;あまり;not very
-雨;あめ;rain
-飴;あめ;candy
-洗う;あらう;to wash
-ある;ある;to be,to have (used for inanimate objects)
-歩く;あるく;to walk
-あれ;あれ;(pronoun) that
-いい / よい;いい / よい;good
-いいえ;いいえ;no
-言う;いう;to say
-家;いえ;house
-いかが;いかが;how
-行く;いく;to go
-いくつ;いくつ;how many?,how old?
-いくら;いくら;how much?
-池;いけ;pond
-医者;いしゃ;medical doctor
-いす;いす;chair
-忙しい;いそがしい;busy,irritated
-痛い;いたい;painful
-一;いち;one (number)
-一日;いちにち;(1) one day, (2) first of month
-いちばん;いちばん;best,first
-いつ;いつ;when
-五日;いつか;five days, fifth day
-一緒;いっしょ;together
-五つ;いつつ;five (things)
-いつも;いつも;always
-犬;いぬ;dog
-今;いま;now
-意味;いみ;meaning
-妹;いもうと;(humble) younger sister
-嫌;いや;unpleasant
-入口;いりぐち;entrance
-居る;いる;to be, to have (used for people and animals)
-要る;いる;to need
-入れる;いれる;to put in
-色;いろ;colour
-いろいろ;いろいろ;various
-上;うえ;on top of
-後ろ;うしろ;behind
-薄い;うすい;thin,weak
-歌;うた;song
-歌う;うたう;to sing
-生まれる;うまれる;to be born
-海;うみ;sea
-売る;うる;to sell
-煩い;うるさい;noisy,annoying
-上着;うわぎ;jacket
-絵;え;picture
-映画;えいが;movie
-映画館;えいがかん;cinema
-英語;えいご;English language
-ええ;ええ;yes
-駅;えき;station
-エレベーター;エレベーター;elevator
-鉛筆;えんぴつ;pencil
-おいしい;おいしい;delicious
-多い;おおい;many
-大きい;おおきい;big
-大勢;おおぜい;great number of people
-お母さん;おかあさん;(honorable) mother
-お菓子;おかし;sweets, candy
-お金;おかね;money
-起きる;おきる;to get up
-置く;おく;to put
-奥さん;おくさん;(honorable) wife
-お酒;おさけ;alcohol, rice wine
-お皿;おさら;plate, dish
-おじいさん;おじいさん;grandfather,male senior citizen
-教える;おしえる;to teach,to tell
-おじさん;おじさん;uncle,middle aged gentleman
-押す;おす;to push, to stamp something
-遅い;おそい;late,slow
-お茶;おちゃ;green tea
-お手洗い;おてあらい;bathroom
-お父さん;おとうさん;(honorable) father
-弟;おとうと;younger brother
-男;おとこ;man
-男の子;おとこのこ;boy
-一昨日;おととい;day before yesterday
-一昨年;おととし;year before last
-大人;おとな;adult
-おなか;おなか;stomach
-同じ;おなじ;same
-お兄さん;おにいさん;(honorable) older brother
-お姉さん;おねえさん;(honorable) older sister
-おばあさん;おばあさん;grandmother,female senior-citizen
-伯母さん / 叔母さん;おばさん;aunt
-お風呂;おふろ;bath (formal)
-お弁当;おべんとう;boxed lunch
-覚える;おぼえる;to remember
-おまわりさん;おまわりさん;friendly term for policeman
-重い;おもい;heavy
-おもしろい;おもしろい;interesting
-泳ぐ;およぐ;to swim
-降りる;おりる;to get off, to descend
-終る;おわる;to finish
-音楽;おんがく;music
-女;おんな;woman
-女の子;おんなのこ;girl
-外国;がいこく;foreign country
-外国人;がいこくじん;foreigner
-会社;かいしゃ;company
-階段;かいだん;stairs
-買い物;かいもの;shopping
-買う;かう;to buy
-返す;かえす;to return something
-帰る;かえる;to go back
-かかる;かかる;to take time or money
-かぎ;かぎ;key
-書く;かく;to write
-学生;がくせい;student
-かける;かける;to call by phone
-傘;かさ;umbrella
-貸す;かす;to lend
-風;かぜ;wind
-風邪;かぜ;a cold
-家族;かぞく;family
-方;かた;person, way of doing
-学校;がっこう;school
-カップ;カップ;cup
-家庭;かてい;household
-角;かど;a corner
-かばん;かばん;bag,basket
-花瓶;かびん;a vase
-紙;かみ;paper
-カメラ;カメラ;camera
-火曜日;かようび;Tuesday
-辛い;からい;spicy
-体;からだ;body
-借りる;かりる;to borrow
-軽い;かるい;light
-カレー;カレー;curry
-カレンダー;カレンダー;calendar
-川 / 河;かわ;river
-かわいい;かわいい;cute
-漢字;かんじ;Chinese character
-木;き;tree,wood
-黄色い;きいろい;yellow
-消える;きえる;to disappear
-聞く;きく;to hear,to listen to,to ask
-北;きた;north
-ギター;ギター;guitar
-汚い;きたない;dirty
-喫茶店;きっさてん;coffee lounge
-切手;きって;postage stamp
-切符;きっぷ;ticket
-昨日;きのう;yesterday
-九;きゅう / く;nine (number)
-牛肉;ぎゅうにく;beef
-牛乳;ぎゅうにゅう;milk
-今日;きょう;today
-教室;きょうしつ;classroom
-兄弟;きょうだい;(humble) siblings
-去年;きょねん;last year
-嫌い;きらい;hate
-切る;きる;to cut
-着る;きる;to put on from the shoulders down
-きれい;きれい;pretty,clean
-キロ / キログラム;キロ / キログラム;kilogram
-キロ / キロメートル;キロ / キロメートル;kilometre
-銀行;ぎんこう;bank
-金曜日;きんようび;Friday
-薬;くすり;medicine
-ください;ください;please
-果物;くだもの;fruit
-口;くち;mouth,opening
-靴;くつ;shoes
-靴下;くつした;socks
-国;くに;country
-曇り;くもり;cloudy weather
-曇る;くもる;to become cloudy,to become dim
-暗い;くらい;gloomy
-クラス;クラス;class
-グラム;グラム;gram
-来る;くる;to come
-車;くるま;car,vehicle
-黒い;くろい;black
-警官;けいかん;policeman
-今朝;けさ;this morning
-消す;けす;to erase,to turn off power
-結構;けっこう;splendid,enough
-結婚;けっこん;marriage
-月曜日;げつようび;Monday
-玄関;げんかん;entry hall
-元気;げんき;health, vitality
-五;ご;five (number)
-公園;こうえん;park
-交差点;こうさてん;intersection
-紅茶;こうちゃ;black tea
-交番;こうばん;police box
-声;こえ;voice
-コート;コート;coat,tennis court
-コーヒー;コーヒー;coffee
-ここ;ここ;here
-午後;ごご;afternoon
-九日;ここのか;nine days, ninth day
-九つ;ここのつ;nine (things)
-午前;ごぜん;before noon (a.m.)
-答える;こたえる;to answer
-こちら;こちら;this person or way
-こっち;こっち;this person or way (shortened)
-コップ;コップ;a glass
-今年;ことし;this year
-言葉;ことば;word,language
-子供;こども;child
-この;この;this (thing)
-御飯;ごはん;cooked rice,meal
-コピーする;コピーする;to copy
-困る;こまる;to be worried
-これ;これ;this
-今月;こんげつ;this month
-今週;こんしゅう;this week
-こんな;こんな;such
-今晩;こんばん;this evening
-さあ;さあ;well…
-財布;さいふ;wallet
-魚;さかな;fish
-先;さき;the future,previous
-咲く;さく;to bloom
-作文;さくぶん;composition,writing
-差す;さす;to stretch out hands,to raise an umbrella
-雑誌;ざっし;magazine
-砂糖;さとう;sugar
-寒い;さむい;cold
-再来年;さらいねん;year after next
-三;さん;three (number)
-散歩;さんぽする;to stroll
-四;し / よん;four (number)
-塩;しお;salt
-しかし;しかし;however
-時間;じかん;time
-仕事;しごと;job
-辞書;じしょ;dictionary
-静か;しずか;quiet
-下;した;below
-七;しち / なな;seven (number)
-質問;しつもん;question
-自転車;じてんしゃ;bicycle
-自動車;じどうしゃ;automobile
-死ぬ;しぬ;to die
-字引;じびき;dictionary (alternative)
-自分;じぶん;oneself
-閉まる;しまる;to close,to be closed
-閉める;しめる;to close something
-締める;しめる;to tie
-じゃ / じゃあ;じゃ / じゃあ;well then…
-写真;しゃしん;photograph
-シャツ;シャツ;shirt
-シャワー;シャワー;shower
-十;じゅう / とお;ten
-授業;じゅぎょう;lesson,class work
-宿題;しゅくだい;homework
-上手;じょうず;skillful
-丈夫;じょうぶ;strong,durable
-しょうゆ;しょうゆ;soy sauce
-食堂;しょくどう;dining hall
-知る;しる;to know
-白い;しろい;white
-新聞;しんぶん;newspaper
-水曜日;すいようび;Wednesday
-吸う;すう;to smoke,to suck
-スカート;スカート;skirt
-好き;すき;likeable
-少ない;すくない;a few
-すぐに;すぐに;instantly
-少し;すこし;few
-涼しい;すずしい;refreshing
-ストーブ;ストーブ;heater
-スプーン;スプーン;spoon
-スポーツ;スポーツ;sport
-ズボン;ズボン;trousers
-住む;すむ;to live in
-スリッパ;スリッパ;slippers
-する;する;to do
-座る;すわる;to sit
-背;せ;height,stature
-生徒;せいと;pupil
-セーター;セーター;sweater,jumper
-せっけん;せっけん;soap
-背広;せびろ;business suit
-狭い;せまい;narrow
-ゼロ;ゼロ;zero (katakana)
-千;せん;thousand
-先月;せんげつ;last month
-先週;せんしゅう;last week
-先生;せんせい;teacher,doctor
-洗濯;せんたく;washing
-全部;ぜんぶ;all
-掃除;そうじ;cleaning, sweeping
-そうして / そして;そうして / そして;and
-そこ;そこ;that place
-そちら;そちら;there
-そっち;そっち;there (shortened)
-外;そと;outside
-その;その;that (thing)
-そば;そば;near,beside
-空;そら;sky
-それ;それ;that
-それから;それから;after that
-それでは;それでは;in that situation
-大学;だいがく;university
-大使館;たいしかん;embassy
-大丈夫;だいじょうぶ;all right
-大好き;だいすき;to be very likeable
-大切;たいせつ;important
-台所;だいどころ;kitchen
-たいへん;たいへん;very much,difficult situation
-高い;たかい;tall, expensive
-たくさん;たくさん;many,a lot
-タクシー;タクシー;taxi
-出す;だす;to put out
-立つ;たつ;to stand
-たて;たて;length,height
-建物;たてもの;building
-楽しい;たのしい;enjoyable
-頼む;たのむ;to ask
-たばこ;たばこ;tobacco,cigarettes
-たぶん;たぶん;probably
-食べ物;たべもの;food
-食べる;たべる;to eat
-卵;たまご;egg
-誰;だれ;who
-誰か;だれか;somebody
-誕生日;たんじょうび;birthday
-だんだん;だんだん;gradually
-小さい;ちいさい;little
-近い;ちかい;close
-違う;ちがう;to differ
-近く;ちかく;near
-地下鉄;ちかてつ;underground train
-地図;ちず;map
-茶色;ちゃいろ;brown
-ちゃわん;ちゃわん;rice bowl
-ちょうど;ちょうど;exactly
-ちょっと;ちょっと;somewhat
-使う;つかう;to use
-疲れる;つかれる;to get tired
-次;つぎ;next
-着く;つく;to arrive at
-机;つくえ;desk
-作る;つくる;to make
-つける;つける;to turn on
-勤める;つとめる;to work for someone
-つまらない;つまらない;boring
-冷たい;つめたい;cold to the touch
-強い;つよい;powerful
-手;て;hand
-テープ;テープ;tape
-テーブル;テーブル;table
-テープレコーダー;テープレコーダー;tape recorder
-出かける;でかける;to go out
-手紙;てがみ;letter
-できる;できる;to be able to
-出口;でぐち;exit
-テスト;テスト;test
-では;では;with that...
-デパート;デパート;department store
-でも;でも;but
-出る;でる;to appear,to leave
-テレビ;テレビ;television
-天気;てんき;weather
-電気;でんき;electricity,electric light
-電車;でんしゃ;electric train
-電話;でんわ;telephone
-戸;と;Japanese style door
-ドア;ドア;Western style door
-トイレ;トイレ;toilet
-どう;どう;how,in what way
-どうして;どうして;for what reason
-どうぞ;どうぞ;please,here
-動物;どうぶつ;animal
-どうも;どうも;thanks
-遠い;とおい;far
-十日;とおか;ten days,the tenth day
-時々;ときどき;sometimes
-時計;とけい;watch,clock
-どこ;どこ;where
-所;ところ;place
-年;とし;year
-図書館;としょかん;library
-どちら;どちら;which of two
-どっち;どっち;which of two (shortened)
-とても;とても;very
-どなた;どなた;who is it
-隣;となり;next door to
-どの;どの;which
-飛ぶ;とぶ;to fly,to hop
-止まる;とまる;to come to a halt
-友達;ともだち;friend
-土曜日;どようび;Saturday
-鳥;とり;bird
-とり肉;とりにく;chicken meat
-取る;とる;to take something
-撮る;とる;to take a photo or record a film
-どれ;どれ;which (of three or more)
-ナイフ;ナイフ;knife
-中;なか;middle
-長い;ながい;long
-鳴く;なく;animal noise. to chirp, roar or croak etc.
-無くす;なくす;to lose something
-なぜ;なぜ;why
-夏;なつ;summer
-夏休み;なつやすみ;summer holiday
-など;など;et cetera
-七つ;ななつ;seven (things)
-七日;なのか;seven days,the seventh day
-名前;なまえ;name
-習う;ならう;to learn
-並ぶ;ならぶ;to line up,to stand in a line
-並べる;ならべる;to line up,to set up
-なる;なる;to become
-何;なん / なに;what
-二;に;two (number)
-賑やか;にぎやか;bustling,busy
-肉;にく;meat
-西;にし;west
-日曜日;にちようび;Sunday
-荷物;にもつ;luggage
-ニュース;ニュース;news
-庭;にわ;garden
-脱ぐ;ぬぐ;to take off clothes
-温い;ぬるい;luke warm
-ネクタイ;ネクタイ;tie,necktie
-猫;ねこ;cat
-寝る;ねる;to go to bed,to sleep
-ノート;ノート;notebook,exercise book
-登る;のぼる;to climb
-飲み物;のみもの;a drink
-飲む;のむ;to drink
-乗る;のる;to get on,to ride
-歯;は;tooth
-パーティー;パーティー;party
-はい;はい;yes (formal)
-灰皿;はいざら;ashtray
-入る;はいる;to enter,to contain
-葉書;はがき;postcard
-はく;はく;to wear,to put on trousers
-箱;はこ;box
-橋;はし;bridge
-はし;はし;chopsticks
-始まる;はじまる;to begin
-初め / 始め;はじめ;beginning
-初めて;はじめて;for the first time
-走る;はしる;to run
-バス;バス;bus
-バター;バター;butter
-二十歳;はたち;20 years old,20th year
-働く;はたらく;to work
-八;はち;eight (number)
-二十日;はつか;twenty days,twentieth
-花;はな;flower
-鼻;はな;nose
-話;はなし;talk,story
-話す;はなす;to speak
-早い;はやい;early
-速い;はやい;quick
-春;はる;spring
-貼る;はる;to stick
-晴れ;はれ;clear weather
-晴れる;はれる;to be sunny
-半;はん;half
-晩;ばん;night
-パン;パン;bread
-ハンカチ;ハンカチ;handkerchief
-番号;ばんごう;number
-晩御飯;ばんごはん;evening meal
-半分;はんぶん;half minute
-東;ひがし;east
-引く;ひく;to pull
-弾く;ひく;to play an instrument with strings, including piano
-低い;ひくい;short,low
-飛行機;ひこうき;aeroplane
-左;ひだり;left hand side
-人;ひと;person
-一つ;ひとつ;one (thing)
-一月;ひとつき;one month
-一人;ひとり;one person
-暇;ひま;free time
-百;ひゃく;hundred
-病院;びょういん;hospital
-病気;びょうき;illness
-昼;ひる;noon, daytime
-昼御飯;ひるごはん;midday meal
-広い;ひろい;spacious,wide
-フィルム;フィルム;roll of film
-封筒;ふうとう;envelope
-プール;プール;swimming pool
-フォーク;フォーク;fork
-吹く;ふく;to blow
-服;ふく;clothes
-二つ;ふたつ;two (things)
-豚肉;ぶたにく;pork
-二人;ふたり;two people
-二日;ふつか;two days, second day of the month
-太い;ふとい;fat
-冬;ふゆ;winter
-降る;ふる;to fall, e.g. rain or snow
-古い;ふるい;old (not used for people)
-ふろ;ふろ;bath
-文章;ぶんしょう;sentence,text
-ページ;ページ;page
-下手;へた;unskillful
-ベッド;ベッド;bed
-ペット;ペット;pet
-部屋;へや;room
-辺;へん;area
-ペン;ペン;pen
-勉強;べんきょうする;to study
-便利;べんり;useful, convenient
-帽子;ぼうし;hat
-ボールペン;ボールペン;ball-point pen
-ほか;ほか;other, the rest
-ポケット;ポケット;pocket
-欲しい;ほしい;want
-ポスト;ポスト;post
-細い;ほそい;thin
-ボタン;ボタン;button
-ホテル;ホテル;hotel
-本;ほん;book
-本棚;ほんだな;bookshelves
-ほんとう;ほんとう;truth
-毎朝;まいあさ;every morning
-毎月;まいげつ / まいつき;every month
-毎週;まいしゅう;every week
-毎日;まいにち;every day
-毎年;まいねん / まいとし;every year
-毎晩;まいばん;every night
-前;まえ;before
-曲る;まがる;to turn,to bend
-まずい;まずい;unpleasant,unpalatable
-また;また;again,and
-まだ;まだ;yet,still
-町;まち;town,city
-待つ;まつ;to wait
-まっすぐ;まっすぐ;straight ahead,direct
-マッチ;マッチ;match
-窓;まど;window
-丸い / 円い;まるい;round,circular
-万;まん;ten thousand
-万年筆;まんねんひつ;fountain pen
-磨く;みがく;to brush teeth, to polish
-右;みぎ;right side
-短い;みじかい;short
-水;みず;water
-店;みせ;shop
-見せる;みせる;to show
-道;みち;street
-三日;みっか;three days, third day of the month
-三つ;みっつ;three (things)
-緑;みどり;green
-皆さん;みなさん;everyone (formal)
-南;みなみ;south
-耳;みみ;ear
-見る / 観る;みる;to see, to watch
-みんな;みんな;everyone
-六日;むいか;six days, sixth day of the month
-向こう;むこう;towards over there
-難しい;むずかしい;difficult
-六つ;むっつ;six (things)
-村;むら;village
-目;め;eye
-メートル;メートル;metre
-眼鏡;めがね;glasses
-もう;もう;already
-もう一度;もういちど;again
-木曜日;もくようび;Thursday
-持つ;もつ;to hold
-もっと;もっと;more
-物;もの;thing
-門;もん;gate
-問題;もんだい;problem
-八百屋;やおや;greengrocer
-野菜;やさい;vegetable
-易しい;やさしい;easy, simple
-安い;やすい;cheap
-休み;やすみ;rest,holiday
-休む;やすむ;to rest
-八つ;やっつ;eight (things)
-山;やま;mountain
-やる;やる;to do (alternative)
-夕方;ゆうがた;evening
-夕飯;ゆうはん;dinner
-郵便局;ゆうびんきょく;post office
-昨夜;ゆうべ;last night
-有名;ゆうめい;famous
-雪;ゆき;snow
-ゆっくりと;ゆっくりと;slowly
-八日;ようか;eight days, eighth day of the month
-洋服;ようふく;western-style clothes
-よく;よく;often, well
-横;よこ;beside,side,width
-四日;よっか;four days, fouth day of the month
-四つ;よっつ;four (things)
-呼ぶ;よぶ;to call out,to invite
-読む;よむ;to read
-夜;よる;evening,night
-弱い;よわい;weak
-来月;らいげつ;next month
-来週;らいしゅう;next week
-来年;らいねん;next year
-ラジオ;ラジオ;radio
-ラジカセ / ラジオカセット;ラジカセ / ラジオカセット;radio cassette player
-りっぱ;りっぱ;splendid
-留学生;りゅうがくせい;overseas student
-両親;りょうしん;both parents
-料理;りょうり;cuisine
-旅行;りょこう;travel
-零;れい;zero (kanji)
-冷蔵庫;れいぞうこ;refrigerator
-レコード;レコード;record
-レストラン;レストラン;restaurant
-練習;れんしゅうする;to practice
-廊下;ろうか;corridor
-六;ろく;six (number)
-ワイシャツ;ワイシャツ;business shirt
-若い;わかい;young
-分かる;わかる;to be understood
-忘れる;わすれる;to forget
-私;わたし;I,myself
-渡す;わたす;to hand over
-渡る;わたる;to go across
-悪い;わるい;bad
-より;ほう;Used for comparison.
+会う;あう;to meet;1
+青い;あおい;blue;2
+赤い;あかい;red;0
+明るい;あかるい;bright;0,3
+秋;あき;autumn;1
+開く;あく;to open,to become open;0
+開ける;あける;to open;0
+上げる;あげる;to give;0
+朝;あさ;morning;1
+朝御飯;あさごはん;breakfast;3
+明後日;あさって;day after tomorrow;2
+足;あし;foot,leg;2
+明日;あした;tomorrow;3
+彼処;あそこ;over there;0
+遊ぶ;あそぶ;to play,to make a visit;0
+暖かい;あたたかい;warm;4
+頭;あたま;head;3,2
+新しい;あたらしい;new;4
+あちら;あちら;over that way;
+暑い;あつい;hot;2
+厚い;あつい;kind, deep, thick;0
+あっち;あっち;over there (shortened);
+後;あと;afterwards;1
+あなた;あなた;you;
+兄;あに;(humble) older brother;1
+姉;あね;(humble) older sister;0
+あの;あの;um... that over there;0
+アパート;アパート;apartment;2
+あびる;あびる;to bathe,to shower;
+危ない;あぶない;dangerous;0,3
+甘い;あまい;sweet;0
+あまり;あまり;not very;
+雨;あめ;rain;1
+飴;あめ;candy;0
+洗う;あらう;to wash;0
+ある;ある;to be,to have (used for inanimate objects);
+歩く;あるく;to walk;2
+あれ;あれ;(pronoun) that;
+いい / よい;いい / よい;good;
+いいえ;いいえ;no;
+言う;いう;to say;0
+家;いえ;house;2
+いかが;いかが;how;
+行く;いく;to go;0
+いくつ;いくつ;how many?,how old?;
+いくら;いくら;how much?;
+池;いけ;pond;2
+医者;いしゃ;medical doctor;0
+いす;いす;chair;
+忙しい;いそがしい;busy,irritated;4
+痛い;いたい;painful;2
+一;いち;one (number);2
+一日;いちにち;(1) one day, (2) first of month;4
+いちばん;いちばん;best,first;
+いつ;いつ;when;
+五日;いつか;five days, fifth day;3,0
+一緒;いっしょ;together;0
+五つ;いつつ;five (things);2
+いつも;いつも;always;
+犬;いぬ;dog;2
+今;いま;now;1
+意味;いみ;meaning;1
+妹;いもうと;(humble) younger sister;4
+嫌;いや;unpleasant;2
+入口;いりぐち;entrance;0
+居る;いる;to be, to have (used for people and animals);0
+要る;いる;to need;0
+入れる;いれる;to put in;0
+色;いろ;colour;2
+いろいろ;いろいろ;various;
+上;うえ;on top of;0,2
+後ろ;うしろ;behind;0
+薄い;うすい;thin,weak;0,2
+歌;うた;song;2
+歌う;うたう;to sing;0
+生まれる;うまれる;to be born;0
+海;うみ;sea;1
+売る;うる;to sell;0
+煩い;うるさい;noisy,annoying;3
+上着;うわぎ;jacket;0
+絵;え;picture;1
+映画;えいが;movie;1,0
+映画館;えいがかん;cinema;3
+英語;えいご;English language;0
+ええ;ええ;yes;1,2,0
+駅;えき;station;1
+エレベーター;エレベーター;elevator;3
+鉛筆;えんぴつ;pencil;0
+おいしい;おいしい;delicious;
+多い;おおい;many;1,2
+大きい;おおきい;big;3
+大勢;おおぜい;great number of people;3
+お母さん;おかあさん;(honorable) mother;2
+お菓子;おかし;sweets, candy;2
+お金;おかね;money;0
+起きる;おきる;to get up;2
+置く;おく;to put;0
+奥さん;おくさん;(honorable) wife;1
+お酒;おさけ;alcohol, rice wine;
+お皿;おさら;plate, dish;
+おじいさん;おじいさん;grandfather,male senior citizen;
+教える;おしえる;to teach,to tell;0
+おじさん;おじさん;uncle,middle aged gentleman;
+押す;おす;to push, to stamp something;0
+遅い;おそい;late,slow;0,2
+お茶;おちゃ;green tea;0
+お手洗い;おてあらい;bathroom;3
+お父さん;おとうさん;(honorable) father;2
+弟;おとうと;younger brother;4
+男;おとこ;man;3
+男の子;おとこのこ;boy;3
+一昨日;おととい;day before yesterday;3
+一昨年;おととし;year before last;2
+大人;おとな;adult;0
+おなか;おなか;stomach;
+同じ;おなじ;same;0
+お兄さん;おにいさん;(honorable) older brother;2
+お姉さん;おねえさん;(honorable) older sister;2
+おばあさん;おばあさん;grandmother,female senior-citizen;
+伯母さん / 叔母さん;おばさん;aunt;
+お風呂;おふろ;bath (formal);2
+お弁当;おべんとう;boxed lunch;0
+覚える;おぼえる;to remember;3
+おまわりさん;おまわりさん;friendly term for policeman;
+重い;おもい;heavy;0
+おもしろい;おもしろい;interesting;
+泳ぐ;およぐ;to swim;2
+降りる;おりる;to get off, to descend;2
+終る;おわる;to finish;0
+音楽;おんがく;music;1
+女;おんな;woman;3
+女の子;おんなのこ;girl;3
+外国;がいこく;foreign country;0
+外国人;がいこくじん;foreigner;4
+会社;かいしゃ;company;0
+階段;かいだん;stairs;0
+買い物;かいもの;shopping;0
+買う;かう;to buy;0
+返す;かえす;to return something;1
+帰る;かえる;to go back;1
+かかる;かかる;to take time or money;
+かぎ;かぎ;key;
+書く;かく;to write;1
+学生;がくせい;student;0
+かける;かける;to call by phone;
+傘;かさ;umbrella;1
+貸す;かす;to lend;0
+風;かぜ;wind;0
+風邪;かぜ;a cold;0
+家族;かぞく;family;1
+方;かた;person, way of doing;2
+学校;がっこう;school;0
+カップ;カップ;cup;1
+家庭;かてい;household;0
+角;かど;a corner;1
+かばん;かばん;bag,basket;
+花瓶;かびん;a vase;0
+紙;かみ;paper;2
+カメラ;カメラ;camera;1
+火曜日;かようび;Tuesday;2
+辛い;からい;spicy;2
+体;からだ;body;0
+借りる;かりる;to borrow;0
+軽い;かるい;light;0
+カレー;カレー;curry;0
+カレンダー;カレンダー;calendar;2
+川 / 河;かわ;river;
+かわいい;かわいい;cute;
+漢字;かんじ;Chinese character;0
+木;き;tree,wood;1
+黄色い;きいろい;yellow;0
+消える;きえる;to disappear;0
+聞く;きく;to hear,to listen to,to ask;0
+北;きた;north;0,2
+ギター;ギター;guitar;1
+汚い;きたない;dirty;3
+喫茶店;きっさてん;coffee lounge;3,0
+切手;きって;postage stamp;0
+切符;きっぷ;ticket;0
+昨日;きのう;yesterday;2
+九;きゅう / く;nine (number);
+牛肉;ぎゅうにく;beef;0
+牛乳;ぎゅうにゅう;milk;0
+今日;きょう;today;1
+教室;きょうしつ;classroom;0
+兄弟;きょうだい;(humble) siblings;1
+去年;きょねん;last year;1
+嫌い;きらい;hate;0
+切る;きる;to cut;1
+着る;きる;to put on from the shoulders down;0
+きれい;きれい;pretty,clean;
+キロ / キログラム;キロ / キログラム;kilogram;
+キロ / キロメートル;キロ / キロメートル;kilometre;
+銀行;ぎんこう;bank;0
+金曜日;きんようび;Friday;3
+薬;くすり;medicine;0
+ください;ください;please;
+果物;くだもの;fruit;2
+口;くち;mouth,opening;0
+靴;くつ;shoes;2
+靴下;くつした;socks;2,4
+国;くに;country;0
+曇り;くもり;cloudy weather;3
+曇る;くもる;to become cloudy,to become dim;2
+暗い;くらい;gloomy;0
+クラス;クラス;class;1
+グラム;グラム;gram;
+来る;くる;to come;1
+車;くるま;car,vehicle;0
+黒い;くろい;black;2
+警官;けいかん;policeman;0
+今朝;けさ;this morning;1
+消す;けす;to erase,to turn off power;0
+結構;けっこう;splendid,enough;0,3,1
+結婚;けっこん;marriage;0
+月曜日;げつようび;Monday;3
+玄関;げんかん;entry hall;1
+元気;げんき;health, vitality;1
+五;ご;five (number);1
+公園;こうえん;park;0
+交差点;こうさてん;intersection;0,3
+紅茶;こうちゃ;black tea;0
+交番;こうばん;police box;0
+声;こえ;voice;1
+コート;コート;coat,tennis court;1
+コーヒー;コーヒー;coffee;3
+ここ;ここ;here;
+午後;ごご;afternoon;1
+九日;ここのか;nine days, ninth day;4
+九つ;ここのつ;nine (things);2
+午前;ごぜん;before noon (a.m.);1
+答える;こたえる;to answer;3,2
+こちら;こちら;this person or way;
+こっち;こっち;this person or way (shortened);
+コップ;コップ;a glass;0
+今年;ことし;this year;0
+言葉;ことば;word,language;3
+子供;こども;child;0
+この;この;this (thing);
+御飯;ごはん;cooked rice,meal;1
+コピーする;コピーする;to copy;
+困る;こまる;to be worried;2
+これ;これ;this;1
+今月;こんげつ;this month;0
+今週;こんしゅう;this week;0
+こんな;こんな;such;0
+今晩;こんばん;this evening;1
+さあ;さあ;well…;1
+財布;さいふ;wallet;0
+魚;さかな;fish;0
+先;さき;the future,previous;0
+咲く;さく;to bloom;0
+作文;さくぶん;composition,writing;0
+差す;さす;to stretch out hands,to raise an umbrella;1
+雑誌;ざっし;magazine;0
+砂糖;さとう;sugar;2
+寒い;さむい;cold;2
+再来年;さらいねん;year after next;0
+三;さん;three (number);
+散歩;さんぽする;to stroll;
+四;し / よん;four (number);
+塩;しお;salt;2
+しかし;しかし;however;
+時間;じかん;time;0
+仕事;しごと;job;0
+辞書;じしょ;dictionary;1
+静か;しずか;quiet;1
+下;した;below;0
+七;しち / なな;seven (number);
+質問;しつもん;question;0
+自転車;じてんしゃ;bicycle;2,0
+自動車;じどうしゃ;automobile;2,0
+死ぬ;しぬ;to die;0
+字引;じびき;dictionary (alternative);3
+自分;じぶん;oneself;0
+閉まる;しまる;to close,to be closed;2
+閉める;しめる;to close something;2
+締める;しめる;to tie;2
+じゃ / じゃあ;じゃ / じゃあ;well then…;
+写真;しゃしん;photograph;0
+シャツ;シャツ;shirt;1
+シャワー;シャワー;shower;1
+十;じゅう / とお;ten;
+授業;じゅぎょう;lesson,class work;1
+宿題;しゅくだい;homework;0
+上手;じょうず;skillful;3
+丈夫;じょうぶ;strong,durable;0
+しょうゆ;しょうゆ;soy sauce;
+食堂;しょくどう;dining hall;0
+知る;しる;to know;0
+白い;しろい;white;2
+新聞;しんぶん;newspaper;0
+水曜日;すいようび;Wednesday;3
+吸う;すう;to smoke,to suck;0
+スカート;スカート;skirt;2
+好き;すき;likeable;2
+少ない;すくない;a few;3
+すぐに;すぐに;instantly;
+少し;すこし;few;2
+涼しい;すずしい;refreshing;3
+ストーブ;ストーブ;heater;2
+スプーン;スプーン;spoon;2
+スポーツ;スポーツ;sport;2
+ズボン;ズボン;trousers;2,1
+住む;すむ;to live in;1
+スリッパ;スリッパ;slippers;1,2
+する;する;to do;
+座る;すわる;to sit;0
+背;せ;height,stature;0,1
+生徒;せいと;pupil;1
+セーター;セーター;sweater,jumper;1
+せっけん;せっけん;soap;
+背広;せびろ;business suit;
+狭い;せまい;narrow;2
+ゼロ;ゼロ;zero (katakana);1
+千;せん;thousand;1
+先月;せんげつ;last month;1
+先週;せんしゅう;last week;0
+先生;せんせい;teacher,doctor;3
+洗濯;せんたく;washing;0
+全部;ぜんぶ;all;1
+掃除;そうじ;cleaning, sweeping;0
+そうして / そして;そうして / そして;and;
+そこ;そこ;that place;
+そちら;そちら;there;
+そっち;そっち;there (shortened);
+外;そと;outside;1
+その;その;that (thing);
+そば;そば;near,beside;
+空;そら;sky;1
+それ;それ;that;1
+それから;それから;after that;
+それでは;それでは;in that situation;
+大学;だいがく;university;0
+大使館;たいしかん;embassy;3
+大丈夫;だいじょうぶ;all right;3
+大好き;だいすき;to be very likeable;1
+大切;たいせつ;important;0
+台所;だいどころ;kitchen;0
+たいへん;たいへん;very much,difficult situation;
+高い;たかい;tall, expensive;2
+たくさん;たくさん;many,a lot;
+タクシー;タクシー;taxi;1
+出す;だす;to put out;1
+立つ;たつ;to stand;1
+たて;たて;length,height;
+建物;たてもの;building;2,3
+楽しい;たのしい;enjoyable;3
+頼む;たのむ;to ask;2
+たばこ;たばこ;tobacco,cigarettes;
+たぶん;たぶん;probably;
+食べ物;たべもの;food;3,2
+食べる;たべる;to eat;2
+卵;たまご;egg;2,0
+誰;だれ;who;1
+誰か;だれか;somebody;1
+誕生日;たんじょうび;birthday;3
+だんだん;だんだん;gradually;
+小さい;ちいさい;little;3
+近い;ちかい;close;2
+違う;ちがう;to differ;0
+近く;ちかく;near;2,1
+地下鉄;ちかてつ;underground train;0
+地図;ちず;map;1
+茶色;ちゃいろ;brown;0
+ちゃわん;ちゃわん;rice bowl;
+ちょうど;ちょうど;exactly;
+ちょっと;ちょっと;somewhat;
+使う;つかう;to use;0
+疲れる;つかれる;to get tired;3
+次;つぎ;next;2
+着く;つく;to arrive at;1,2
+机;つくえ;desk;0
+作る;つくる;to make;2
+つける;つける;to turn on;
+勤める;つとめる;to work for someone;3
+つまらない;つまらない;boring;
+冷たい;つめたい;cold to the touch;0,3
+強い;つよい;powerful;2
+手;て;hand;1
+テープ;テープ;tape;1
+テーブル;テーブル;table;0
+テープレコーダー;テープレコーダー;tape recorder;5
+出かける;でかける;to go out;0
+手紙;てがみ;letter;0
+できる;できる;to be able to;
+出口;でぐち;exit;1
+テスト;テスト;test;1
+では;では;with that...;1
+デパート;デパート;department store;2
+でも;でも;but;1
+出る;でる;to appear,to leave;1
+テレビ;テレビ;television;1
+天気;てんき;weather;1
+電気;でんき;electricity,electric light;1
+電車;でんしゃ;electric train;0,1
+電話;でんわ;telephone;0
+戸;と;Japanese style door;0
+ドア;ドア;Western style door;1
+トイレ;トイレ;toilet;1
+どう;どう;how,in what way;1
+どうして;どうして;for what reason;
+どうぞ;どうぞ;please,here;1
+動物;どうぶつ;animal;0
+どうも;どうも;thanks;1
+遠い;とおい;far;0
+十日;とおか;ten days,the tenth day;0
+時々;ときどき;sometimes;0,2
+時計;とけい;watch,clock;0
+どこ;どこ;where;
+所;ところ;place;0
+年;とし;year;2
+図書館;としょかん;library;2
+どちら;どちら;which of two;
+どっち;どっち;which of two (shortened);
+とても;とても;very;
+どなた;どなた;who is it;
+隣;となり;next door to;0
+どの;どの;which;
+飛ぶ;とぶ;to fly,to hop;0
+止まる;とまる;to come to a halt;0
+友達;ともだち;friend;0
+土曜日;どようび;Saturday;2
+鳥;とり;bird;0
+とり肉;とりにく;chicken meat;
+取る;とる;to take something;1
+撮る;とる;to take a photo or record a film;1
+どれ;どれ;which (of three or more);
+ナイフ;ナイフ;knife;1
+中;なか;middle;1
+長い;ながい;long;2
+鳴く;なく;animal noise. to chirp, roar or croak etc.;0
+無くす;なくす;to lose something;0
+なぜ;なぜ;why;
+夏;なつ;summer;2
+夏休み;なつやすみ;summer holiday;3
+など;など;et cetera;
+七つ;ななつ;seven (things);2
+七日;なのか;seven days,the seventh day;0
+名前;なまえ;name;0
+習う;ならう;to learn;2
+並ぶ;ならぶ;to line up,to stand in a line;0
+並べる;ならべる;to line up,to set up;0
+なる;なる;to become;
+何;なん / なに;what;
+二;に;two (number);1
+賑やか;にぎやか;bustling,busy;2
+肉;にく;meat;2
+西;にし;west;0
+日曜日;にちようび;Sunday;3
+荷物;にもつ;luggage;1
+ニュース;ニュース;news;1
+庭;にわ;garden;0
+脱ぐ;ぬぐ;to take off clothes;1
+温い;ぬるい;luke warm;2
+ネクタイ;ネクタイ;tie,necktie;1
+猫;ねこ;cat;1
+寝る;ねる;to go to bed,to sleep;0
+ノート;ノート;notebook,exercise book;1
+登る;のぼる;to climb;0
+飲み物;のみもの;a drink;3,2
+飲む;のむ;to drink;1
+乗る;のる;to get on,to ride;0
+歯;は;tooth;1
+パーティー;パーティー;party;1
+はい;はい;yes (formal);1
+灰皿;はいざら;ashtray;0
+入る;はいる;to enter,to contain;1
+葉書;はがき;postcard;0
+はく;はく;to wear,to put on trousers;
+箱;はこ;box;0
+橋;はし;bridge;2
+はし;はし;chopsticks;
+始まる;はじまる;to begin;0
+初め / 始め;はじめ;beginning;
+初めて;はじめて;for the first time;2
+走る;はしる;to run;2
+バス;バス;bus;1
+バター;バター;butter;1
+二十歳;はたち;20 years old,20th year;1
+働く;はたらく;to work;0
+八;はち;eight (number);2
+二十日;はつか;twenty days,twentieth;0
+花;はな;flower;2
+鼻;はな;nose;0
+話;はなし;talk,story;3
+話す;はなす;to speak;2
+早い;はやい;early;2
+速い;はやい;quick;2
+春;はる;spring;1
+貼る;はる;to stick;0
+晴れ;はれ;clear weather;2
+晴れる;はれる;to be sunny;2
+半;はん;half;1
+晩;ばん;night;0
+パン;パン;bread;1
+ハンカチ;ハンカチ;handkerchief;3,0
+番号;ばんごう;number;3
+晩御飯;ばんごはん;evening meal;3
+半分;はんぶん;half minute;3
+東;ひがし;east;0,3
+引く;ひく;to pull;0
+弾く;ひく;to play an instrument with strings, including piano;0
+低い;ひくい;short,low;2
+飛行機;ひこうき;aeroplane;2
+左;ひだり;left hand side;0
+人;ひと;person;0
+一つ;ひとつ;one (thing);2
+一月;ひとつき;one month;2
+一人;ひとり;one person;2
+暇;ひま;free time;0
+百;ひゃく;hundred;2
+病院;びょういん;hospital;0
+病気;びょうき;illness;0
+昼;ひる;noon, daytime;2
+昼御飯;ひるごはん;midday meal;3
+広い;ひろい;spacious,wide;2
+フィルム;フィルム;roll of film;1
+封筒;ふうとう;envelope;0
+プール;プール;swimming pool;1
+フォーク;フォーク;fork;1
+吹く;ふく;to blow;1,2
+服;ふく;clothes;2
+二つ;ふたつ;two (things);3
+豚肉;ぶたにく;pork;0
+二人;ふたり;two people;3
+二日;ふつか;two days, second day of the month;0
+太い;ふとい;fat;2
+冬;ふゆ;winter;2
+降る;ふる;to fall, e.g. rain or snow;1
+古い;ふるい;old (not used for people);2
+ふろ;ふろ;bath;
+文章;ぶんしょう;sentence,text;1
+ページ;ページ;page;
+下手;へた;unskillful;2
+ベッド;ベッド;bed;1
+ペット;ペット;pet;1
+部屋;へや;room;2
+辺;へん;area;0
+ペン;ペン;pen;1
+勉強;べんきょうする;to study;
+便利;べんり;useful, convenient;1
+帽子;ぼうし;hat;0
+ボールペン;ボールペン;ball-point pen;0
+ほか;ほか;other, the rest;
+ポケット;ポケット;pocket;2,1
+欲しい;ほしい;want;2
+ポスト;ポスト;post;1
+細い;ほそい;thin;2
+ボタン;ボタン;button;0
+ホテル;ホテル;hotel;1
+本;ほん;book;1
+本棚;ほんだな;bookshelves;1
+ほんとう;ほんとう;truth;
+毎朝;まいあさ;every morning;1,0
+毎月;まいげつ / まいつき;every month;
+毎週;まいしゅう;every week;0
+毎日;まいにち;every day;1
+毎年;まいねん / まいとし;every year;
+毎晩;まいばん;every night;1,0
+前;まえ;before;1
+曲る;まがる;to turn,to bend;0
+まずい;まずい;unpleasant,unpalatable;
+また;また;again,and;
+まだ;まだ;yet,still;
+町;まち;town,city;2
+待つ;まつ;to wait;1
+まっすぐ;まっすぐ;straight ahead,direct;
+マッチ;マッチ;match;1
+窓;まど;window;1
+丸い / 円い;まるい;round,circular;
+万;まん;ten thousand;1
+万年筆;まんねんひつ;fountain pen;3
+磨く;みがく;to brush teeth, to polish;0
+右;みぎ;right side;0
+短い;みじかい;short;3
+水;みず;water;0
+店;みせ;shop;2
+見せる;みせる;to show;2
+道;みち;street;0
+三日;みっか;three days, third day of the month;0
+三つ;みっつ;three (things);3
+緑;みどり;green;1
+皆さん;みなさん;everyone (formal);2
+南;みなみ;south;0
+耳;みみ;ear;2
+見る / 観る;みる;to see, to watch;
+みんな;みんな;everyone;
+六日;むいか;six days, sixth day of the month;0
+向こう;むこう;towards over there;2,0
+難しい;むずかしい;difficult;4,0
+六つ;むっつ;six (things);3
+村;むら;village;2
+目;め;eye;1
+メートル;メートル;metre;
+眼鏡;めがね;glasses;1
+もう;もう;already;1,0
+もう一度;もういちど;again;
+木曜日;もくようび;Thursday;3
+持つ;もつ;to hold;1
+もっと;もっと;more;1
+物;もの;thing;2,0
+門;もん;gate;1
+問題;もんだい;problem;0
+八百屋;やおや;greengrocer;0
+野菜;やさい;vegetable;0
+易しい;やさしい;easy, simple;0,3
+安い;やすい;cheap;2
+休み;やすみ;rest,holiday;3
+休む;やすむ;to rest;2
+八つ;やっつ;eight (things);3
+山;やま;mountain;2
+やる;やる;to do (alternative);
+夕方;ゆうがた;evening;0
+夕飯;ゆうはん;dinner;0
+郵便局;ゆうびんきょく;post office;3
+昨夜;ゆうべ;last night;3
+有名;ゆうめい;famous;0
+雪;ゆき;snow;2
+ゆっくりと;ゆっくりと;slowly;
+八日;ようか;eight days, eighth day of the month;0
+洋服;ようふく;western-style clothes;0
+よく;よく;often, well;
+横;よこ;beside,side,width;0
+四日;よっか;four days, fouth day of the month;0
+四つ;よっつ;four (things);3
+呼ぶ;よぶ;to call out,to invite;0
+読む;よむ;to read;1
+夜;よる;evening,night;1
+弱い;よわい;weak;2
+来月;らいげつ;next month;1
+来週;らいしゅう;next week;0
+来年;らいねん;next year;0
+ラジオ;ラジオ;radio;1
+ラジカセ / ラジオカセット;ラジカセ / ラジオカセット;radio cassette player;
+りっぱ;りっぱ;splendid;
+留学生;りゅうがくせい;overseas student;3,4
+両親;りょうしん;both parents;1
+料理;りょうり;cuisine;1
+旅行;りょこう;travel;0
+零;れい;zero (kanji);1
+冷蔵庫;れいぞうこ;refrigerator;3
+レコード;レコード;record;2
+レストラン;レストラン;restaurant;1
+練習;れんしゅうする;to practice;
+廊下;ろうか;corridor;0
+六;ろく;six (number);2
+ワイシャツ;ワイシャツ;business shirt;
+若い;わかい;young;2
+分かる;わかる;to be understood;2
+忘れる;わすれる;to forget;0
+私;わたし;I,myself;0
+渡す;わたす;to hand over;0
+渡る;わたる;to go across;0
+悪い;わるい;bad;2
+より;ほう;Used for comparison.;
