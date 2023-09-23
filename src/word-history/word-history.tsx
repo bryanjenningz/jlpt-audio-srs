@@ -1,5 +1,6 @@
 import { type Word } from "~/words/types";
 import { classNames } from "~/utils/class-names";
+import { Pronunciation } from "~/components/pronunciation";
 
 export function WordHistory({
   wordHistoryWithWords,
@@ -27,8 +28,13 @@ export function WordHistory({
               )}
             >
               <div className="flex grow items-center gap-3">
-                <h3 className="line-clamp-1 shrink-0 text-ellipsis text-xs">
-                  {`${wordHistoryEntry.kanji} ${wordHistoryEntry.kana}`}
+                <h3 className="line-clamp-1 flex shrink-0 gap-2 text-ellipsis text-xs">
+                  {wordHistoryEntry.kanji}
+                  <Pronunciation
+                    pronunciation={wordHistoryEntry.kana}
+                    pitchAccents={wordHistoryEntry.pitchAccents}
+                    pitchAccentsShown={1}
+                  />
                 </h3>
                 <p className="line-clamp-1 text-ellipsis text-xs">
                   {wordHistoryEntry.definition}
