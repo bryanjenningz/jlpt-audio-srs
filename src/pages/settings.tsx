@@ -1,16 +1,35 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { SideMenu } from "~/components/side-menu";
 import { SimpleHeader } from "~/components/simple-header";
 
+function usePitchAccentShown() {
+  const key = "pitch-accent-shown";
+  const [pitchAccentShown, setPitchAccentShown] = useState(true);
+
+  useEffect(() => {
+    setPitchAccentShown((localStorage.getItem(key) ?? "true") === "true");
+  }, []);
+
+  const togglePitchAccentShown = useCallback(() => {
+    setPitchAccentShown((pitchAccentShown) => {
+      const result = !pitchAccentShown;
+      localStorage.setItem(key, String(result));
+      return result;
+    });
+  }, []);
+
+  return { pitchAccentShown, togglePitchAccentShown };
+}
+
 export default function Settings() {
-  const [isSrsEasyMode, setIsSrsEasyMode] = useState(false);
+  const { pitchAccentShown, togglePitchAccentShown } = usePitchAccentShown();
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
   const settings = [
     {
-      name: "SRS Easy Mode",
-      value: isSrsEasyMode,
-      toggle: () => setIsSrsEasyMode((isSrsEasyMode) => !isSrsEasyMode),
+      name: "Show pitch accent",
+      value: pitchAccentShown,
+      toggle: togglePitchAccentShown,
     },
   ];
 
