@@ -28,7 +28,7 @@ export function WordTablePagination() {
   return (
     <div className="flex w-full items-center justify-between">
       <button
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-700"
+        className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-700 disabled:bg-slate-900"
         disabled={page <= 0}
         onClick={() => decrementPage(level)}
         title="Previous page"
@@ -40,7 +40,7 @@ export function WordTablePagination() {
         (page + 1) * WORDS_PER_PAGE,
       )}`}
       <button
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-700"
+        className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-700 disabled:bg-slate-900"
         disabled={(page + 1) * WORDS_PER_PAGE >= wordsLength}
         onClick={() => incrementPage(level)}
         title="Next page"
