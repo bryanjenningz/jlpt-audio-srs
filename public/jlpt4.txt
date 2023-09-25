@@ -123,7 +123,7 @@
 ガス;ガス;gas;
 ガソリン;ガソリン;gasoline;0
 ガソリンスタンド;ガソリンスタンド;gas station;6
-堅/硬/固い;かたい;hard;
+固い;かたい;hard;0,2
 形;かたち;shape;0
 片付ける;かたづける;to tidy up;4
 課長;かちょう;section manager;0
@@ -132,7 +132,7 @@
 家内;かない;housewife;1
 悲しい;かなしい;sad;0,3
 必ず;かならず;certainly,necessarily;0
-お・金持ち;かねもち/おかねもち;rich man;
+金持ち;かねもち;rich man;3
 彼女;かのじょ;she,girlfriend;1
 壁;かべ;wall;0
 かまう;かまう;to mind;
@@ -195,7 +195,7 @@
 消しゴム;けしゴム;eraser;0
 下宿;げしゅく;lodging;0
 決して;けっして;never;0
-けれど/けれども;けれど/けれども;however;
+けれども;けれども;however;1
 原因;げんいん;cause,source;0
 けんか・する;けんか・する;to quarrel;
 研究;けんきゅう;research;0
@@ -236,7 +236,7 @@
 壊れる;こわれる;to be broken;3
 コンサート;コンサート;concert;1,3
 今度;こんど;now,next time;1
-コンピュータ/コンピューター;コンピュータ/コンピューター;computer;
+コンピューター;コンピューター;computer;3
 今夜;こんや;tonight;1
 最近;さいきん;latest,nowadays;0
 最後;さいご;last,end;1
@@ -591,7 +591,7 @@ express;express;train);
 優しい;やさしい;kind;0,3
 痩せる;やせる;to become thin;0
 やっと;やっと;at last;0
-やはり/やっぱり;やはり/やっぱり;as I thought,absolutely;
+やっぱり;やっぱり;as I thought,absolutely;
 止む;やむ;to stop;0
 柔らかい;やわらかい;soft,tender;4
 湯;ゆ;hot water;1
@@ -619,7 +619,7 @@ express;express;train);
 冷房;れいぼう;air conditioning;0
 歴史;れきし;history;0
 レジ;レジ;register;1
-レポート/リポート;レポート/リポート;report;
+レポート;レポート;report;2
 連絡;れんらく;contact;0
 ワープロ;ワープロ;word processor;0
 沸かす;わかす;to boil,to heat;0
