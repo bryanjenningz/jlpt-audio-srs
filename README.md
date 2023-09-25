@@ -17,6 +17,15 @@ The goal of this web app is to make reviewing JLPT vocab effortless - just liste
 - View JLPT 1-5 word lists
 - Works entirely offline (all HTTP responses are cached with service workers)
 
+## Screenshots
+
+<div style="display: flex;">
+  <img width="200" src="screenshots/reviewing.png" alt="Reviewing with autoplaying audio SRS" />
+  <img width="200" src="screenshots/side-menu.png" alt="Side menu" />
+  <img width="200" src="screenshots/word-table.png" alt="JLPT word table page" />
+  <img width="200" src="screenshots/settings.png" alt="Settings page" />
+</div>
+
 ## Credits
 
 - [https://www.tanos.co.uk](https://www.tanos.co.uk) for JLPT word lists
