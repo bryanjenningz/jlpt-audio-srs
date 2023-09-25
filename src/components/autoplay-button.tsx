@@ -8,19 +8,14 @@ export function AutoplayButton({
   setAutoplay: (updateAutoplay: (autoplay: boolean) => boolean) => void;
 }) {
   return (
-    <label
+    <button
       className={classNames(
         "flex w-full cursor-pointer justify-center rounded-full px-4 py-2 text-lg",
         autoplay ? "bg-blue-700" : "bg-slate-700",
       )}
+      onClick={() => setAutoplay((autoplay) => !autoplay)}
     >
-      {autoplay ? `Autoplaying` : `Autoplay`}
-      <input
-        className="hidden"
-        type="checkbox"
-        checked={autoplay}
-        onChange={() => setAutoplay((autoplay) => !autoplay)}
-      />
-    </label>
+      {autoplay ? "Autoplaying" : "Autoplay"}
+    </button>
   );
 }
