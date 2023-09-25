@@ -74,9 +74,10 @@ export function WordTable({
 
       <tbody className="h-96 w-full max-w-2xl overflow-auto text-lg">
         {words.map((word, i) => {
+          const key = `${word.kanji}-${word.definition}`;
           return (
             <tr
-              key={`${word.kanji}-${word.definition}`}
+              key={key}
               className={classNames(
                 "flex items-center p-2",
                 ((): string => {
@@ -133,7 +134,11 @@ export function WordTable({
               }}
             >
               <td className="mr-3 flex items-center">
+                <label htmlFor={key} className="sr-only">
+                  Mark known
+                </label>
                 <input
+                  id={key}
                   className="h-5 w-5"
                   type="checkbox"
                   checked={word.known}
