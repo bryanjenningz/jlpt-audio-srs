@@ -55,7 +55,7 @@
 いえ;いえ;same as いいえ in spoken;
 意外;いがい;unexpected, surprising;0,1
 息;いき;breath, tone;1
-行き;いき/ゆき;going,;
+行き;いき;going,;0
 勢い;いきおい;force, vigour, energy, spirit;3
 生き物;いきもの;living thing, animal;3,2
 幾つ;いくつ;how many?, how old?;1
@@ -237,7 +237,7 @@
 快適;かいてき;pleasant, agreeable, comfortable;0
 回復;かいふく;recovery (from illness),improvement, rehabilitation, restoration;0
 飼う;かう;to keep, to raise, to feed;1
-替える/換える;かえる;to exchange, to interchange, to substitute, to replace;
+替える;かえる;to exchange, to interchange, to substitute, to replace;0
 香り;かおり;aroma, fragrance, scent, smell;0
 画家;がか;painter, artist;0
 抱える;かかえる;to hold or carry under or in the arms;0
@@ -910,10 +910,10 @@
 騒音;そうおん;noise;0
 増加;ぞうか;increase,addition;0
 操作;そうさ;operation,management,processing;1
-掃除;そうじ/そうじする;cleaning,sweeping, to clean, to sweep;
+掃除;そうじ;cleaning,sweeping, to clean, to sweep;0
 想像;そうぞう;imagination,guess;0
 相続;そうぞく;succession,inheritance;0,1
-相談;そうだん/そうだんする;consultation,discussion，to consult, to discuss;
+相談;そうだん;consultation,discussion，to consult, to discuss;0
 装置;そうち;equipment,installation,apparatus;1
 相当;そうとう;suitable,fair,tolerable,proper;0
 速度;そくど;speed,velocity,rate;1
@@ -1174,7 +1174,7 @@
 留める;とめる;to fasten,to turn off,to detain;0
 友;とも;friend,companion,pal;1
 共に;ともに;sharing with,participate in;0,1
-土曜/土曜日;どよう/どようび;Saturday;
+土曜日;どようび;Saturday;2
 虎;とら;tiger;0
 取り上げる;とりあげる;to take up,to pick up,to disqualify,to confiscate,to deprive;0,4
 努力;どりょく;great effort,exertion,endeavour,effort;1
@@ -1413,7 +1413,7 @@
 減らす;へらす;to abate,to decrease,to diminish,to shorten;0
 減る;へる;to decrease (in size or number),to diminish,to abate;0
 変化;へんか;goblin,ghost,apparition,bugbear;1
-勉強/勉強する;べんきょう・する;study, work, to study, to sell (a thing) cheap;
+勉強;べんきょう;study, work, to study, to sell (a thing) cheap;0
 変更;へんこう;change,modification,alteration;0
 弁当;べんとう;box lunch;3
 法;ほう;Act (law: the X Act);0
@@ -1422,7 +1422,7 @@
 方向;ほうこう;direction,course,way;0
 報告;ほうこく;report,information;0
 宝石;ほうせき;gem,jewel;0
-放送/放送する;ほうそう・する;broadcast,　broadcasting, to broadcast;
+放送;ほうそう;broadcast,　broadcasting, to broadcast;0
 豊富;ほうふ;abundance,wealth,plenty,bounty;0,1
 方法;ほうほう;method,manner,way,means,technique;0
 訪問;ほうもん;call,visit;0
@@ -1528,7 +1528,7 @@
 燃える;もえる;to burn;0
 目的;もくてき;purpose,goal,aim,objective,intention;0
 目標;もくひょう;mark,objective,target;0
-木曜/木曜日;もくよう/もくようび;Thursday;
+木曜日;もくようび;Thursday;3
 文字;もじ;letter (of alphabet),character;1
 もしも;もしも;if;
 持ち上げる;もちあげる;to raise,to lift up,to flatter;0
@@ -1579,7 +1579,7 @@
 輸出;ゆしゅつ・する;export, to export;
 譲る;ゆずる;to turn over,to assign,to hand over;0
 豊か;ゆたか;abundant,wealthy,plentiful,rich;1
-ゆっくり/と;ゆっくり/と;slowly,at ease;
+ゆっくり;ゆっくり;slowly,at ease;3
 輸入;ゆにゅう・する;importation,import,introduction, to import;
 許す;ゆるす;to permit, to allow, to approve, to forgive;2
 夜;よ;evening,night;1
