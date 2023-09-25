@@ -65,14 +65,6 @@ for (const filePath of FILE_PATHS) {
             if (a.kanji > b.kanji) return 1;
             return 0;
           });
-
-        function count<T>(values: Iterable<T>): Map<T, number> {
-          const counts = new Map<T, number>();
-          for (const value of values) {
-            counts.set(value, (counts.get(value) ?? 0) + 1);
-          }
-          return counts;
-        }
       })(),
     },
     {
@@ -88,14 +80,6 @@ for (const filePath of FILE_PATHS) {
             if (a.definition > b.definition) return 1;
             return 0;
           });
-
-        function count<T>(values: Iterable<T>): Map<T, number> {
-          const counts = new Map<T, number>();
-          for (const value of values) {
-            counts.set(value, (counts.get(value) ?? 0) + 1);
-          }
-          return counts;
-        }
       })(),
     },
   ].filter((category) => category.lines.length > 0);
@@ -129,4 +113,12 @@ for (const filePath of FILE_PATHS) {
   //     )
   //     .join(ENTRY_SEPARATOR),
   // );
+}
+
+function count<T>(values: Iterable<T>): Map<T, number> {
+  const counts = new Map<T, number>();
+  for (const value of values) {
+    counts.set(value, (counts.get(value) ?? 0) + 1);
+  }
+  return counts;
 }
