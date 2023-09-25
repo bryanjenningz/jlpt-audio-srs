@@ -6,7 +6,9 @@ import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   useEffect(() => {
-    void navigator.serviceWorker.register("/service-worker.mjs");
+    if ("serviceWorker" in navigator) {
+      void navigator.serviceWorker.register("/service-worker.mjs");
+    }
   }, []);
 
   return (
