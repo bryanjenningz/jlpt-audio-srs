@@ -17,7 +17,7 @@ export function ProgressBar({ words }: { words: Word[] }) {
 
   return (
     <button
-      aria-hidden
+      aria-label="Toggle progress shown"
       className="relative h-5 w-full overflow-hidden rounded-full bg-slate-800"
       onClick={toggleProgressBarState}
     >
