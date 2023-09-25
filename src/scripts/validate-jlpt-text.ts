@@ -82,6 +82,12 @@ for (const filePath of FILE_PATHS) {
           });
       })(),
     },
+    {
+      name: `All kanji and kana must not have "/" in them`,
+      lines: entries.filter((entry) =>
+        (entry.kanji + entry.kana).includes("/"),
+      ),
+    },
   ].filter((category) => category.lines.length > 0);
 
   if (errors.length > 0) {
