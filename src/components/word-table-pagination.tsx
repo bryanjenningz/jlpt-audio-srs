@@ -19,8 +19,6 @@ export function WordTablePagination() {
   const decrementPage = useWordTablePaginationStore((x) => x.decrementPage);
   const incrementPage = useWordTablePaginationStore((x) => x.incrementPage);
 
-  console.log({ wordsLength });
-
   if (wordsLength === 0) {
     <></>;
   }
