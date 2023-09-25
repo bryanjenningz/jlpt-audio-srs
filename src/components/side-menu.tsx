@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { classNames } from "~/utils/class-names";
 import { levels, type Level } from "~/utils/levels";
 
@@ -57,6 +58,17 @@ export const SideMenu = ({
       options: [{ label: "Settings", href: "/settings" }],
     },
   ];
+
+  useEffect(() => {
+    function closeMenuOnEscapeKey(event: KeyboardEvent) {
+      if (isSideMenuOpen && event.key === "Escape") {
+        closeSideMenu();
+      }
+    }
+
+    document.addEventListener("keydown", closeMenuOnEscapeKey);
+    return () => document.removeEventListener("keydown", closeMenuOnEscapeKey);
+  }, [isSideMenuOpen, closeSideMenu]);
 
   return (
     <>
