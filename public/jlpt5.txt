@@ -36,7 +36,7 @@
 ある;ある;to be,to have (used for inanimate objects);
 歩く;あるく;to walk;2
 あれ;あれ;(pronoun) that;
-いい / よい;いい / よい;good;
+いい;いい;good;
 いいえ;いいえ;no;
 言う;いう;to say;0
 家;いえ;house;2
@@ -117,7 +117,7 @@
 お兄さん;おにいさん;(honorable) older brother;2
 お姉さん;おねえさん;(honorable) older sister;2
 おばあさん;おばあさん;grandmother,female senior-citizen;
-伯母さん / 叔母さん;おばさん;aunt;
+伯母さん;おばさん;aunt;0
 お風呂;おふろ;bath (formal);2
 お弁当;おべんとう;boxed lunch;0
 覚える;おぼえる;to remember;3
@@ -164,7 +164,7 @@
 軽い;かるい;light;0
 カレー;カレー;curry;0
 カレンダー;カレンダー;calendar;2
-川 / 河;かわ;river;
+川;かわ;river;2
 かわいい;かわいい;cute;
 漢字;かんじ;Chinese character;0
 木;き;tree,wood;1
@@ -178,7 +178,7 @@
 切手;きって;postage stamp;0
 切符;きっぷ;ticket;0
 昨日;きのう;yesterday;2
-九;きゅう / く;nine (number);
+九;く;nine (number);1
 牛肉;ぎゅうにく;beef;0
 牛乳;ぎゅうにゅう;milk;0
 今日;きょう;today;1
@@ -189,8 +189,8 @@
 切る;きる;to cut;1
 着る;きる;to put on from the shoulders down;0
 きれい;きれい;pretty,clean;
-キロ / キログラム;キロ / キログラム;kilogram;
-キロ / キロメートル;キロ / キロメートル;kilometre;
+キログラム;キログラム;kilogram;
+キロメートル;キロメートル;kilometre;
 銀行;ぎんこう;bank;0
 金曜日;きんようび;Friday;3
 薬;くすり;medicine;0
@@ -258,7 +258,7 @@
 再来年;さらいねん;year after next;0
 三;さん;three (number);
 散歩;さんぽする;to stroll;
-四;し / よん;four (number);
+四;よん;four (number);1
 塩;しお;salt;2
 しかし;しかし;however;
 時間;じかん;time;0
@@ -266,7 +266,7 @@
 辞書;じしょ;dictionary;1
 静か;しずか;quiet;1
 下;した;below;0
-七;しち / なな;seven (number);
+七;なな;seven (number);1
 質問;しつもん;question;0
 自転車;じてんしゃ;bicycle;2,0
 自動車;じどうしゃ;automobile;2,0
@@ -276,11 +276,11 @@
 閉まる;しまる;to close,to be closed;2
 閉める;しめる;to close something;2
 締める;しめる;to tie;2
-じゃ / じゃあ;じゃ / じゃあ;well then…;
+じゃあ;じゃあ;well then…;
 写真;しゃしん;photograph;0
 シャツ;シャツ;shirt;1
 シャワー;シャワー;shower;1
-十;じゅう / とお;ten;
+十;じゅう;ten;1
 授業;じゅぎょう;lesson,class work;1
 宿題;しゅくだい;homework;0
 上手;じょうず;skillful;3
@@ -320,7 +320,7 @@
 洗濯;せんたく;washing;0
 全部;ぜんぶ;all;1
 掃除;そうじ;cleaning, sweeping;0
-そうして / そして;そうして / そして;and;
+そして;そして;and;
 そこ;そこ;that place;
 そちら;そちら;there;
 そっち;そっち;there (shortened);
@@ -442,7 +442,7 @@
 並ぶ;ならぶ;to line up,to stand in a line;0
 並べる;ならべる;to line up,to set up;0
 なる;なる;to become;
-何;なん / なに;what;
+何;なん;what;1
 二;に;two (number);1
 賑やか;にぎやか;bustling,busy;2
 肉;にく;meat;2
@@ -472,7 +472,7 @@
 橋;はし;bridge;2
 はし;はし;chopsticks;
 始まる;はじまる;to begin;0
-初め / 始め;はじめ;beginning;
+初め;はじめ;beginning;0
 初めて;はじめて;for the first time;2
 走る;はしる;to run;2
 バス;バス;bus;1
@@ -553,10 +553,10 @@
 本棚;ほんだな;bookshelves;1
 ほんとう;ほんとう;truth;
 毎朝;まいあさ;every morning;1,0
-毎月;まいげつ / まいつき;every month;
+毎月;まいつき;every month;0
 毎週;まいしゅう;every week;0
 毎日;まいにち;every day;1
-毎年;まいねん / まいとし;every year;
+毎年;まいとし;every year;0
 毎晩;まいばん;every night;1,0
 前;まえ;before;1
 曲る;まがる;to turn,to bend;0
@@ -568,7 +568,7 @@
 まっすぐ;まっすぐ;straight ahead,direct;
 マッチ;マッチ;match;1
 窓;まど;window;1
-丸い / 円い;まるい;round,circular;
+丸い;まるい;round,circular;0,2
 万;まん;ten thousand;1
 万年筆;まんねんひつ;fountain pen;3
 磨く;みがく;to brush teeth, to polish;0
@@ -584,7 +584,7 @@
 皆さん;みなさん;everyone (formal);2
 南;みなみ;south;0
 耳;みみ;ear;2
-見る / 観る;みる;to see, to watch;
+見る;みる;to see, to watch;1
 みんな;みんな;everyone;
 六日;むいか;six days, sixth day of the month;0
 向こう;むこう;towards over there;2,0
@@ -632,7 +632,7 @@
 来週;らいしゅう;next week;0
 来年;らいねん;next year;0
 ラジオ;ラジオ;radio;1
-ラジカセ / ラジオカセット;ラジカセ / ラジオカセット;radio cassette player;
+ラジカセ;ラジカセ;radio cassette player;0
 りっぱ;りっぱ;splendid;
 留学生;りゅうがくせい;overseas student;3,4
 両親;りょうしん;both parents;1
