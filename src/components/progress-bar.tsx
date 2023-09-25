@@ -4,18 +4,16 @@ import { type Word } from "~/words/types";
 
 export function ProgressBar({ words }: { words: Word[] }) {
   const progressBarState =
-    useStore(useProgressBarStore, (x) => x.progressBarState) ?? "complete";
+    useStore(useProgressBarStore, (x) => x.progressBarState) ?? "known";
   const toggleProgressBarState = useProgressBarStore(
     (x) => x.toggleProgressBarState,
   );
-  const completeCount = words.filter((word) => word.known).length;
-  const seenOrCompleteCount = words.filter(
+  const knownCount = words.filter((word) => word.known).length;
+  const seenCount = words.filter(
     (word) => word.known || word.type === "seen",
   ).length;
-  const completePercent = Math.floor((completeCount / words.length) * 100);
-  const seenOrCompletePercent = Math.floor(
-    (seenOrCompleteCount / words.length) * 100,
-  );
+  const knownPercent = Math.floor((knownCount / words.length) * 100);
+  const seenPercent = Math.floor((seenCount / words.length) * 100);
 
   return (
     <button
@@ -27,18 +25,18 @@ export function ProgressBar({ words }: { words: Word[] }) {
         className="absolute bottom-0 left-0 top-0 bg-blue-700 text-center"
         style={{
           width:
-            progressBarState === "complete"
-              ? `${completePercent}%`
-              : `${seenOrCompletePercent}%`,
+            progressBarState === "known"
+              ? `${knownPercent}%`
+              : `${seenPercent}%`,
         }}
       ></div>
 
       <div className="absolute inset-0 flex items-center justify-center text-xs">
         {words.length === 0
           ? ""
-          : progressBarState === "complete"
-          ? `${completeCount} / ${words.length} (${completePercent}%) complete`
-          : `${seenOrCompleteCount} / ${words.length} (${seenOrCompletePercent}%) seen or complete`}
+          : progressBarState === "known"
+          ? `${knownCount} / ${words.length} (${knownPercent}%) known`
+          : `${seenCount} / ${words.length} (${seenPercent}%) seen`}
       </div>
     </button>
   );

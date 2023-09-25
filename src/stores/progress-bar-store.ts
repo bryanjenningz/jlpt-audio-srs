@@ -6,16 +6,15 @@ type ProgressBarStore = {
   toggleProgressBarState: () => void;
 };
 
-type ProgressBarState = "complete" | "completeOrSeen";
+type ProgressBarState = "known" | "seen";
 
 export const useProgressBarStore = create<ProgressBarStore>()(
   persist(
     (set) => ({
-      progressBarState: "complete",
+      progressBarState: "known",
       toggleProgressBarState: () => {
         set(({ progressBarState }) => ({
-          progressBarState:
-            progressBarState === "complete" ? "completeOrSeen" : "complete",
+          progressBarState: progressBarState === "known" ? "seen" : "known",
         }));
       },
     }),
