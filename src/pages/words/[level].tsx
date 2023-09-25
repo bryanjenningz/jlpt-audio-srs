@@ -6,11 +6,21 @@ import { MenuIcon } from "~/icons/menu-icon";
 import { WordTable } from "~/components/word-table";
 import { type Word } from "~/words/types";
 import { useLevel } from "~/utils/levels";
+import { WordTablePagination } from "~/components/word-table-pagination";
+import {
+  DEFAULT_PAGE,
+  WORDS_PER_PAGE,
+  useWordTablePaginationStore,
+} from "~/stores/word-table-pagination-store";
+import { useStore } from "~/stores/use-store";
 
 export default function Home() {
   const level = useLevel();
   const [words, setWords] = useWords(level);
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+  const page =
+    useStore(useWordTablePaginationStore, (x) => x.page[level]) ??
+    DEFAULT_PAGE[level];
 
   return (
     <main className="flex min-h-[100dvh] flex-col items-center bg-black text-white">
@@ -32,11 +42,16 @@ export default function Home() {
         />
 
         <WordTable
-          words={words}
+          words={words.slice(
+            page * WORDS_PER_PAGE,
+            (page + 1) * WORDS_PER_PAGE,
+          )}
           setWords={(updateWords: (words: Word[]) => Word[]) =>
             setWords(level, updateWords)
           }
         />
+
+        <WordTablePagination />
       </div>
     </main>
   );
