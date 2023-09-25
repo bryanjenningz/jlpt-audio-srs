@@ -1,5 +1,5 @@
 あいかわらず;あいかわらず;as ever,as usual,the same;
-アイデア/アイディア;アイデア/アイディア;idea;
+アイディア;アイディア;idea;1,3
 あいまい;あいまい;vague,ambiguous;
 遭う;あう;to meet,to encounter (undesirable nuance);1
 扇ぐ;あおぐ;to fan,to flap;2
@@ -461,7 +461,7 @@
 下品;げひん;vulgarity,meanness,indecency,coarseness;2
 煙い;けむい;smoky;0,2
 蹴る;ける;to kick;1
-けれど/けれども;けれど/けれども;but,however;
+けれども;けれども;but,however;1
 険しい;けわしい;inaccessible place,sharp eyes;3
 見学;けんがく;inspection,study by observation,field trip;0
 謙虚;けんきょ;modesty,humility;1
@@ -1075,7 +1075,7 @@
 点く;つく;to catch fire,(electricity) comes on;1,2
 突く;つく;(1) to thrust,to strike,(2) to poke;0,1
 次ぐ;つぐ;to rank next to,to come after;0
-作る/造る;つくる;to make,to create;
+作る;つくる;to make,to create;2
 着ける;つける;(1) to attach,to join,to add,to append;2
 点ける;つける;to turn on,to switch on,to light up;2
 浸ける;つける;to dip in,to soak;0
