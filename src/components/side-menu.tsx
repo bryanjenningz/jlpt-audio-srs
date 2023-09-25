@@ -92,6 +92,7 @@ export const SideMenu = ({
                   return (
                     <li key={key}>
                       <Link
+                        tabIndex={isSideMenuOpen ? 0 : -1}
                         className={classNames(
                           "flex w-full items-center gap-2 px-4 py-2 text-left text-lg",
                           (router.pathname === option.href ||
