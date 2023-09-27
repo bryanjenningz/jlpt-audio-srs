@@ -4,11 +4,11 @@ import { useSettingsStore } from "~/stores/settings-store";
 import { useStore } from "~/stores/use-store";
 
 export function Pronunciation({
-  pronunciation,
+  kana,
   pitchAccents,
   pitchAccentsShown = Infinity,
 }: {
-  pronunciation: string;
+  kana: string;
   pitchAccents: number[];
   pitchAccentsShown: number;
 }) {
@@ -16,10 +16,10 @@ export function Pronunciation({
     useStore(useSettingsStore, (x) => x.pitchAccentShown) ?? true;
 
   if (!pitchAccentShown) {
-    return <div>{pronunciation}</div>;
+    return <div>{kana}</div>;
   }
 
-  const moras = getMoras(pronunciation);
+  const moras = getMoras(kana);
   const fallIndexes = pitchAccents
     .slice(0, Math.max(1, pitchAccentsShown))
     .map((pitchAccent) => (pitchAccent === 0 ? Infinity : pitchAccent));
@@ -29,7 +29,7 @@ export function Pronunciation({
       {fallIndexes.length > 0 ? (
         fallIndexes.map((fallIndex) => {
           return (
-            <div key={`${pronunciation}-${fallIndex}`}>
+            <div key={`${kana}-${fallIndex}`}>
               {moras.map((mora, i) => {
                 return (
                   <div
@@ -61,7 +61,7 @@ export function Pronunciation({
           );
         })
       ) : (
-        <div>{pronunciation}</div>
+        <div>{kana}</div>
       )}
     </div>
   );

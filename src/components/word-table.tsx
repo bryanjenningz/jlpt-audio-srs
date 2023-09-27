@@ -155,7 +155,7 @@ export function WordTable({
               <td className="grow basis-1">{word.kanji}</td>
               <td className="grow basis-1 text-sm">
                 <Pronunciation
-                  pronunciation={word.kana}
+                  kana={word.kana}
                   pitchAccents={word.pitchAccents}
                   pitchAccentsShown={1}
                 />

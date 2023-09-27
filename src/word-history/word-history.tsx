@@ -31,7 +31,7 @@ export function WordHistory({
                 <h3 className="line-clamp-1 flex shrink-0 gap-2 text-ellipsis text-xs">
                   {wordHistoryEntry.kanji}
                   <Pronunciation
-                    pronunciation={wordHistoryEntry.kana}
+                    kana={wordHistoryEntry.kana}
                     pitchAccents={wordHistoryEntry.pitchAccents}
                     pitchAccentsShown={1}
                   />

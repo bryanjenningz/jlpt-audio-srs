@@ -108,7 +108,7 @@ export default function Learn() {
               >
                 <div>{wordPlaying.kanji}</div>
                 <Pronunciation
-                  pronunciation={wordPlaying.kana}
+                  kana={wordPlaying.kana}
                   pitchAccents={wordPlaying.pitchAccents}
                   pitchAccentsShown={1}
                 />
