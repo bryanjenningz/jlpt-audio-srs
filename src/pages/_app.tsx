@@ -17,9 +17,11 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <title>JLPT Audio SRS</title>
         <meta
           name="description"
-          content="Learn and review JLPT vocab by just listening"
+          content="Learn and review JLPT vocab by just listening."
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#333" />
+        <link rel="manifest" href="/app.webmanifest" />
       </Head>
       <Component {...pageProps} />
     </>
