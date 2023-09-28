@@ -6,7 +6,7 @@ import { Pronunciation } from "~/components/pronunciation";
 type ToggleRange =
   | { type: "CLOSED" }
   | { type: "TOGGLING_FIRST" }
-  | { type: "TOGGLING_SECOND"; firstIndex: number };
+  | { type: "TOGGLING_SECOND"; first: number };
 
 export function WordTable({
   words,
@@ -73,7 +73,7 @@ export function WordTable({
       </thead>
 
       <tbody className="h-96 w-full max-w-2xl overflow-auto text-lg">
-        {words.map((word, i) => {
+        {words.map((word) => {
           const key = `${word.kanji}-${word.definition}`;
           return (
             <tr
@@ -89,7 +89,7 @@ export function WordTable({
                         : "odd:bg-slate-800";
 
                     case "TOGGLING_SECOND":
-                      return i === toggleRange.firstIndex
+                      return word.order === toggleRange.first
                         ? "bg-blue-500"
                         : word.type === "seen"
                         ? "odd:bg-blue-800 even:bg-blue-900"
@@ -105,22 +105,22 @@ export function WordTable({
                   case "TOGGLING_FIRST":
                     return setToggleRange({
                       type: "TOGGLING_SECOND",
-                      firstIndex: i,
+                      first: word.order,
                     });
 
                   case "TOGGLING_SECOND": {
                     const [first, second] =
-                      toggleRange.firstIndex <= i
-                        ? [toggleRange.firstIndex, i]
-                        : [i, toggleRange.firstIndex];
+                      toggleRange.first <= word.order
+                        ? [toggleRange.first, word.order]
+                        : [word.order, toggleRange.first];
 
                     const allKnown = words
-                      .slice(first, second + 1)
+                      .filter((x) => x.order >= first && x.order <= second)
                       .every((word) => word.known);
 
                     setWords((words) =>
-                      words.map((word, i) => {
-                        if (i >= first && i <= second) {
+                      words.map((word) => {
+                        if (word.order >= first && word.order <= second) {
                           return { ...word, known: !allKnown };
                         }
                         return word;
