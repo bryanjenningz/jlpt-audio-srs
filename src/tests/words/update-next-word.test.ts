@@ -12,7 +12,9 @@ import { type Word } from "~/words/types";
 
 describe("updateNextWord", () => {
   it("Returns empty array if you pass in an empty array", () => {
-    expect(updateNextWord([], timeNow, 0)).toEqual([]);
+    expect(
+      updateNextWord({ words: [], now: timeNow, maxSeenUnknownWords: 0 }),
+    ).toEqual([]);
   });
 
   it("Updates the first unseen word if there are 2 unseen words", () => {
@@ -27,9 +29,13 @@ describe("updateNextWord", () => {
         known: false,
       },
     ];
-    expect(updateNextWord([unseenWord, unseenWord2], timeNow, 0)).toEqual(
-      result,
-    );
+    expect(
+      updateNextWord({
+        words: [unseenWord, unseenWord2],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
+    ).toEqual(result);
 
     const result2: Word[] = [
       unseenWord,
@@ -41,9 +47,13 @@ describe("updateNextWord", () => {
         known: false,
       },
     ];
-    expect(updateNextWord([unseenWord2, unseenWord], timeNow, 0)).toEqual(
-      result2,
-    );
+    expect(
+      updateNextWord({
+        words: [unseenWord2, unseenWord],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
+    ).toEqual(result2);
   });
 
   it("Updates the last seen time and seen count of the next word even if there's only 1 word", () => {
@@ -56,7 +66,13 @@ describe("updateNextWord", () => {
         known: false,
       },
     ];
-    expect(updateNextWord([unseenWord], timeNow, 0)).toEqual(result);
+    expect(
+      updateNextWord({
+        words: [unseenWord],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
+    ).toEqual(result);
 
     const result2: Word[] = [
       {
@@ -67,7 +83,11 @@ describe("updateNextWord", () => {
       },
     ];
     expect(
-      updateNextWord([wordSeenOnceLessThanIntervalAgo], timeNow, 0),
+      updateNextWord({
+        words: [wordSeenOnceLessThanIntervalAgo],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
     ).toEqual(result2);
 
     const result3: Word[] = [
@@ -78,9 +98,13 @@ describe("updateNextWord", () => {
         seenCount: 2,
       },
     ];
-    expect(updateNextWord([wordSeenOnceIntervalAgo], timeNow, 0)).toEqual(
-      result3,
-    );
+    expect(
+      updateNextWord({
+        words: [wordSeenOnceIntervalAgo],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
+    ).toEqual(result3);
 
     const result4: Word[] = [
       {
@@ -91,7 +115,11 @@ describe("updateNextWord", () => {
       },
     ];
     expect(
-      updateNextWord([wordSeenOnceMoreThanIntervalAgo], timeNow, 0),
+      updateNextWord({
+        words: [wordSeenOnceMoreThanIntervalAgo],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
     ).toEqual(result4);
 
     const result5: Word[] = [
@@ -102,9 +130,13 @@ describe("updateNextWord", () => {
         seenCount: 3,
       },
     ];
-    expect(updateNextWord([wordSeenTwiceTwoIntervalsAgo], timeNow, 0)).toEqual(
-      result5,
-    );
+    expect(
+      updateNextWord({
+        words: [wordSeenTwiceTwoIntervalsAgo],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
+    ).toEqual(result5);
   });
 
   it("Updates the unseen word if there's an unseen word and a word seen once 10 seconds ago", () => {
@@ -120,7 +152,11 @@ describe("updateNextWord", () => {
       newlySeenWord,
     ].sort((a, b) => a.order - b.order);
     expect(
-      updateNextWord([unseenWord, wordSeenOnceLessThanIntervalAgo], timeNow, 0),
+      updateNextWord({
+        words: [unseenWord, wordSeenOnceLessThanIntervalAgo],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
     ).toEqual(result);
   });
 
@@ -135,11 +171,15 @@ describe("updateNextWord", () => {
       },
     ].sort((a, b) => a.order - b.order);
     expect(
-      updateNextWord(
-        [unseenWord, wordSeenOnceLessThanIntervalAgo, wordSeenOnceIntervalAgo],
-        timeNow,
-        0,
-      ),
+      updateNextWord({
+        words: [
+          unseenWord,
+          wordSeenOnceLessThanIntervalAgo,
+          wordSeenOnceIntervalAgo,
+        ],
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
     ).toEqual(result);
   });
 
@@ -155,16 +195,16 @@ describe("updateNextWord", () => {
       },
     ].sort((a, b) => a.order - b.order);
     expect(
-      updateNextWord(
-        [
+      updateNextWord({
+        words: [
           unseenWord,
           wordSeenOnceLessThanIntervalAgo,
           wordSeenOnceIntervalAgo,
           wordSeenOnceMoreThanIntervalAgo,
         ],
-        timeNow,
-        0,
-      ),
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
     ).toEqual(result);
   });
 
@@ -180,16 +220,16 @@ describe("updateNextWord", () => {
       },
     ].sort((a, b) => a.order - b.order);
     expect(
-      updateNextWord(
-        [
+      updateNextWord({
+        words: [
           unseenWord,
           wordSeenOnceLessThanIntervalAgo,
           wordSeenOnceIntervalAgo,
           wordSeenTwiceTwoIntervalsAgo,
         ],
-        timeNow,
-        0,
-      ),
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
     ).toEqual(result);
   });
 
@@ -206,17 +246,17 @@ describe("updateNextWord", () => {
       },
     ].sort((a, b) => a.order - b.order);
     expect(
-      updateNextWord(
-        [
+      updateNextWord({
+        words: [
           unseenWord,
           wordSeenOnceLessThanIntervalAgo,
           wordSeenOnceIntervalAgo,
           wordSeenOnceMoreThanIntervalAgo,
           wordSeenTwiceTwoIntervalsAgo,
         ],
-        timeNow,
-        0,
-      ),
+        now: timeNow,
+        maxSeenUnknownWords: 0,
+      }),
     ).toEqual(result);
   });
 });

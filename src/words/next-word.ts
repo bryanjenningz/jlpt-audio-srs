@@ -6,11 +6,15 @@ function nextSeenTime({ lastSeen, seenCount }: SeenWord): number {
   return 2 ** (seenCount - 1) * intervalTime + lastSeen;
 }
 
-export function nextWord(
-  words: Word[],
-  now: number,
-  maxSeenUnknownWords: number,
-): Word | undefined {
+export function nextWord({
+  words,
+  now,
+  maxSeenUnknownWords,
+}: {
+  words: Word[];
+  now: number;
+  maxSeenUnknownWords: number;
+}): Word | undefined {
   const seenUnknownWordCount = words.filter(
     (word) => word.type === "seen" && !word.known,
   ).length;

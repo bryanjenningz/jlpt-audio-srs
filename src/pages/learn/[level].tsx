@@ -52,7 +52,7 @@ export default function Learn() {
       setJapaneseShown(false);
       setWordPlaying(undefined);
       setWords(level, (words) =>
-        updateNextWord(words, now, maxSeenUnknownWords),
+        updateNextWord({ words, now, maxSeenUnknownWords }),
       );
     },
     [
@@ -68,7 +68,7 @@ export default function Learn() {
     void (async () => {
       if (autoplay && !wordPlaying) {
         const now = Date.now();
-        const word = nextWord(words, now, maxSeenUnknownWords);
+        const word = nextWord({ words, now, maxSeenUnknownWords });
         if (!word) return;
         await playWord(word, now, maxSeenUnknownWords);
       }
