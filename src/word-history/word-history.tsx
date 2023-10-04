@@ -19,7 +19,7 @@ export function WordHistory({
             <li
               key={`${wordHistoryEntry.kanji}-${wordHistoryEntry.definition}-${wordHistoryEntry.order}-${i}`}
               className={classNames(
-                "flex items-center gap-3 rounded-full px-4",
+                "flex items-center gap-3 rounded-full px-4 py-3",
                 wordHistoryEntry.known
                   ? "bg-blue-700 even:bg-blue-800"
                   : wordHistoryEntry.type === "unseen"
