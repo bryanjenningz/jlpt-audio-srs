@@ -31,11 +31,17 @@ export default function Learn() {
     useStore(useSettingsStore, (x) => x.waitTimeAfterQuestion) ?? 1000;
   const waitTimeAfterAnswer =
     useStore(useSettingsStore, (x) => x.waitTimeAfterAnswer) ?? 0;
+  const maxSeenUnknownWords =
+    useStore(useSettingsStore, (x) => x.maxSeenUnknownWords) ?? 0;
 
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
   const playWord = useCallback(
-    async (word: Word, now: number): Promise<void> => {
+    async (
+      word: Word,
+      now: number,
+      maxSeenUnknownWords: number,
+    ): Promise<void> => {
       setWordPlaying(word);
       await playEnglish(word.definition, speechSynthesis);
       await wait(waitTimeAfterQuestion);
@@ -45,7 +51,9 @@ export default function Learn() {
       await wait(waitTimeAfterAnswer);
       setJapaneseShown(false);
       setWordPlaying(undefined);
-      setWords(level, (words) => updateNextWord(words, now));
+      setWords(level, (words) =>
+        updateNextWord(words, now, maxSeenUnknownWords),
+      );
     },
     [
       setWords,
@@ -60,12 +68,12 @@ export default function Learn() {
     void (async () => {
       if (autoplay && !wordPlaying) {
         const now = Date.now();
-        const word = nextWord(words, now);
+        const word = nextWord(words, now, maxSeenUnknownWords);
         if (!word) return;
-        await playWord(word, now);
+        await playWord(word, now, maxSeenUnknownWords);
       }
     })();
-  }, [autoplay, wordPlaying, words, playWord]);
+  }, [autoplay, wordPlaying, words, playWord, maxSeenUnknownWords]);
 
   return (
     <main className="flex min-h-[100dvh] flex-col items-center bg-black text-white">

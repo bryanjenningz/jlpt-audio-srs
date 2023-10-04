@@ -21,6 +21,11 @@ export default function Settings() {
   const setWaitTimeAfterAnswer = useSettingsStore(
     (x) => x.setWaitTimeAfterAnswer,
   );
+  const maxSeenUnknownWords =
+    useStore(useSettingsStore, (x) => x.maxSeenUnknownWords) ?? 0;
+  const setMaxSeenUnknownWords = useSettingsStore(
+    (x) => x.setMaxSeenUnknownWords,
+  );
 
   const settings = [
     {
@@ -46,6 +51,16 @@ export default function Settings() {
       setValue: setWaitTimeAfterAnswer,
       min: 0,
       max: 5000,
+    },
+    {
+      type: "number",
+      name: "Max number of seen unknown words",
+      description:
+        "Don't show any new unknown words until the number of seen unknown words goes below this threshold (0 to 1000; 0 means unlimited)",
+      value: maxSeenUnknownWords,
+      setValue: setMaxSeenUnknownWords,
+      min: 0,
+      max: 1000,
     },
   ] as const;
 
@@ -90,7 +105,7 @@ export default function Settings() {
               const { name, description, value, setValue, min, max } = setting;
               return (
                 <li key={name}>
-                  <label className="flex justify-between p-4 text-lg">
+                  <label className="flex justify-between gap-2 p-4 text-lg">
                     <span className="flex grow flex-col">
                       <span>{name}</span>
                       <span className="text-sm text-slate-400">

@@ -8,6 +8,8 @@ type SettingsStore = {
   setWaitTimeAfterQuestion: (waitTimeAfterQuestion: number) => void;
   waitTimeAfterAnswer: number;
   setWaitTimeAfterAnswer: (waitTimeAfterAnswer: number) => void;
+  maxSeenUnknownWords: number;
+  setMaxSeenUnknownWords: (maxSeenUnknownWords: number) => void;
 };
 
 export const useSettingsStore = create<SettingsStore>()(
@@ -36,6 +38,10 @@ export const useSettingsStore = create<SettingsStore>()(
             Math.max(0, waitTimeAfterAnswer),
           ),
         });
+      },
+      maxSeenUnknownWords: 0,
+      setMaxSeenUnknownWords: (maxSeenUnknownWords: number) => {
+        set({ maxSeenUnknownWords });
       },
     }),
     { name: "settings" },

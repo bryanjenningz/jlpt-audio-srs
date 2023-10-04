@@ -11,21 +11,21 @@ import {
 
 describe("nextWord", () => {
   it("Returns undefined if there are no words", () => {
-    expect(nextWord([], 0)).toEqual(undefined);
+    expect(nextWord([], 0, 0)).toEqual(undefined);
   });
 
   it("Returns the first word if there is only 1 word", () => {
-    expect(nextWord([unseenWord], timeNow)).toEqual(unseenWord);
-    expect(nextWord([wordSeenOnceLessThanIntervalAgo], timeNow)).toEqual(
+    expect(nextWord([unseenWord], timeNow, 0)).toEqual(unseenWord);
+    expect(nextWord([wordSeenOnceLessThanIntervalAgo], timeNow, 0)).toEqual(
       wordSeenOnceLessThanIntervalAgo,
     );
-    expect(nextWord([wordSeenOnceIntervalAgo], timeNow)).toEqual(
+    expect(nextWord([wordSeenOnceIntervalAgo], timeNow, 0)).toEqual(
       wordSeenOnceIntervalAgo,
     );
-    expect(nextWord([wordSeenOnceMoreThanIntervalAgo], timeNow)).toEqual(
+    expect(nextWord([wordSeenOnceMoreThanIntervalAgo], timeNow, 0)).toEqual(
       wordSeenOnceMoreThanIntervalAgo,
     );
-    expect(nextWord([wordSeenTwiceTwoIntervalsAgo], timeNow)).toEqual(
+    expect(nextWord([wordSeenTwiceTwoIntervalsAgo], timeNow, 0)).toEqual(
       wordSeenTwiceTwoIntervalsAgo,
     );
   });
@@ -35,6 +35,7 @@ describe("nextWord", () => {
       nextWord(
         [unseenWord, wordSeenOnceIntervalAgo, wordSeenOnceLessThanIntervalAgo],
         timeNow,
+        0,
       ),
     ).toEqual(wordSeenOnceIntervalAgo);
   });
@@ -49,13 +50,14 @@ describe("nextWord", () => {
           wordSeenOnceLessThanIntervalAgo,
         ],
         timeNow,
+        0,
       ),
     ).toEqual(wordSeenOnceMoreThanIntervalAgo);
   });
 
   it("Returns unseen word if no words were last seen >=15 seconds ago", () => {
     expect(
-      nextWord([unseenWord, wordSeenOnceLessThanIntervalAgo], timeNow),
+      nextWord([unseenWord, wordSeenOnceLessThanIntervalAgo], timeNow, 0),
     ).toEqual(unseenWord);
   });
 
@@ -64,6 +66,7 @@ describe("nextWord", () => {
       nextWord(
         [wordSeenOnceIntervalAgo, wordSeenTwiceTwoIntervalsAgo],
         timeNow,
+        0,
       ),
     ).toEqual(wordSeenTwiceTwoIntervalsAgo);
   });
@@ -73,6 +76,7 @@ describe("nextWord", () => {
       nextWord(
         [wordSeenOnceMoreThanIntervalAgo, wordSeenTwiceTwoIntervalsAgo],
         timeNow,
+        0,
       ),
     ).toEqual(wordSeenOnceMoreThanIntervalAgo);
   });

@@ -6,7 +6,17 @@ function nextSeenTime({ lastSeen, seenCount }: SeenWord): number {
   return 2 ** (seenCount - 1) * intervalTime + lastSeen;
 }
 
-export function nextWord(words: Word[], now: number): Word | undefined {
+export function nextWord(
+  words: Word[],
+  now: number,
+  maxSeenUnknownWords: number,
+): Word | undefined {
+  const seenUnknownWordCount = words.filter(
+    (word) => word.type === "seen" && !word.known,
+  ).length;
+  const showUnseenWords =
+    maxSeenUnknownWords === 0 || seenUnknownWordCount < maxSeenUnknownWords;
+
   words = words
     .filter((word) => !word.known)
     .sort((a, b) => {
@@ -35,8 +45,11 @@ export function nextWord(words: Word[], now: number): Word | undefined {
     });
 
   return (
-    words.filter(
-      (word) => word.type === "unseen" || nextSeenTime(word) <= now,
-    )[0] ?? words[0]
+    words.filter((word) => {
+      if (word.type === "unseen") {
+        return showUnseenWords;
+      }
+      return nextSeenTime(word) <= now;
+    })[0] ?? words[0]
   );
 }
