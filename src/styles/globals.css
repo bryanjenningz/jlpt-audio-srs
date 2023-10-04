@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Disable scrolling on body */
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
 /* Hide input[type="number"] up/down buttons */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

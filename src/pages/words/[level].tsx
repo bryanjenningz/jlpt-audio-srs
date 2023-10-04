@@ -13,6 +13,7 @@ import {
   useWordTablePaginationStore,
 } from "~/stores/word-table-pagination-store";
 import { useStore } from "~/stores/use-store";
+import Head from "next/head";
 
 export default function Home() {
   const level = useLevel();
@@ -23,36 +24,45 @@ export default function Home() {
     DEFAULT_PAGE[level];
 
   return (
-    <main className="flex min-h-[100dvh] flex-col items-center bg-black text-white">
-      <div className="flex w-full max-w-2xl grow flex-col items-center gap-3 p-4">
-        <section className="flex w-full flex-col gap-3">
-          <div className="flex items-center gap-3">
-            <button onClick={() => setIsSideMenuOpen((x) => !x)}>
-              <span className="sr-only">Open menu</span>
-              <MenuIcon />
-            </button>
+    <>
+      <Head>
+        <style>
+          {/* Disable scrolling on body */}
+          {`body { overflow: hidden; }`}
+        </style>
+      </Head>
 
-            <ProgressBar words={words} />
-          </div>
-        </section>
+      <main className="flex min-h-[100dvh] flex-col items-center bg-black text-white">
+        <div className="flex w-full max-w-2xl grow flex-col items-center gap-3 p-4">
+          <section className="flex w-full flex-col gap-3">
+            <div className="flex items-center gap-3">
+              <button onClick={() => setIsSideMenuOpen((x) => !x)}>
+                <span className="sr-only">Open menu</span>
+                <MenuIcon />
+              </button>
 
-        <SideMenu
-          isSideMenuOpen={isSideMenuOpen}
-          closeSideMenu={() => setIsSideMenuOpen(false)}
-        />
+              <ProgressBar words={words} />
+            </div>
+          </section>
 
-        <WordTable
-          words={words.slice(
-            page * WORDS_PER_PAGE,
-            (page + 1) * WORDS_PER_PAGE,
-          )}
-          setWords={(updateWords: (words: Word[]) => Word[]) =>
-            setWords(level, updateWords)
-          }
-        />
+          <SideMenu
+            isSideMenuOpen={isSideMenuOpen}
+            closeSideMenu={() => setIsSideMenuOpen(false)}
+          />
 
-        <WordTablePagination />
-      </div>
-    </main>
+          <WordTable
+            words={words.slice(
+              page * WORDS_PER_PAGE,
+              (page + 1) * WORDS_PER_PAGE,
+            )}
+            setWords={(updateWords: (words: Word[]) => Word[]) =>
+              setWords(level, updateWords)
+            }
+          />
+
+          <WordTablePagination />
+        </div>
+      </main>
+    </>
   );
 }
