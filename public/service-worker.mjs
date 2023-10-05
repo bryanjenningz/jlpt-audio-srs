@@ -6,12 +6,21 @@ const self = /** @type {ServiceWorkerGlobalScope} */ (
 
 const CACHE_NAME = "jlpt-audio-srs-pages";
 const CACHED_FILES = [
+  "/android-chrome-192x192.png",
+  "/android-chrome-512x512.png",
+  "/app.webmanifest",
+  "/apple-touch-icon.png",
+  "/favicon-16x16.png",
+  "/favicon-32x32.png",
   "/favicon.ico",
+
   "/jlpt1.txt",
   "/jlpt2.txt",
   "/jlpt3.txt",
   "/jlpt4.txt",
   "/jlpt5.txt",
+
+  "/service-worker.mjs",
 
   "/",
 
