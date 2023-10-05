@@ -68,11 +68,7 @@ self.addEventListener("fetch", (event) => {
           ignoreSearch: true,
         });
         if (!response) {
-          console.log(
-            "Uncached response for request, retrying fetch...",
-            event.request,
-          );
-          return fetch(event.request);
+          throw new Error(`Uncached response for request ${event.request.url}`);
         }
         return response;
       }
