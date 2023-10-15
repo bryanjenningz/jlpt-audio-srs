@@ -4,23 +4,14 @@ const self = /** @type {ServiceWorkerGlobalScope} */ (
   /** @type {unknown} */ (globalThis.self)
 );
 
-const CACHE_NAME = "jlpt-audio-srs-pages";
-const CACHED_FILES = [
-  "/android-chrome-192x192.png",
-  "/android-chrome-512x512.png",
-  "/app.webmanifest",
-  "/apple-touch-icon.png",
-  "/favicon-16x16.png",
-  "/favicon-32x32.png",
-  "/favicon.ico",
-
+const CACHE_NAME = "cache";
+const PAGES_CACHE_NAME = "pages";
+const PAGES = [
   "/jlpt1.txt",
   "/jlpt2.txt",
   "/jlpt3.txt",
   "/jlpt4.txt",
   "/jlpt5.txt",
-
-  "/service-worker.mjs",
 
   "/",
 
@@ -38,40 +29,38 @@ const CACHED_FILES = [
 
   "/settings",
 ];
-const EXTRA_CACHE_NAME = "jlpt-audio-srs-extra";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      await cache.addAll(CACHED_FILES);
+      const cache = await caches.open(PAGES_CACHE_NAME);
+      await cache.addAll(PAGES);
     })(),
   );
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(caches.delete(EXTRA_CACHE_NAME));
+  event.waitUntil(caches.delete(CACHE_NAME));
 });
+
+/** @param {FetchEvent} event */
+async function fetchAndCacheResponse(event) {
+  const cache = await caches.open(CACHE_NAME);
+  await cache.add(event.request.url);
+  return /** @type {Promise<Response>} */ (cache.match(event.request.url));
+}
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     (async () => {
-      try {
-        const response = await fetch(event.request);
-        if (!(await caches.has(event.request.url))) {
-          const cache = await caches.open(EXTRA_CACHE_NAME);
-          void cache.add(event.request.url);
-        }
-        return response;
-      } catch {
-        const response = await caches.match(event.request.url, {
-          ignoreSearch: true,
-        });
-        if (!response) {
-          throw new Error(`Uncached response for request ${event.request.url}`);
-        }
-        return response;
+      const cachedResponse = await caches.match(event.request.url, {
+        ignoreSearch: true,
+      });
+      if (!cachedResponse) {
+        return fetchAndCacheResponse(event);
       }
+      void fetchAndCacheResponse(event);
+      return cachedResponse;
     })(),
   );
 });
