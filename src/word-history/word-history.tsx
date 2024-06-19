@@ -13,7 +13,7 @@ export function WordHistory({
     <article className="flex w-full flex-col gap-2">
       <h2 className="font-bold">Word history</h2>
 
-      <ul className="flex flex-col gap-1">
+      <ul className="flex flex-col gap-3">
         {wordHistoryWithWords.map((wordHistoryEntry, i) => {
           return (
             <li
