@@ -103,7 +103,7 @@ export default function Learn() {
           closeSideMenu={() => setIsSideMenuOpen(false)}
         />
 
-        <section className="flex w-full flex-col items-center gap-3">
+        <section className="flex w-full flex-col items-center gap-5">
           {wordPlaying && (
             <>
               <div className="text-lg">{wordPlaying.definition}</div>
